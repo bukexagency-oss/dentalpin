@@ -6,7 +6,7 @@ Adaptasi DentalPin v2.0.0 menjadi aplikasi klinik estetika/kecantikan. Fork dila
 
 ## Commit
 
-**Commit**: `6934a53` — OTO-427: fix frontend build (rename aesthetic_plan composable + import path), di atas `b7b7b38` (migration collisions + boot stack) dan `60daea1` (estetika fork)
+**Commit**: `a01d357` — OTO-427: seed catalog aesthetic-only (skip dental items) — di atas `6934a53` (fix frontend build), `b7b7b38` (migration collisions + boot stack) dan `60daea1` (estetika fork)
 **Branch**: https://github.com/bukexagency-oss/dentalpin/tree/estetika
 
 ## Modul Baru
@@ -89,7 +89,27 @@ Aesthetic_plan adalah copy treatment_plan yang harus coexist dengan treatment_pl
 | `/api/v1/aesthetic/aesthetic/recommendations` | 200 | `{"data":[],"total":0}` |
 | `/api/v1/skin_analysis/skin_analysis/fitzpatrick` | 200 | Fitzpatrick scale data |
 | `/api/v1/patients` | 200 | 15 demo patients |
-| `/api/v1/catalog/items` | 200 | 144 items (15 estetika) |
+| `/api/v1/catalog/items` | 200 | 15 items — **aesthetic-only** (5 kategori: facial, injectables, laser, skin, body) |
+
+### Catalog Aesthetic-Only (baru, commit a01d357)
+
+Known issue #2 sebelumnya: catalog masih seed dental items (129 + 15 estetika). Di-fix dengan parameter `aesthetic_only` di `seed_catalog()`:
+
+| File | Perubahan |
+|------|-----------|
+| `catalog/seed.py` | +`AESTHETIC_CATEGORY_KEYS = {facial, injectables, laser, skin, body}`; param `aesthetic_only: bool = False`; skip kategori & treatment dental saat True |
+| `seed_demo.py` | Deteksi `aesthetic_fork` dipindah sebelum seed catalog; panggil `seed_catalog(..., aesthetic_only=aesthetic_fork)` |
+
+Verifikasi setelah reset DB + re-seed (DB estetik di-drop, dibuat ulang dari volume kosong):
+
+```
+Created 5 categories
+Created 15 catalog items
+[5-10/10] Skipping dental demo journey ...
+Demo data created successfully!
+```
+
+DB check: `treatment_categories` = 5 (facial, injectables, laser, skin, body), `treatment_catalog_items` = 15. Nol item dental. API `GET /catalog/items` → total=15, kategori hanya 5 aesthetic.
 
 ### Frontend (verified 28Agu26, commit 6934a53)
 
@@ -109,17 +129,18 @@ Build gagal di run sebelumnya: `RollupError: Could not resolve "../../composable
 
 Kedua file sudah di-commit (`6934a53`) dan push ke origin/estetika. Stack sekarang full healthy.
 
-### Seed Data
+### Seed Data (setelah reset DB + re-seed commit a01d357)
 
 - Demo users: admin/dentist/hygienist/assistant/receptionist (password: demo1234)
-- 50 pasien demo
+- 15 pasien demo (tanpa normalized clinical rows)
 - Dental journey **skipped** (gating `aesthetic_fork` berfungsi)
-- 144 catalog items termasuk 15 estetika (injectables 4, laser 3, skin 3, facial 3, body 2)
+- 15 catalog items, **aesthetic-only** (5 kategori: facial 3, injectables 4, laser 3, skin 3, body 2)
+- Aesthetic consultation notes & photo journey: seedable via API (tabel kosong, menunggu user input)
 
 ## Known Issues (Follow-up Items)
 
 1. **Double prefix** pada route aesthetic & skin_analysis: `/api/v1/aesthetic/aesthetic/...` dan `/api/v1/skin_analysis/skin_analysis/...`. Router prefix clash dengan module mount prefix. Tidak fatal, path berfungsi.
-2. **Catalog seed** masih men-seed dental items juga (129 dental + 15 estetika). Idealnya fork estetika hanya seed estetika. Solusi: tambahkan parameter `aesthetic_only` di seed_catalog.
+2. **Catalog seed dental-only** — ✅ RESOLVED di commit `a01d357`. Sekarang hanya seed aesthetic categories (5 kategori, 15 items).
 3. **Frontend build** — ✅ RESOLVED di commit `6934a53` (28Agu28). Stack full healthy (db 5435, backend 8101, frontend 3102).
 4. **Physical deletion dental modules** — masih diperlukan refactor besar untuk menghapus odontogram/treatment_plan/periodontogram dari runtime (imports di agenda/service, clinical_notes, migration_import, alembic/env.py, scripts, tests). Ditunggu di Fase 2b atau 3.
 5. **Aesthetic_plan decoupling from odontogram** — `treatment_id` FK masih menunjuk `treatments.id` (odontogram). Full decoupling needed untuk membuat fork benar-benar independen.
