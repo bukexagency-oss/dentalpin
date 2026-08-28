@@ -2,6 +2,8 @@
   "layers": [
     "/module_layers/accounting_export/frontend",
     "/module_layers/activity_journal/frontend",
+    "/module_layers/aesthetic_plan/frontend",
+    "/module_layers/aesthetic/frontend",
     "/module_layers/agenda/frontend",
     "/module_layers/billing/frontend",
     "/module_layers/budget/frontend",
@@ -18,20 +20,17 @@
     "/module_layers/medication_catalog/frontend",
     "/module_layers/migration_import/frontend",
     "/module_layers/notifications/frontend",
-    "/module_layers/odontogram/frontend",
     "/module_layers/patient_relationships/frontend",
     "/module_layers/patient_timeline/frontend",
     "/module_layers/patients/frontend",
     "/module_layers/patients_clinical/frontend",
     "/module_layers/payments/frontend",
-    "/module_layers/periodontogram/frontend",
     "/module_layers/recall_reminders/frontend",
     "/module_layers/recalls/frontend",
     "/module_layers/reports/frontend",
     "/module_layers/schedules/frontend",
     "/module_layers/staff_tasks/frontend",
     "/module_layers/treatment_consumables/frontend",
-    "/module_layers/treatment_plan/frontend",
     "/module_layers/verifactu/frontend",
     "/module_layers/whatsapp_kapso/frontend"
   ],
@@ -43,6 +42,14 @@
     {
       "name": "activity_journal",
       "path": "/module_layers/activity_journal/frontend"
+    },
+    {
+      "name": "aesthetic_plan",
+      "path": "/module_layers/aesthetic_plan/frontend"
+    },
+    {
+      "name": "aesthetic",
+      "path": "/module_layers/aesthetic/frontend"
     },
     {
       "name": "agenda",
@@ -109,10 +116,6 @@
       "path": "/module_layers/notifications/frontend"
     },
     {
-      "name": "odontogram",
-      "path": "/module_layers/odontogram/frontend"
-    },
-    {
       "name": "patient_relationships",
       "path": "/module_layers/patient_relationships/frontend"
     },
@@ -131,10 +134,6 @@
     {
       "name": "payments",
       "path": "/module_layers/payments/frontend"
-    },
-    {
-      "name": "periodontogram",
-      "path": "/module_layers/periodontogram/frontend"
     },
     {
       "name": "recall_reminders",
@@ -159,10 +158,6 @@
     {
       "name": "treatment_consumables",
       "path": "/module_layers/treatment_consumables/frontend"
-    },
-    {
-      "name": "treatment_plan",
-      "path": "/module_layers/treatment_plan/frontend"
     },
     {
       "name": "verifactu",

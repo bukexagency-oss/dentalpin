@@ -1,0 +1,89 @@
+# Otomedis Estetika — Fase 2a (OTO-427): DentalPin fork for aesthetic clinics.
+# Isolated stack: different ports (frontend 3102, backend 8101, db 5434) so it
+# can run alongside the dental deploy (3101/8100/5433) without collision.
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-aesthetic_clinic}
+      POSTGRES_USER: ${POSTGRES_USER:-aesthetic}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.estetic}
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aesthetic} -d ${POSTGRES_DB:-aesthetic_clinic}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-aesthetic}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-aesthetic_clinic}
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env.estetic}
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:3102,http://127.0.0.1:3102}
+      STORAGE_BACKEND: ${STORAGE_BACKEND:-local}
+      STORAGE_LOCAL_PATH: ${STORAGE_LOCAL_PATH:-/app/storage}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-http://host.docker.internal:20128/v1}
+      SEED_ON_STARTUP: ${SEED_ON_STARTUP:-1}
+      SEED_LANG: ${SEED_LANG:-en}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8101:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health', timeout=2).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+      - storage_data:/app/storage
+      - ./frontend:/host_frontend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --proxy-headers --forwarded-allow-ips=*
+
+  frontend:
+    build:
+      context: ./frontend
+      target: builder
+      args:
+        API_BASE_URL: ${API_BASE_URL:-http://localhost:8101}
+        API_BASE_URL_SERVER: ${API_BASE_URL_SERVER:-http://backend:8000}
+    environment:
+      NITRO_HOST: 0.0.0.0
+      NITRO_PORT: 3000
+      NUXT_PUBLIC_API_BASE_URL: ${API_BASE_URL:-http://localhost:8101}
+      API_BASE_URL_SERVER: ${API_BASE_URL_SERVER:-http://backend:8000}
+      NODE_OPTIONS: --max-old-space-size=4096
+      NUXT_DEVTOOLS: "false"
+    ports:
+      - "3102:3000"
+    depends_on:
+      backend:
+        condition: service_started
+    volumes:
+      - ./backend/app/modules:/module_layers:ro
+      - /app/node_modules
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:3000/ || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 120s
+    restart: unless-stopped
+    command: sh -c "npm run build && node .output/server/index.mjs"
+
+volumes:
+  pgdata:
+  storage_data:
