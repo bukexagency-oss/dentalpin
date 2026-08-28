@@ -92,13 +92,13 @@ class AestheticPlan(Base, TimestampMixin):
     )
     creator: Mapped["User"] = relationship(foreign_keys=[created_by])
     items: Mapped[list["AestheticPlanItem"]] = relationship(
-        back_populates="aesthetic_plan",
+        back_populates="treatment_plan",
         cascade="all, delete-orphan",
         order_by="AestheticPlanItem.sequence_order",
     )
 
     __table_args__ = (
-        UniqueConstraint("clinic_id", "plan_number", name="uq_treatment_plan_number"),
+        UniqueConstraint("clinic_id", "plan_number", name="uq_aesthetic_plan_number"),
         Index("idx_aesthetic_plans_patient", "patient_id"),
         Index("idx_aesthetic_plans_status", "clinic_id", "status"),
         Index("idx_aesthetic_plans_budget", "budget_id"),
@@ -127,9 +127,12 @@ class AestheticPlanItem(Base, TimestampMixin):
         ForeignKey("aesthetic_plans.id", ondelete="CASCADE"), index=True
     )
 
-    # Link to catalog item for this aesthetic treatment.
-    catalog_item_id: Mapped[UUID] = mapped_column(
-        ForeignKey("treatment_catalog_items.id", ondelete="CASCADE"), index=True
+    # Link to the odontogram Treatment this plan item wraps. Matches the
+    # ae_0001 migration (FK to treatments.id); kept so the plan↔tooth
+    # sync (events.py/service.py) works unchanged from the treatment_plan
+    # lineage. Full decoupling from odontogram is a follow-up (OTO-427).
+    treatment_id: Mapped[UUID] = mapped_column(
+        ForeignKey("treatments.id", ondelete="CASCADE"), index=True
     )
 
     # Ordering and status
@@ -168,12 +171,12 @@ class AestheticPlanItem(Base, TimestampMixin):
     )
 
     __table_args__ = (
-        UniqueConstraint("treatment_id", name="uq_planned_item_treatment"),
-        Index("idx_planned_items_plan", "treatment_plan_id"),
-        Index("idx_planned_items_treatment", "treatment_id"),
-        Index("idx_planned_items_status", "treatment_plan_id", "status"),
+        UniqueConstraint("treatment_id", name="uq_aesthetic_plan_item_treatment"),
+        Index("idx_aesthetic_plan_items_plan", "treatment_plan_id"),
+        Index("idx_aesthetic_plan_items_treatment", "treatment_id"),
+        Index("idx_aesthetic_plan_items_status", "treatment_plan_id", "status"),
         Index(
-            "idx_planned_items_plan_professional",
+            "idx_aesthetic_plan_items_plan_professional",
             "treatment_plan_id",
             "assigned_professional_id",
         ),
@@ -212,7 +215,7 @@ class AestheticPlanItemSession(Base, TimestampMixin):
     completer: Mapped["User | None"] = relationship(foreign_keys=[completed_by])
 
     __table_args__ = (
-        UniqueConstraint("plan_item_id", "sequence", name="uq_plan_item_session_sequence"),
-        Index("idx_pti_session_plan_item", "plan_item_id"),
-        Index("ix_pti_session_plan_item_status", "plan_item_id", "status"),
+        UniqueConstraint("plan_item_id", "sequence", name="uq_aesthetic_plan_item_session_sequence"),
+        Index("idx_aesthetic_plan_item_session_plan_item", "plan_item_id"),
+        Index("ix_aesthetic_plan_item_session_plan_item_status", "plan_item_id", "status"),
     )

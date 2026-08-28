@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "aesthetic": "Aesthetic"
+  },
+  "aesthetic": {
+    "title": "Aesthetic Clinic",
+    "consultations": "Consultations",
+    "photos": "Photo Journey",
+    "treatments": "Treatment History",
+    "recommendations": "Product Recommendations",
+    "newConsultation": "New Consultation",
+    "newPhoto": "Add Photo",
+    "newTreatment": "Log Treatment",
+    "newRecommendation": "Add Recommendation",
+    "patient": "Patient",
+    "type": "Type",
+    "date": "Date",
+    "findings": "Findings",
+    "recommendations": "Recommendations",
+    "skinAnalysis": "Skin Analysis",
+    "photoType": "Photo Type",
+    "before": "Before",
+    "after": "After",
+    "progress": "Progress",
+    "notes": "Notes",
+    "treatmentType": "Treatment",
+    "productUsed": "Product Used",
+    "dosage": "Dosage (cc)",
+    "areaTreated": "Area Treated",
+    "productName": "Product Name",
+    "productType": "Product Type",
+    "usageInstructions": "Usage Instructions",
+    "frequency": "Frequency",
+    "durationDays": "Duration (days)",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "empty": "No data yet. Create your first record.",
+    "error": "Could not load data"
+  }
+}

@@ -1,55 +1,33 @@
 {
   "layers": [
-    "/module_layers/accounting_export/frontend",
-    "/module_layers/activity_journal/frontend",
-    "/module_layers/aesthetic_plan/frontend",
     "/module_layers/aesthetic/frontend",
+    "/module_layers/aesthetic_plan/frontend",
     "/module_layers/agenda/frontend",
     "/module_layers/billing/frontend",
     "/module_layers/budget/frontend",
     "/module_layers/catalog/frontend",
     "/module_layers/clinical_notes/frontend",
-    "/module_layers/contacts/frontend",
     "/module_layers/copilot/frontend",
-    "/module_layers/expenses/frontend",
-    "/module_layers/india_gst/frontend",
-    "/module_layers/inventory/frontend",
-    "/module_layers/lab_orders/frontend",
     "/module_layers/media/frontend",
-    "/module_layers/medical_reference/frontend",
-    "/module_layers/medication_catalog/frontend",
-    "/module_layers/migration_import/frontend",
     "/module_layers/notifications/frontend",
-    "/module_layers/patient_relationships/frontend",
+    "/module_layers/odontogram/frontend",
     "/module_layers/patient_timeline/frontend",
     "/module_layers/patients/frontend",
     "/module_layers/patients_clinical/frontend",
     "/module_layers/payments/frontend",
-    "/module_layers/recall_reminders/frontend",
     "/module_layers/recalls/frontend",
     "/module_layers/reports/frontend",
     "/module_layers/schedules/frontend",
-    "/module_layers/staff_tasks/frontend",
-    "/module_layers/treatment_consumables/frontend",
-    "/module_layers/verifactu/frontend",
-    "/module_layers/whatsapp_kapso/frontend"
+    "/module_layers/treatment_plan/frontend"
   ],
   "modules": [
     {
-      "name": "accounting_export",
-      "path": "/module_layers/accounting_export/frontend"
-    },
-    {
-      "name": "activity_journal",
-      "path": "/module_layers/activity_journal/frontend"
+      "name": "aesthetic",
+      "path": "/module_layers/aesthetic/frontend"
     },
     {
       "name": "aesthetic_plan",
       "path": "/module_layers/aesthetic_plan/frontend"
-    },
-    {
-      "name": "aesthetic",
-      "path": "/module_layers/aesthetic/frontend"
     },
     {
       "name": "agenda",
@@ -72,52 +50,20 @@
       "path": "/module_layers/clinical_notes/frontend"
     },
     {
-      "name": "contacts",
-      "path": "/module_layers/contacts/frontend"
-    },
-    {
       "name": "copilot",
       "path": "/module_layers/copilot/frontend"
-    },
-    {
-      "name": "expenses",
-      "path": "/module_layers/expenses/frontend"
-    },
-    {
-      "name": "india_gst",
-      "path": "/module_layers/india_gst/frontend"
-    },
-    {
-      "name": "inventory",
-      "path": "/module_layers/inventory/frontend"
-    },
-    {
-      "name": "lab_orders",
-      "path": "/module_layers/lab_orders/frontend"
     },
     {
       "name": "media",
       "path": "/module_layers/media/frontend"
     },
     {
-      "name": "medical_reference",
-      "path": "/module_layers/medical_reference/frontend"
-    },
-    {
-      "name": "medication_catalog",
-      "path": "/module_layers/medication_catalog/frontend"
-    },
-    {
-      "name": "migration_import",
-      "path": "/module_layers/migration_import/frontend"
-    },
-    {
       "name": "notifications",
       "path": "/module_layers/notifications/frontend"
     },
     {
-      "name": "patient_relationships",
-      "path": "/module_layers/patient_relationships/frontend"
+      "name": "odontogram",
+      "path": "/module_layers/odontogram/frontend"
     },
     {
       "name": "patient_timeline",
@@ -136,10 +82,6 @@
       "path": "/module_layers/payments/frontend"
     },
     {
-      "name": "recall_reminders",
-      "path": "/module_layers/recall_reminders/frontend"
-    },
-    {
       "name": "recalls",
       "path": "/module_layers/recalls/frontend"
     },
@@ -152,20 +94,8 @@
       "path": "/module_layers/schedules/frontend"
     },
     {
-      "name": "staff_tasks",
-      "path": "/module_layers/staff_tasks/frontend"
-    },
-    {
-      "name": "treatment_consumables",
-      "path": "/module_layers/treatment_consumables/frontend"
-    },
-    {
-      "name": "verifactu",
-      "path": "/module_layers/verifactu/frontend"
-    },
-    {
-      "name": "whatsapp_kapso",
-      "path": "/module_layers/whatsapp_kapso/frontend"
+      "name": "treatment_plan",
+      "path": "/module_layers/treatment_plan/frontend"
     }
   ],
   "version": 1

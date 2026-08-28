@@ -171,6 +171,10 @@ export const PERMISSIONS = {
     read: 'staff_tasks.read',
     write: 'staff_tasks.write'
   },
+  aesthetic: {
+    read: 'aesthetic.read',
+    write: 'aesthetic.write'
+  },
   inventory: {
     read: 'inventory.read',
     write: 'inventory.write'

@@ -14,6 +14,7 @@ wipes the clinic's clinical_notes rows, then repopulates.
 
 from __future__ import annotations
 
+import logging
 from datetime import UTC, datetime, timedelta
 from uuid import UUID
 
@@ -35,6 +36,8 @@ from .models import (
     NOTE_TYPE_TREATMENT_PLAN,
     ClinicalNote,
 )
+
+logger = logging.getLogger(__name__)
 
 # Translation dicts resolved via t() at seed time — after set_language().
 _ADMIN_BODIES = (
@@ -240,14 +243,20 @@ async def seed_clinical_notes_demo(
 
     # First tooth per patient from seeded TreatmentTooth — gives diagnosis
     # notes a realistic tooth pin where the odontogram already has data.
-    tt_rows = await db.execute(
-        select(TreatmentTooth.tooth_number, Treatment.patient_id)
-        .join(Treatment, TreatmentTooth.treatment_id == Treatment.id)
-        .where(Treatment.clinic_id == clinic_id)
-    )
+    # Estetic fork (OTO-427): gracefully skip when odontogram table does not
+    # exist (module not installed).
     tooth_by_patient: dict[UUID, int] = {}
-    for tooth_number, patient_id in tt_rows.all():
-        tooth_by_patient.setdefault(patient_id, tooth_number)
+    try:
+        tt_rows = await db.execute(
+            select(TreatmentTooth.tooth_number, Treatment.patient_id)
+            .join(Treatment, TreatmentTooth.treatment_id == Treatment.id)
+            .where(Treatment.clinic_id == clinic_id)
+        )
+        for tooth_number, patient_id in tt_rows.all():
+            tooth_by_patient.setdefault(patient_id, tooth_number)
+    except Exception:
+        tooth_by_patient = {}
+        logger.info("odontogram/treatment tables not available — skipping tooth diagnosis notes")
 
     for i, patient in enumerate(patient_list):
         admin_at = now - timedelta(days=80 + (i % 14))
@@ -285,57 +294,73 @@ async def seed_clinical_notes_demo(
         stats["diagnosis"] += 1
 
     # --- Per-plan: treatment_plan note (~2 of every 3 plans) -------------
-    plans_res = await db.execute(
-        select(TreatmentPlan)
-        .where(TreatmentPlan.clinic_id == clinic_id)
-        .order_by(TreatmentPlan.created_at)
-    )
-    for i, plan in enumerate(plans_res.scalars().all()):
-        if i % 3 == 0:
-            continue
-        plan_at = now - timedelta(days=30 + (i % 14))
-        db.add(
-            ClinicalNote(
-                clinic_id=clinic_id,
-                note_type=NOTE_TYPE_TREATMENT_PLAN,
-                owner_type=NOTE_OWNER_PLAN,
-                owner_id=plan.id,
-                tooth_number=None,
-                body=t(_PLAN_BODIES[cursor % len(_PLAN_BODIES)]),
-                author_id=author(cursor),
-                created_at=plan_at,
-                updated_at=plan_at,
-            )
+    # Estetic fork (OTO-427): gracefully skip when treatment_plan table
+    # does not exist (module not installed).
+    plan_notes = 0
+    try:
+        plans_res = await db.execute(
+            select(TreatmentPlan)
+            .where(TreatmentPlan.clinic_id == clinic_id)
+            .order_by(TreatmentPlan.created_at)
         )
-        cursor += 1
-        stats["treatment_plan"] += 1
+        for i, plan in enumerate(plans_res.scalars().all()):
+            if i % 3 == 0:
+                continue
+            plan_at = now - timedelta(days=30 + (i % 14))
+            db.add(
+                ClinicalNote(
+                    clinic_id=clinic_id,
+                    note_type=NOTE_TYPE_TREATMENT_PLAN,
+                    owner_type=NOTE_OWNER_PLAN,
+                    owner_id=plan.id,
+                    tooth_number=None,
+                    body=t(_PLAN_BODIES[cursor % len(_PLAN_BODIES)]),
+                    author_id=author(cursor),
+                    created_at=plan_at,
+                    updated_at=plan_at,
+                )
+            )
+            cursor += 1
+            plan_notes += 1
+    except Exception:
+        plan_notes = 0
+        logger.info("treatment_plan table not available — skipping plan notes")
+    stats["treatment_plan"] = plan_notes
 
     # --- Per-performed-treatment: treatment note (every other one) -------
-    performed_res = await db.execute(
-        select(Treatment).where(
-            Treatment.clinic_id == clinic_id,
-            Treatment.status == "performed",
-        )
-    )
-    for i, tx in enumerate(performed_res.scalars().all()):
-        if i % 2 == 1:
-            continue
-        tx_at = now - timedelta(days=10 + (i % 18))
-        db.add(
-            ClinicalNote(
-                clinic_id=clinic_id,
-                note_type=NOTE_TYPE_TREATMENT,
-                owner_type=NOTE_OWNER_TREATMENT,
-                owner_id=tx.id,
-                tooth_number=None,
-                body=t(_TREATMENT_BODIES[cursor % len(_TREATMENT_BODIES)]),
-                author_id=author(cursor),
-                created_at=tx_at,
-                updated_at=tx_at,
+    # Estetic fork (OTO-427): gracefully skip when odontogram table does
+    # not exist (module not installed).
+    tx_notes = 0
+    try:
+        performed_res = await db.execute(
+            select(Treatment).where(
+                Treatment.clinic_id == clinic_id,
+                Treatment.status == "performed",
             )
         )
-        cursor += 1
-        stats["treatment"] += 1
+        for i, tx in enumerate(performed_res.scalars().all()):
+            if i % 2 == 1:
+                continue
+            tx_at = now - timedelta(days=10 + (i % 18))
+            db.add(
+                ClinicalNote(
+                    clinic_id=clinic_id,
+                    note_type=NOTE_TYPE_TREATMENT,
+                    owner_type=NOTE_OWNER_TREATMENT,
+                    owner_id=tx.id,
+                    tooth_number=None,
+                    body=t(_TREATMENT_BODIES[cursor % len(_TREATMENT_BODIES)]),
+                    author_id=author(cursor),
+                    created_at=tx_at,
+                    updated_at=tx_at,
+                )
+            )
+            cursor += 1
+            tx_notes += 1
+    except Exception:
+        tx_notes = 0
+        logger.info("odontogram Treatment table not available — skipping treatment notes")
+    stats["treatment"] = tx_notes
 
     await db.flush()
     return stats

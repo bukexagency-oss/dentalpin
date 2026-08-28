@@ -41,6 +41,12 @@ class Settings(BaseSettings):
 
     # Module system
     DENTALPIN_DEV_MODULE_SCAN: bool = True  # Fallback filesystem scan for dev
+    # Comma-separated module names to skip during filesystem discovery.
+    # Lets a fork exclude legacy modules that live on disk but must not
+    # be loaded (e.g. dental-pin's `treatment_plan` in the Otomedis
+    # estetic fork, replaced by `aesthetic_plan`). Default empty — the
+    # stock dental deploy is unaffected.
+    DENTALPIN_MODULE_EXCLUDE: str = ""
     # Host-mounted path where `frontend/modules.json` lives. The backend
     # writes this file whenever a module with a Nuxt layer is
     # installed/uninstalled so the Nuxt host picks up `extends` on next

@@ -29,7 +29,7 @@ def upgrade() -> None:
         sa.Column("assigned_professional_id", sa.UUID(), nullable=True),
     )
     op.create_foreign_key(
-        "fk_planned_items_assigned_professional",
+        "fk_aesthetic_plan_items_assigned_professional",
         "aesthetic_plan_items",
         "users",
         ["assigned_professional_id"],
@@ -41,7 +41,7 @@ def upgrade() -> None:
         ["assigned_professional_id"],
     )
     op.create_index(
-        "idx_planned_items_plan_professional",
+        "idx_aesthetic_plan_items_plan_professional",
         "aesthetic_plan_items",
         ["treatment_plan_id", "assigned_professional_id"],
     )
@@ -63,7 +63,7 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     op.drop_index(
-        "idx_planned_items_plan_professional",
+        "idx_aesthetic_plan_items_plan_professional",
         table_name="aesthetic_plan_items",
     )
     op.drop_index(
@@ -71,7 +71,7 @@ def downgrade() -> None:
         table_name="aesthetic_plan_items",
     )
     op.drop_constraint(
-        "fk_planned_items_assigned_professional",
+        "fk_aesthetic_plan_items_assigned_professional",
         "aesthetic_plan_items",
         type_="foreignkey",
     )

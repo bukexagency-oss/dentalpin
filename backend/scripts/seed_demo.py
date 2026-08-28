@@ -787,13 +787,37 @@ async def main(lang: str = "en", country: str = "generic") -> None:
                 # Reload catalog map so invoice lines pick up GST 18%.
                 catalog_map = await _load_catalog_map(db)
 
-            print("\n[5/10] Creating odontogram data...")
-            await seed_odontogram(db)
+            # Estetic fork (OTO-427): in the fork, dental modules may still
+            # be auto-installed by the dev filesystem scan, so the reliable
+            # fork signal is the presence of `aesthetic_plan`. When the fork
+            # is active the dental journey (tooth records, per-tooth plans,
+            # plan-derived budgets/appointments/invoices) is skipped. The
+            # dental deployment (OTODENTAL) has no aesthetic_plan and keeps
+            # the full journey.
+            aesthetic_fork = await _module_is_installed(db, "aesthetic_plan")
+            dental_installed = not aesthetic_fork and (
+                await _module_is_installed(db, "odontogram")
+                and await _module_is_installed(db, "treatment_plan")
+            )
+            # Bound so downstream optional sections never hit NameError in
+            # the estetic fork (dental journey skipped).
+            plans_result: dict | None = None
+            budgets_result: dict | None = None
+            invoices_result: dict | None = None
+            if not dental_installed:
+                print(
+                    "\n[5-10/10] Skipping dental demo journey "
+                    "(odontogram/treatment_plan not installed in estetic fork)..."
+                )
+            if dental_installed:
+                print("\n[5/10] Creating odontogram data...")
+                await seed_odontogram(db)
 
-            print("\n[6/10] Creating treatment plans...")
-            plans_result = await seed_treatment_plans(db, catalog_map)
+            if dental_installed:
+                print("\n[6/10] Creating treatment plans...")
+                plans_result = await seed_treatment_plans(db, catalog_map)
 
-            print("\n[7/10] Creating clinical notes (admin/diagnosis/plan/treatment)...")
+            print("\n[7/10] Creating clinical notes (admin/diagnosis)...")
             notes_stats = await seed_clinical_notes_demo(
                 db,
                 clinic_id=CLINIC_ID,
@@ -807,22 +831,28 @@ async def main(lang: str = "en", country: str = "generic") -> None:
                 f"Treatment: {notes_stats['treatment']}"
             )
 
-            print("\n[8/10] Creating budgets (derived from plans)...")
-            budgets_result = await seed_budgets(db, catalog_map, plans_result)
+            if dental_installed:
+                print("\n[8/10] Creating budgets (derived from plans)...")
+                budgets_result = await seed_budgets(db, catalog_map, plans_result)
 
-            print("\n[9/10] Creating appointments (anchored to plan items)...")
-            await seed_appointments(db, plans_result)
+            if dental_installed:
+                print("\n[9/10] Creating appointments (anchored to plan items)...")
+                await seed_appointments(db, plans_result)
 
-            print("\n[10/10] Creating invoice series + invoices (derived from budgets)...")
-            await seed_invoice_series(db)
-            invoices_result = await seed_invoices(db, catalog_map, budgets_result)
+            if dental_installed:
+                print("\n[10/10] Creating invoice series + invoices (derived from budgets)...")
+                await seed_invoice_series(db)
+                invoices_result = await seed_invoices(db, catalog_map, budgets_result)
 
             if is_india_demo and await _module_is_installed(db, "india_gst"):
                 print("\n[opt] Computing India GST CGST/SGST/IGST breakdown on invoices...")
-                gst_invoice_count = await seed_india_gst_invoice_breakdown(
-                    db, invoices_result["gst_invoices_pending_hook"]
-                )
-                print(f"  GST breakdown applied to {gst_invoice_count} invoice(s)")
+                if invoices_result is None:
+                    print("  Skipped — no invoices in estetic fork (dental journey not installed)")
+                else:
+                    gst_invoice_count = await seed_india_gst_invoice_breakdown(
+                        db, invoices_result["gst_invoices_pending_hook"]
+                    )
+                    print(f"  GST breakdown applied to {gst_invoice_count} invoice(s)")
 
             # Optional modules — only seed when installed. Looked up by
             # name in ``core_module`` so a future ``dentalpin modules

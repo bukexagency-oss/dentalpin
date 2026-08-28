@@ -9,7 +9,7 @@ from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, Field
 
-ItemCategory = Literal["consumables", "equipment", "office", "other"]
+ItemCategory = Literal["consumables", "equipment", "office", "aesthetic_product", "other"]
 
 
 class InventoryItemCreate(BaseModel):

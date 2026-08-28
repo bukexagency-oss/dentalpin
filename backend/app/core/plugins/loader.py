@@ -98,7 +98,8 @@ def _discover_filesystem(seen: set[str]) -> list[BaseModule]:
     """Filesystem scan fallback for dev mode.
 
     Skips modules already present in ``seen`` (names discovered via
-    entry points).
+    entry points) and modules listed in ``DENTALPIN_MODULE_EXCLUDE``
+    (fork-specific legacy exclusions).
     """
     modules: list[BaseModule] = []
     modules_path = Path(__file__).parent.parent.parent / "modules"
@@ -107,8 +108,17 @@ def _discover_filesystem(seen: set[str]) -> list[BaseModule]:
         logger.warning("Modules directory not found: %s", modules_path)
         return modules
 
+    excluded = {
+        name.strip()
+        for name in settings.DENTALPIN_MODULE_EXCLUDE.split(",")
+        if name.strip()
+    }
+
     for module_info in pkgutil.iter_modules([str(modules_path)]):
         if not module_info.ispkg:
+            continue
+        if module_info.name in excluded:
+            logger.info("Skipping excluded module (DENTALPIN_MODULE_EXCLUDE): %s", module_info.name)
             continue
 
         try:

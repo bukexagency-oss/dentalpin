@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "aesthetic": "Estética"
+  },
+  "aesthetic": {
+    "title": "Clínica Estética",
+    "consultations": "Consultas",
+    "photos": "Viaje fotográfico",
+    "treatments": "Historial de tratamientos",
+    "recommendations": "Recomendaciones de producto",
+    "newConsultation": "Nueva consulta",
+    "newPhoto": "Añadir foto",
+    "newTreatment": "Registrar tratamiento",
+    "newRecommendation": "Añadir recomendación",
+    "patient": "Paciente",
+    "type": "Tipo",
+    "date": "Fecha",
+    "findings": "Hallazgos",
+    "recommendations": "Recomendaciones",
+    "skinAnalysis": "Análisis de piel",
+    "photoType": "Tipo de foto",
+    "before": "Antes",
+    "after": "Después",
+    "progress": "Progreso",
+    "notes": "Notas",
+    "treatmentType": "Tratamiento",
+    "productUsed": "Producto utilizado",
+    "dosage": "Dosis (cc)",
+    "areaTreated": "Zona tratada",
+    "productName": "Nombre del producto",
+    "productType": "Tipo de producto",
+    "usageInstructions": "Instrucciones de uso",
+    "frequency": "Frecuencia",
+    "durationDays": "Duración (días)",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "loading": "Cargando...",
+    "empty": "Sin datos aún. Crea tu primer registro.",
+    "error": "No se pudieron cargar los datos"
+  }
+}

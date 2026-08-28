@@ -7,27 +7,14 @@ from uuid import UUID
 from pydantic import BaseModel, ConfigDict, Field
 
 WorkType = Literal[
-    "crown", "bridge", "denture", "implant", "veneer", "orthodontic", "repair", "other"
+    "skin_test", "patch_test", "allergy_test", "custom_skincare",
+    "splint", "phlebotomy", "culture_swab", "other"
 ]
 OrderStatus = Literal["sent", "in_progress", "ready", "received", "cancelled"]
-ImpressionType = Literal["alginate", "pvs_silicone", "digital_scan", "other"]
+ImpressionType = Literal["skin_swab", "blood_sample", "culture", "photography", "other"]
 ShadeSelection = Literal[
-    "A1",
-    "A2",
-    "A3",
-    "A3.5",
-    "A4",
-    "B1",
-    "B2",
-    "B3",
-    "B4",
-    "C1",
-    "C2",
-    "C3",
-    "C4",
-    "D2",
-    "D3",
-    "D4",
+    "porcelain", "ivory", "fair", "light", "light_medium", "medium",
+    "medium_tan", "tan", "deep", "rich_deep", "custom", "other"
 ]
 
 

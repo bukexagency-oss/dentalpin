@@ -37,7 +37,7 @@ async def _resolve_treatment_category_key(db: AsyncSession, treatment_id: UUID) 
     ``depends``, so the read is permitted.
     """
     from app.modules.catalog.models import TreatmentCatalogItem, TreatmentCategory
-    from app.modules.models import Treatment
+    from app.modules.odontogram.models import Treatment
 
     result = await db.execute(
         select(TreatmentCategory.key)

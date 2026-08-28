@@ -63,15 +63,15 @@ def upgrade() -> None:
             server_default=sa.text("now()"),
             nullable=False,
         ),
-        sa.UniqueConstraint("plan_item_id", "sequence", name="uq_plan_item_session_sequence"),
+        sa.UniqueConstraint("plan_item_id", "sequence", name="uq_aesthetic_plan_item_session_sequence"),
     )
     op.create_index(
-        "idx_pti_session_plan_item",
+        "idx_aesthetic_plan_item_session_plan_item",
         "aesthetic_plan_item_sessions",
         ["plan_item_id"],
     )
     op.create_index(
-        "ix_pti_session_plan_item_status",
+        "ix_aesthetic_plan_item_session_plan_item_status",
         "aesthetic_plan_item_sessions",
         ["plan_item_id", "status"],
     )
@@ -103,11 +103,11 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     op.drop_index(
-        "ix_pti_session_plan_item_status",
+        "ix_aesthetic_plan_item_session_plan_item_status",
         table_name="aesthetic_plan_item_sessions",
     )
     op.drop_index(
-        "idx_pti_session_plan_item",
+        "idx_aesthetic_plan_item_session_plan_item",
         table_name="aesthetic_plan_item_sessions",
     )
     op.drop_table("aesthetic_plan_item_sessions")

@@ -14,7 +14,7 @@ from sqlalchemy.orm import selectinload
 from app.core.auth.models import ClinicMembership
 from app.core.events import event_bus
 from app.core.events.types import EventType
-from app.modules.models import Treatment
+from app.modules.odontogram.models import Treatment
 from app.modules.patients.models import Patient
 
 from .models import AestheticPlanItem, AestheticPlanItemSession, AestheticPlan
