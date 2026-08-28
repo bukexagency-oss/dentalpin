@@ -764,8 +764,12 @@ async def main(lang: str = "en", country: str = "generic") -> None:
             print("\n[3/10] Creating patients...")
             await seed_patients(db)
 
+            # Estetic fork (OTO-427): detect early so seed_catalog can skip
+            # dental items and seed only aesthetic categories.
+            aesthetic_fork = await _module_is_installed(db, "aesthetic_plan")
+
             print("\n[4/10] Creating treatment catalog...")
-            catalog_result = await seed_catalog(db, CLINIC_ID)
+            catalog_result = await seed_catalog(db, CLINIC_ID, aesthetic_only=aesthetic_fork)
             print(f"  Created {catalog_result['categories']} categories")
             print(f"  Created {catalog_result['items']} catalog items")
             catalog_map = await _load_catalog_map(db)
@@ -794,11 +798,11 @@ async def main(lang: str = "en", country: str = "generic") -> None:
             # plan-derived budgets/appointments/invoices) is skipped. The
             # dental deployment (OTODENTAL) has no aesthetic_plan and keeps
             # the full journey.
-            aesthetic_fork = await _module_is_installed(db, "aesthetic_plan")
             dental_installed = not aesthetic_fork and (
                 await _module_is_installed(db, "odontogram")
                 and await _module_is_installed(db, "treatment_plan")
             )
+
             # Bound so downstream optional sections never hit NameError in
             # the estetic fork (dental journey skipped).
             plans_result: dict | None = None

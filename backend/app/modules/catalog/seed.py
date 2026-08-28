@@ -2744,11 +2744,15 @@ def _zero_pricing_config(config: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+AESTHETIC_CATEGORY_KEYS = {"facial", "injectables", "laser", "skin", "body"}
+
+
 async def seed_catalog(
     db: AsyncSession,
     clinic_id: UUID,
     vat_preset: str = "es",
     with_prices: bool = True,
+    aesthetic_only: bool = False,
 ) -> dict:
     """Seed catalog items for a clinic. Idempotent (skips existing internal_codes).
 
@@ -2756,6 +2760,9 @@ async def seed_catalog(
     ``vat_type`` key is missing from the preset fall back to the exempt one.
     ``with_prices=False`` seeds every price as 0 — used for non-EUR clinics
     where the Spanish reference prices would be meaningless.
+    ``aesthetic_only=True`` seeds only the aesthetic-clinic categories
+    (facial, injectables, laser, skin, body) — used by the Otomedis
+    estetika fork (OTO-427) so no dental treatments are created.
     """
     vat_type_map, vat_types_created = await _ensure_vat_types(db, clinic_id, vat_preset)
 
@@ -2764,6 +2771,8 @@ async def seed_catalog(
     category_map: dict[str, UUID] = {}
 
     for cat_data in CATEGORIES:
+        if aesthetic_only and cat_data["key"] not in AESTHETIC_CATEGORY_KEYS:
+            continue
         existing = await db.execute(
             select(TreatmentCategory).where(
                 TreatmentCategory.clinic_id == clinic_id,
@@ -2779,6 +2788,8 @@ async def seed_catalog(
         category_map[cat_data["key"]] = category.id
 
     for category_key, treatments in TREATMENTS.items():
+        if aesthetic_only and category_key not in AESTHETIC_CATEGORY_KEYS:
+            continue
         category_id = category_map.get(category_key)
         if not category_id:
             continue

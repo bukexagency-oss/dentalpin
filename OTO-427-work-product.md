@@ -6,7 +6,7 @@ Adaptasi DentalPin v2.0.0 menjadi aplikasi klinik estetika/kecantikan. Fork dila
 
 ## Commit
 
-**Commit**: `b7b7b38` — Fase 2a (OTO-427): fix migration collisions + boot estetic stack
+**Commit**: `6934a53` — OTO-427: fix frontend build (rename aesthetic_plan composable + import path), di atas `b7b7b38` (migration collisions + boot stack) dan `60daea1` (estetika fork)
 **Branch**: https://github.com/bukexagency-oss/dentalpin/tree/estetika
 
 ## Modul Baru
@@ -74,7 +74,7 @@ Aesthetic_plan adalah copy treatment_plan yang harus coexist dengan treatment_pl
 |-----------|--------|------|
 | PostgreSQL | Healthy | 5435 |
 | Backend (FastAPI) | Healthy | 8101 |
-| Frontend (Nuxt) | Exited (build needed) | 3102 |
+| Frontend (Nuxt) | Healthy | 3102 |
 
 ### API Endpoints
 
@@ -88,8 +88,26 @@ Aesthetic_plan adalah copy treatment_plan yang harus coexist dengan treatment_pl
 | `/api/v1/aesthetic/aesthetic/treatments` | 200 | `{"data":[],"total":0}` |
 | `/api/v1/aesthetic/aesthetic/recommendations` | 200 | `{"data":[],"total":0}` |
 | `/api/v1/skin_analysis/skin_analysis/fitzpatrick` | 200 | Fitzpatrick scale data |
-| `/api/v1/patients` | 200 | 50 demo patients |
+| `/api/v1/patients` | 200 | 15 demo patients |
 | `/api/v1/catalog/items` | 200 | 144 items (15 estetika) |
+
+### Frontend (verified 28Agu26, commit 6934a53)
+
+- Container `dentalpin-estetika-frontend-1` **Up (healthy)**, port 3102
+- `GET /login` → 200, Nuxt 4.4.2 SSR render, `<title>DentalPin</title>`
+- `GET /` → 302 → /login (auth redirect normal)
+- Build log: `✓ built in 38.20s`, `✔ Server built`, `Listening on http://0.0.0.0:3000`
+
+### Fix Frontend Build (baru, run 28Agu28)
+
+Build gagal di run sebelumnya: `RollupError: Could not resolve "../../composables/useAestheticPlans"` dan `"../aesthetic-plans/PlanItemSessionRow.vue"`. Akar masalah: copy treatment_plan → aesthetic_plan tidak rename dua hal:
+
+| File | Sebelum (broken) | Sesudah (fix) |
+|------|------------------|---------------|
+| `composables/useTreatmentPlans.ts` | file bernama lama, isi export `useAestheticPlans()` | rename → `composables/useAestheticPlans.ts` |
+| `components/clinical/PlanTreatmentList.vue` | `import ... from '../aesthetic-plans/PlanItemSessionRow.vue'` | `import ... from '../treatment-plans/PlanItemSessionRow.vue'` |
+
+Kedua file sudah di-commit (`6934a53`) dan push ke origin/estetika. Stack sekarang full healthy.
 
 ### Seed Data
 
@@ -102,7 +120,7 @@ Aesthetic_plan adalah copy treatment_plan yang harus coexist dengan treatment_pl
 
 1. **Double prefix** pada route aesthetic & skin_analysis: `/api/v1/aesthetic/aesthetic/...` dan `/api/v1/skin_analysis/skin_analysis/...`. Router prefix clash dengan module mount prefix. Tidak fatal, path berfungsi.
 2. **Catalog seed** masih men-seed dental items juga (129 dental + 15 estetika). Idealnya fork estetika hanya seed estetika. Solusi: tambahkan parameter `aesthetic_only` di seed_catalog.
-3. **Frontend belum build** — container frontend exited (build membutuhkan langkah manual: `docker compose -f docker-compose.estetic.yml build frontend`). Frontend modules.json sudah include aesthetic_plan + aesthetic layers.
+3. **Frontend build** — ✅ RESOLVED di commit `6934a53` (28Agu28). Stack full healthy (db 5435, backend 8101, frontend 3102).
 4. **Physical deletion dental modules** — masih diperlukan refactor besar untuk menghapus odontogram/treatment_plan/periodontogram dari runtime (imports di agenda/service, clinical_notes, migration_import, alembic/env.py, scripts, tests). Ditunggu di Fase 2b atau 3.
 5. **Aesthetic_plan decoupling from odontogram** — `treatment_id` FK masih menunjuk `treatments.id` (odontogram). Full decoupling needed untuk membuat fork benar-benar independen.
 6. **Medical_reference/lab_orders/inventory seed** — perubahan schema sudah dilakukan, tapi seed data estetika belum diisi penuh.
