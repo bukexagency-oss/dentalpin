@@ -13,7 +13,7 @@ import type { AestheticPlanItem } from '~~/app/types'
 import { VueDraggable } from 'vue-draggable-plus'
 import CompletionNudgeModal from './notes/CompletionNudgeModal.vue'
 import PlanItemDoctorChip from './PlanItemDoctorChip.vue'
-import PlanItemSessionRow from '../aesthetic-plans/PlanItemSessionRow.vue'
+import PlanItemSessionRow from '../treatment-plans/PlanItemSessionRow.vue'
 import { itemCatalogPrice, itemEffectivePrice } from '../../composables/useAestheticPlans'
 
 const props = defineProps<{
