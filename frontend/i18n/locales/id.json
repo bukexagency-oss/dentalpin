@@ -1,0 +1,3070 @@
+{
+  "app": {
+    "name": "DentalPin",
+    "tagline": "Manajemen klinik gigi"
+  },
+  "demo": {
+    "bannerMessage": "Demo publik — jangan masukkan data pasien asli. Database direset secara berkala.",
+    "bannerDismiss": "Tutup",
+    "credentialsTitle": "Kredensial demo",
+    "credentialsNote": "Hanya untuk evaluasi — ditampilkan karena ini instance demo publik.",
+    "copyEmail": "Salin email",
+    "copyPassword": "Salin kata sandi",
+    "copied": "Tersalin ke papan klip"
+  },
+  "nav": {
+    "dashboard": "Beranda",
+    "journal": "Log aktivitas",
+    "staffTasks": "Tugas staf",
+    "patients": "Pasien",
+    "appointments": "Jadwal",
+    "recalls": "Recall",
+    "inventory": "Inventaris",
+    "treatmentConsumables": "Bahan habis pakai",
+    "expenses": "Pengeluaran",
+    "labOrdersForm": "Order lab baru",
+    "labOrdersStatus": "Order lab",
+    "treatmentPlans": "Rencana Perawatan",
+    "budgets": "Penawaran",
+    "invoices": "Faktur",
+    "reports": "Laporan",
+    "settings": "Pengaturan",
+    "defaultClinicName": "Klinik",
+    "catalog": "Katalog",
+    "contacts": "Kontak",
+    "menu": "Menu",
+    "openMenu": "Buka menu",
+    "close": "Tutup",
+    "toggleSidebar": "Alihkan sidebar",
+    "skinAssessments": "Penilaian Kulit",
+    "aesthetic": {
+      "photos": "Foto",
+      "consultations": "Konsultasi",
+      "treatments": "Perawatan",
+      "recommendations": "Rekomendasi"
+    }
+  },
+  "auth": {
+    "login": "Masuk",
+    "logout": "Keluar",
+    "email": "Email",
+    "password": "Kata sandi",
+    "loginButton": "Masuk",
+    "loginSuccess": "Berhasil masuk",
+    "invalidCredentials": "Email atau kata sandi salah",
+    "emailRequired": "Masukkan email Anda",
+    "passwordRequired": "Masukkan kata sandi Anda",
+    "emailInvalid": "Alamat email tidak valid",
+    "accountInactive": "Akun Anda tidak aktif. Hubungi administrator Anda",
+    "tooManyAttempts": "Terlalu banyak percobaan. Coba lagi dalam beberapa menit",
+    "sessionExpired": "Sesi Anda telah berakhir",
+    "networkError": "Tidak dapat terhubung ke server",
+    "serverError": "Server tidak tersedia. Silakan coba lagi dalam beberapa menit",
+    "unknownError": "Terjadi kesalahan tak terduga. Silakan coba lagi"
+  },
+  "setup": {
+    "title": "Pengaturan awal",
+    "subtitle": "Buat akun dan klinik Anda. Anda akan siap bekerja dalam dua menit.",
+    "stepAccount": "Akun administrator",
+    "stepClinic": "Detail klinik",
+    "firstName": "Nama depan",
+    "lastName": "Nama belakang",
+    "email": "Email",
+    "password": "Kata sandi",
+    "passwordConfirm": "Konfirmasi kata sandi",
+    "passwordHint": "Minimal 8 karakter, dengan huruf dan angka",
+    "clinicName": "Nama klinik",
+    "taxId": "NPWP",
+    "next": "Lanjut",
+    "back": "Kembali",
+    "submit": "Buat klinik saya",
+    "success": "Selesai! Selamat datang di DentalPin",
+    "firstNameRequired": "Masukkan nama depan",
+    "lastNameRequired": "Masukkan nama belakang",
+    "emailRequired": "Masukkan email",
+    "emailInvalid": "Email tidak valid",
+    "passwordRequired": "Masukkan kata sandi",
+    "passwordTooShort": "Kata sandi minimal 8 karakter",
+    "passwordWeak": "Kata sandi harus mengandung huruf dan angka",
+    "passwordMismatch": "Kata sandi tidak cocok",
+    "clinicNameRequired": "Masukkan nama klinik",
+    "taxIdRequired": "Masukkan NPWP",
+    "alreadyInitialized": "Sistem sudah diatur. Silakan masuk.",
+    "error": "Pengaturan gagal diselesaikan. Silakan coba lagi",
+    "stepOf": "Langkah {current} dari {total}",
+    "country": "Negara",
+    "countryHelp": "Menentukan pajak, mata uang, dan zona waktu Anda",
+    "countryRequired": "Pilih negara",
+    "taxIdGeneric": "NPWP",
+    "taxIdLooksInvalid": "Ini tidak tampak seperti NPWP yang valid. Periksa kembali sebelum membuat faktur.",
+    "taxIdFormat": "Format tidak valid (contoh: {example})",
+    "timezoneRequired": "Pilih zona waktu",
+    "currencyRequired": "Pilih mata uang",
+    "derivedSettings": "Zona waktu dan mata uang",
+    "willSeed": "Kami akan membuat katalog perawatan, tipe PPN, seri faktur, satu ruang perawatan, dan jadwal Senin–Jumat untuk Anda. Semuanya dapat diubah nanti.",
+    "willSuggestVerifactu": "Kami akan menyarankan aktivasi VeriFactu setelahnya.",
+    "invalidData": "Periksa kembali data: ada kolom yang tidak valid."
+  },
+  "onboarding": {
+    "title": "Memulai",
+    "progress": "{done} dari {total} langkah selesai",
+    "configure": "Siapkan",
+    "skip": "Lewati",
+    "unskip": "Urungkan",
+    "dismiss": "Sembunyikan",
+    "guidedMode": "Mode terpandu",
+    "optional": "Opsional ({count})",
+    "stepOf": "Langkah {current} dari {total}",
+    "next": "Lanjut",
+    "finish": "Selesai",
+    "exit": "Keluar",
+    "completedTitle": "Klinik Anda siap!",
+    "completedDescription": "Pengaturan selesai. Anda dapat bekerja seperti biasa sekarang.",
+    "guidedDoneTitle": "Tur selesai",
+    "guidedDoneDescription": "Tidak ada langkah tertunda.",
+    "items": {
+      "team": {
+        "label": "Tim Anda",
+        "description": "Tambahkan profesional yang menangani pasien, atau tandai diri Anda sebagai profesional jika bekerja sendiri."
+      },
+      "verifactu": {
+        "label": "Aktifkan VeriFactu",
+        "description": "Wajib di Spanyol untuk menerbitkan faktur yang valid bagi otoritas pajak (AEAT)."
+      }
+    }
+  },
+  "actions": {
+    "edit": "Edit",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "create": "Buat",
+    "delete": "Hapus",
+    "close": "Tutup",
+    "remove": "Hapus"
+  },
+  "patients": {
+    "title": "Pasien",
+    "create": "Pasien baru",
+    "edit": "Edit pasien",
+    "search": "Cari pasien...",
+    "searchPlaceholder": "Nama atau telepon",
+    "noResults": "Tidak ada pasien ditemukan",
+    "empty": "Belum ada pasien terdaftar",
+    "emptyAction": "Buat pasien pertama",
+    "name": "Nama",
+    "firstName": "Nama depan",
+    "lastName": "Nama belakang",
+    "phone": "Telepon",
+    "email": "Email",
+    "dateOfBirth": "Tanggal lahir",
+    "notes": "Catatan",
+    "created": "Pasien dibuat",
+    "updated": "Pasien diperbarui",
+    "archived": "Pasien diarsipkan",
+    "notFound": "Pasien tidak ditemukan",
+    "archiveConfirm": "Arsipkan pasien {name}?",
+    "archiveDescription": "Tindakan ini akan menyembunyikan pasien dari pencarian. Janji temu yang ada tidak akan dihapus.",
+    "cancel": "Batal",
+    "archive": "Arsipkan",
+    "dangerZone": {
+      "title": "Zona berbahaya",
+      "archiveHelp": "Arsipkan pasien untuk menyembunyikannya dari pencarian. Janji temu dan riwayat tetap tersimpan."
+    },
+    "billingSection": "Informasi penagihan",
+    "billingSectionHint": "Data ini akan otomatis digunakan saat membuat faktur untuk pasien ini.",
+    "editingBillingForInvoice": "Mengedit data penagihan. Perubahan akan tercermin di faktur.",
+    "returnToInvoice": "Kembali ke faktur",
+    "billingName": "Nama penagihan",
+    "billingNamePlaceholder": "Nama atau perusahaan untuk faktur",
+    "billingTaxId": "NPWP",
+    "billingEmail": "Email penagihan",
+    "billingAddress": "Alamat penagihan",
+    "billingComplete": "Lengkap",
+    "billingIncomplete": "Tidak lengkap",
+    "demographics": "Data demografis",
+    "nationalId": "Dokumen identitas",
+    "nationalIdType": "Jenis dokumen",
+    "passport": "Paspor",
+    "profession": "Profesi",
+    "workplace": "Tempat kerja",
+    "years": "tahun",
+    "status": {
+      "active": "Aktif",
+      "archived": "Diarsipkan"
+    },
+    "filters": {
+      "status": "Status",
+      "city": "Kota",
+      "withDebt": "Dengan tagihan",
+      "doNotContact": "Jangan hubungi",
+      "doNotContactOnly": "Hanya jangan-hubungi",
+      "doNotContactOnlyContactable": "Hanya dapat dihubungi"
+    },
+    "columns": {
+      "city": "Kota",
+      "contact": "Kontak",
+      "debt": "Tagihan"
+    },
+    "sort": {
+      "lastVisit": "Kunjungan terakhir",
+      "lastName": "Nama belakang",
+      "firstName": "Nama depan",
+      "createdAt": "Bergabung",
+      "updatedAt": "Baru diedit"
+    },
+    "doNotContact": {
+      "label": "Jangan hubungi",
+      "hint": "Pasien akan dikecualikan dari daftar panggilan dan penjangkauan otomatis",
+      "badge": "Jangan hubungi"
+    },
+    "gender": {
+      "label": "Jenis kelamin",
+      "select": "Pilih jenis kelamin",
+      "male": "Laki-laki",
+      "female": "Perempuan",
+      "other": "Lainnya",
+      "preferNotSay": "Tidak ingin menyebutkan"
+    },
+    "emergencyContact": {
+      "title": "Kontak darurat",
+      "hasContact": "Memiliki kontak darurat",
+      "noContact": "Belum ada kontak darurat terdaftar",
+      "name": "Nama lengkap",
+      "namePlaceholder": "Nama kontak",
+      "relationship": "Hubungan",
+      "relationshipPlaceholder": "Pilih hubungan",
+      "phone": "Telepon",
+      "phonePlaceholder": "Telepon kontak",
+      "email": "Email",
+      "emailPlaceholder": "Email kontak",
+      "isLegalGuardian": "Wali sah",
+      "remove": "Hapus kontak",
+      "relationships": {
+        "spouse": "Pasangan",
+        "parent": "Orang tua",
+        "child": "Anak",
+        "sibling": "Saudara",
+        "friend": "Teman",
+        "other": "Lainnya"
+      }
+    },
+    "medicalHistory": {
+      "title": "Riwayat medis",
+      "save": "Simpan riwayat",
+      "fetchError": "Gagal memuat riwayat medis",
+      "saveSuccess": "Riwayat medis disimpan",
+      "saveError": "Gagal menyimpan riwayat medis",
+      "allergies": "Alergi",
+      "allergiesCount": "{n} alergi",
+      "onAnticoagulants": "Sedang terapi antikoagulan",
+      "allergyName": "Nama alergi",
+      "type": "Jenis",
+      "allergyTypes": {
+        "drug": "Obat",
+        "food": "Makanan",
+        "material": "Material",
+        "environmental": "Lingkungan"
+      },
+      "severity": {
+        "low": "Ringan",
+        "medium": "Sedang",
+        "high": "Berat",
+        "critical": "Kritis"
+      },
+      "medications": "Obat-obatan",
+      "medicationName": "Nama obat",
+      "dosage": "Dosis",
+      "frequency": "Frekuensi",
+      "systemicDiseases": "Penyakit sistemik",
+      "diseaseName": "Nama penyakit",
+      "diseaseTypes": {
+        "cardiovascular": "Kardiovaskular",
+        "respiratory": "Pernapasan",
+        "endocrine": "Endokrin",
+        "neurological": "Neurologis",
+        "autoimmune": "Autoimun",
+        "other": "Lainnya"
+      },
+      "critical": "Kritis",
+      "controlled": "Terkontrol",
+      "notControlled": "Tidak terkontrol",
+      "specialConditions": "Kondisi khusus",
+      "pregnant": "Hamil",
+      "pregnancyWeek": "Usia kehamilan (minggu)",
+      "lactating": "Menyusui",
+      "anticoagulants": "Antikoagulan",
+      "anticoagulantMedication": "Obat antikoagulan",
+      "inrValue": "Nilai INR",
+      "anesthesiaReaction": "Reaksi anestesi",
+      "anesthesiaReactionDetails": "Detail reaksi",
+      "bruxism": "Bruxism",
+      "lifestyle": "Gaya hidup",
+      "smoker": "Perokok",
+      "smokingFrequency": "Rokok/hari",
+      "alcoholConsumption": "Konsumsi alkohol",
+      "alcohol": {
+        "none": "Tidak",
+        "occasional": "Kadang-kadang",
+        "moderate": "Sedang",
+        "heavy": "Berat"
+      },
+      "surgicalHistory": "Riwayat operasi",
+      "procedure": "Prosedur"
+    },
+    "timeline": {
+      "empty": "Belum ada aktivitas tercatat",
+      "emptyFiltered": "Tidak ada kejadian dalam kategori ini",
+      "clearFilter": "Tampilkan semua aktivitas",
+      "endOfTimeline": "Akhir linimasa",
+      "totalEntries": "{count} entri",
+      "groups": {
+        "today": "Hari ini",
+        "yesterday": "Kemarin",
+        "thisWeek": "Minggu ini",
+        "thisMonth": "Bulan ini",
+        "earlier": "Sebelumnya"
+      },
+      "author": "oleh {name}",
+      "meta": {
+        "cabinet": "Ruang {name}",
+        "teeth": "Gigi: {list}",
+        "total": "Total: {amount}",
+        "number": "No. {value}",
+        "via": "Via {channel}",
+        "template": "Templat: {key}",
+        "docType": "Tipe: {type}"
+      },
+      "categories": {
+        "all": "Semua",
+        "visit": "Kunjungan",
+        "treatment": "Perawatan",
+        "financial": "Keuangan",
+        "communication": "Komunikasi",
+        "medical": "Riwayat medis",
+        "document": "Dokumen",
+        "note": "Catatan klinis"
+      }
+    },
+    "alerts": {
+      "title": "{count} peringatan",
+      "label": "Peringatan klinis"
+    },
+    "editDemographics": "Edit data demografis",
+    "editEmergencyContact": "Edit kontak darurat",
+    "editBilling": "Edit informasi penagihan",
+    "editMedicalHistory": "Edit riwayat medis",
+    "medicalSnapshot": {
+      "title": "Informasi medis",
+      "allergiesLabel": "Alergi",
+      "allergiesEmpty": "Tidak ada alergi yang diketahui",
+      "allergiesNotReviewed": "Riwayat medis belum tercatat",
+      "completeHistory": "Riwayat lengkap",
+      "reviewedOn": "Ditinjau pada {date}",
+      "conditions": {
+        "pregnantWeek": "Hamil · mgg {week}",
+        "anticoagulantInr": "Antikoagulan · INR {inr}",
+        "smokerFreq": "Perokok · {freq}/hari"
+      }
+    },
+    "personalInfo": {
+      "title": "Informasi pribadi",
+      "ageLabel": "{age} tahun",
+      "birthWithAge": "{date} ({age} tahun)"
+    },
+    "contactInfo": {
+      "title": "Kontak",
+      "copyPhone": "Salin telepon",
+      "copyEmail": "Salin email",
+      "address": "Alamat",
+      "addEmergency": "Tambah kontak darurat",
+      "addGuardian": "Tambah wali sah",
+      "guardianRequired": "Wali sah diperlukan"
+    },
+    "administrative": {
+      "title": "Administratif"
+    },
+    "header": {
+      "ariaLabel": "Header pasien"
+    },
+    "quickActions": {
+      "ariaLabel": "Aksi cepat pasien"
+    },
+    "onboarding": {
+      "label": "Buat pasien pertama Anda",
+      "description": "Cara tercepat melihat rekam medis, jadwal, dan penawaran beraksi."
+    }
+  },
+  "patientDetail": {
+    "tabs": {
+      "summary": "Ringkasan",
+      "info": "Info",
+      "clinical": "Klinis",
+      "odontogram": "Diagram Gigi",
+      "administration": "Administrasi",
+      "history": "Riwayat",
+      "timeline": "Aktivitas",
+      "appointments": "Janji temu",
+      "budgets": "Penawaran",
+      "billing": "Penagihan",
+      "payments": "Pembayaran",
+      "documents": "Dokumen",
+      "gallery": "Galeri"
+    },
+    "historyPlaceholder": "Catatan klinis tersedia di versi mendatang",
+    "noAppointments": "Pasien ini tidak memiliki janji temu",
+    "scheduleAppointment": "Jadwalkan janji temu",
+    "noBudgets": "Pasien ini tidak memiliki penawaran",
+    "createBudget": "Buat penawaran",
+    "viewAllBudgets": "Lihat semua penawaran",
+    "activePlan": "Rencana aktif",
+    "noActivePlan": "Tidak ada rencana aktif",
+    "viewPlan": "Buka rencana",
+    "createPlan": "Buat rencana",
+    "nextAppointment": "Janji temu berikutnya",
+    "noUpcomingAppointments": "Tidak ada janji temu mendatang",
+    "openAppointment": "Buka janji temu",
+    "lastVisit": "Kunjungan terakhir",
+    "neverVisited": "Belum pernah berkunjung",
+    "reschedule": "Jadwal ulang",
+    "balance": "Saldo",
+    "collect": "Terima pembayaran",
+    "viewLedger": "Buka buku besar",
+    "noPayments": "Tidak ada pergerakan",
+    "diagnoses": "Diagnosis",
+    "pending": "belum dirawat",
+    "noDiagnoses": "Tidak ada temuan tertunda",
+    "openOdontogram": "Buka diagram gigi",
+    "medicalHistory": "Riwayat medis",
+    "completeMedicalHistory": "Belum ada riwayat medis. Lengkapi untuk mencatat alergi, kondisi, dan obat.",
+    "editMedicalHistory": "Edit riwayat medis",
+    "quickActions": "Aksi cepat",
+    "edit": "Edit",
+    "editPatient": "Edit pasien",
+    "noSummaryCards": "Tidak ada modul terdaftar di ringkasan.",
+    "actions": {
+      "label": "Aksi",
+      "newAppointment": "Janji temu",
+      "collect": "Terima pembayaran",
+      "newNote": "Catatan",
+      "newBudget": "Penawaran",
+      "uploadDocument": "Dokumen"
+    }
+  },
+  "patientBilling": {
+    "totalBudgeted": "Total dianggarkan",
+    "workInProgress": "Pekerjaan berjalan",
+    "workCompleted": "Pekerjaan selesai",
+    "totalInvoiced": "Total difakturkan",
+    "totalPaid": "Total dibayar",
+    "balancePending": "Saldo tertunda",
+    "invoices": "Faktur",
+    "createInvoice": "Buat faktur",
+    "noInvoices": "Pasien ini tidak memiliki faktur",
+    "pending": "Tertunda",
+    "totalDiscount": "diskon"
+  },
+  "odontogram": {
+    "title": "Diagram Gigi",
+    "tooth": "Gigi",
+    "globals": {
+      "category": "Seluruh mulut",
+      "applied": "{name} ditambahkan ke rencana",
+      "archPickerTitle": "Rahang mana untuk \"{name}\"?",
+      "upperArch": "Rahang atas",
+      "lowerArch": "Rahang bawah",
+      "searchPlaceholder": "Cari perawatan…"
+    },
+    "selectCondition": "Pilih Kondisi",
+    "readOnly": "Hanya lihat",
+    "legend": "Legenda",
+    "statusLegend": "Status perawatan",
+    "toothPosition": "Posisi gigi",
+    "displaced": "Bergerak",
+    "rotated": "Rotasi",
+    "dentition": {
+      "permanent": "Permanen",
+      "deciduous": "Sulung",
+      "toggle": "Alihkan gigi"
+    },
+    "quadrants": {
+      "upper": "Rahang Atas",
+      "lower": "Rahang Bawah",
+      "upperRight": "Atas Kanan",
+      "upperLeft": "Atas Kiri",
+      "lowerRight": "Bawah Kanan",
+      "lowerLeft": "Bawah Kiri"
+    },
+    "surfaces": {
+      "M": "Mesial",
+      "D": "Distal",
+      "O": "Oklusal",
+      "V": "Vestibular",
+      "L": "Lingual"
+    },
+    "conditions": {
+      "healthy": "Sehat",
+      "caries": "Karies",
+      "filling": "Tambalan",
+      "crown": "Mahkota",
+      "missing": "Hilang",
+      "root_canal": "Perawatan Saluran Akar",
+      "implant": "Implan",
+      "bridge_pontic": "Pontik Jembatan",
+      "bridge_abutment": "Abutmen Jembatan",
+      "extraction_indicated": "Indikasi Pencabutan",
+      "sealant": "Sealant",
+      "fracture": "Fraktur"
+    },
+    "history": {
+      "title": "Riwayat Perubahan",
+      "noChanges": "Tidak ada perubahan tercatat",
+      "changedBy": "Diubah oleh",
+      "changeTypes": {
+        "created": "Dibuat",
+        "general_condition": "Kondisi umum",
+        "surface_update": "Pembaruan permukaan",
+        "note": "Catatan"
+      }
+    },
+    "messages": {
+      "updated": "Diagram gigi diperbarui",
+      "error": "Gagal memperbarui diagram gigi",
+      "loadError": "Tidak dapat memuat diagram gigi"
+    },
+    "actions": {
+      "save": "Simpan",
+      "reset": "Reset",
+      "print": "Cetak"
+    },
+    "status": {
+      "existing": "Ada",
+      "planned": "Direncanakan"
+    },
+    "treatments": {
+      "title": "Perawatan",
+      "addTreatment": "Tambah Perawatan",
+      "selectStatus": "Pilih Status",
+      "noTreatments": "Tidak ada perawatan tercatat",
+      "markPerformed": "Tandai sebagai Dilakukan",
+      "categories": {
+        "common": "Umum",
+        "restorative": "Restoratif",
+        "diagnostic": "Diagnostik",
+        "orthodontic": "Ortodonti",
+        "periodontic": "Periodonti",
+        "position": "Posisi",
+        "other": "Lainnya",
+        "diagnostico": "Diagnostik",
+        "restauradora": "Restoratif",
+        "cirugia": "Bedah",
+        "endodoncia": "Endodonti",
+        "ortodoncia": "Ortodonti"
+      },
+      "types": {
+        "pulpitis": "Pulpitis",
+        "caries": "Karies",
+        "incipient_caries": "Karies awal",
+        "pigmentation": "Pigmentasi",
+        "fracture": "Fraktur",
+        "missing": "Hilang",
+        "periapical_small": "Periapikal <2mm",
+        "periapical_medium": "Periapikal 2-4mm",
+        "periapical_large": "Periapikal >4mm",
+        "rotated": "Rotasi",
+        "displaced": "Bergerak",
+        "unerupted": "Belum erupsi",
+        "filling": "Tambalan",
+        "filling_composite": "Tambalan komposit",
+        "filling_amalgam": "Tambalan amalgam",
+        "filling_temporary": "Tambalan sementara",
+        "sealant": "Sealant",
+        "veneer": "Veneer",
+        "inlay": "Inlay",
+        "overlay": "Overlay",
+        "crown": "Mahkota",
+        "crown_on_implant": "Mahkota di atas implan",
+        "provisional_crown_on_implant": "Mahkota sementara di atas implan",
+        "pontic": "Pontik",
+        "bridge_pontic": "Pontik Jembatan",
+        "bridge_abutment": "Abutmen Jembatan",
+        "extraction": "Pencabutan",
+        "implant": "Implan",
+        "apicoectomy": "Apikoektomi",
+        "root_canal": "Perawatan Saluran Akar",
+        "root_canal_full": "Perawatan saluran akar penuh",
+        "root_canal_two_thirds": "Perawatan saluran akar 2/3",
+        "root_canal_half": "Perawatan saluran akar 1/2",
+        "root_canal_overfill": "Perawatan saluran akar berlebih",
+        "post": "Pasak",
+        "bracket": "Bracket",
+        "tube": "Tube",
+        "band": "Band",
+        "attachment": "Attachment",
+        "retainer": "Retainer",
+        "rotate": "Rotasi",
+        "displace": "Bergerak",
+        "splint": "Splint",
+        "migrated": "Perawatan umum",
+        "other": "Perawatan lain"
+      },
+      "treatmentAdded": "Perawatan ditambahkan",
+      "treatmentPerformed": "Perawatan ditandai sebagai dilakukan",
+      "treatmentDeleted": "Perawatan dihapus",
+      "status": {
+        "existing": "Ada",
+        "planned": "Direncanakan"
+      }
+    },
+    "position": {
+      "displaced": "Bergerak",
+      "rotated": "Rotasi",
+      "normal": "Normal"
+    },
+    "views": {
+      "occlusal": "Tampilan Oklusal",
+      "lateral": "Tampilan Lateral",
+      "dual": "Tampilan Ganda"
+    },
+    "selectSurfaces": "Pilih Permukaan",
+    "selectedSurfaces": "Permukaan terpilih",
+    "surfacesSelected": "permukaan terpilih",
+    "instructions": {
+      "selectTreatment": "Pilih perawatan untuk diterapkan",
+      "clickTooth": "Klik gigi untuk menerapkan"
+    },
+    "addToPlan": "Tambah ke rencana",
+    "noPlan": "Tidak ada rencana",
+    "createNewPlan": "Buat rencana baru...",
+    "applyTo": "Terapkan ke",
+    "oneTooth": "1 gigi",
+    "multipleTeeth": "Beberapa gigi",
+    "surfacePricingHint": "Harga per permukaan: {range}",
+    "toothNames": {
+      "centralIncisor": "Insisivus sentral",
+      "lateralIncisor": "Insisivus lateral",
+      "canine": "Kaninus",
+      "firstPremolar": "Premolar pertama",
+      "secondPremolar": "Premolar kedua",
+      "firstMolar": "Molar pertama",
+      "secondMolar": "Molar kedua",
+      "thirdMolar": "Molar ketiga"
+    },
+    "positions": {
+      "upper": "atas",
+      "lower": "bawah",
+      "left": "kiri",
+      "right": "kanan"
+    },
+    "tooltip": {
+      "clickToEdit": "Klik untuk mengedit"
+    },
+    "planning": "Perencanaan",
+    "diagnosisMode": "Diagnosis",
+    "treatmentList": {
+      "title": "Daftar Perawatan",
+      "noTreatments": "Tidak ada perawatan tercatat"
+    },
+    "changeHistory": {
+      "title": "Riwayat Perubahan",
+      "noChanges": "Tidak ada perubahan tercatat",
+      "treatmentAdded": "Perawatan"
+    },
+    "timeline": {
+      "title": "Linimasa",
+      "viewingDate": "Menampilkan: {date}",
+      "viewingHistory": "Anda sedang melihat kondisi historis diagram gigi",
+      "returnToNow": "Kembali ke kondisi saat ini",
+      "noHistory": "Tidak ada riwayat sebelumnya"
+    },
+    "multiTooth": {
+      "bridge": {
+        "label": "Jembatan tetap"
+      },
+      "splint": {
+        "label": "Splint"
+      },
+      "veneers": {
+        "label": "Veneer ganda"
+      },
+      "crowns": {
+        "label": "Mahkota ganda"
+      },
+      "pillar": "pilar",
+      "pontic": "pontik",
+      "roleHint": "Klik gigi untuk mengalihkan pilar / pontik.",
+      "needPillar": "Jembatan memerlukan setidaknya satu gigi pilar.",
+      "confirmHint": "Anda akan membuat grup perawatan dengan {n} gigi.",
+      "willBePlanned": "Grup akan ditandai sebagai direncanakan.",
+      "willBeExisting": "Grup akan dicatat sebagai ada.",
+      "hints": {
+        "range": "Klik gigi pertama, lalu gigi terakhir",
+        "free": "Klik untuk menambah atau menghapus gigi"
+      },
+      "errors": {
+        "tooFew": "Minimal {n} gigi diperlukan",
+        "tooMany": "Maksimal {n} gigi diperbolehkan",
+        "sameArchRequired": "Gigi harus berada pada rahang yang sama"
+      },
+      "sectionLabel": "Perawatan multi-gigi"
+    }
+  },
+  "clinical": {
+    "modes": {
+      "history": "Riwayat",
+      "diagnosis": "Diagnosis",
+      "plans": "Rencana perawatan",
+      "appointments": "Janji temu"
+    },
+    "history": {
+      "stateAt": "Kondisi pada",
+      "changesOnDate": "Perubahan pada tanggal ini",
+      "noChanges": "Tidak ada perubahan tercatat"
+    },
+    "diagnosis": {
+      "registeredConditions": "Kondisi terdiagnosis",
+      "registerConditions": "Daftarkan kondisi",
+      "noConditions": "Tidak ada kondisi terdaftar",
+      "startDiagnosis": "Pilih gigi dan tambahkan kondisi yang ada",
+      "generalConditions": "Kondisi umum",
+      "readyToCreatePlan": "Diagnosis selesai?",
+      "createPlan": "Buat Rencana Perawatan",
+      "continuePlan": "Lanjutkan Rencana \"{name}\"",
+      "selectPlan": "Pilih rencana",
+      "continue": "Lanjut",
+      "odontogramTab": "Diagram Gigi"
+    },
+    "plans": {
+      "title": "Rencana Perawatan",
+      "create": "Rencana Baru",
+      "backToList": "Kembali ke rencana",
+      "treatments": "Perawatan Rencana",
+      "addTreatment": "Tambah Perawatan",
+      "total": "Total",
+      "activate": "Aktifkan Rencana",
+      "generateBudget": "Buat Penawaran",
+      "empty": "Tidak ada rencana perawatan",
+      "emptyDescription": "Buat rencana untuk mengatur perawatan pasien",
+      "createFirst": "Buat rencana pertama",
+      "active": "Rencana Aktif",
+      "drafts": "Draf",
+      "completed": "Selesai",
+      "closed": "Ditutup",
+      "other": "Lainnya",
+      "noItems": "Tidak ada perawatan dalam rencana",
+      "markComplete": "Tandai selesai",
+      "removeItem": "Hapus dari rencana",
+      "sessions": {
+        "progress": "{done}/{total} sesi",
+        "markDone": "Tandai sesi selesai",
+        "cancel": "Batalkan sesi",
+        "markedDone": "Sesi ditandai selesai",
+        "cancelled": "Sesi dibatalkan",
+        "untitled": "Sesi {n}"
+      },
+      "unknownTreatment": "Perawatan",
+      "odontogram": "Diagram Gigi",
+      "pending": "tertunda",
+      "dragToReorder": "Seret untuk mengurutkan ulang",
+      "reorderHint": "Gunakan Alt + tombol panah untuk memindahkan",
+      "emptyDraft": {
+        "title": "Rencanakan perawatan",
+        "step1": "Pilih perawatan dari bilah di bawah",
+        "step2": "Klik gigi pada diagram gigi",
+        "step3": "Konfirmasi rencana untuk membuat penawaran dan janji temu"
+      },
+      "steps": {
+        "plan": "Rencana",
+        "confirm": "Konfirmasi",
+        "inProgress": "Berlangsung"
+      },
+      "confirmCta": {
+        "titleWithItems": "Konfirmasi rencana",
+        "subtitleWithItems": "Konfirmasi membuka pembuatan penawaran dan penjadwalan janji temu.",
+        "empty": "Tambahkan setidaknya satu perawatan untuk mengonfirmasi rencana"
+      },
+      "ghostHint": "Tersedia setelah mengonfirmasi rencana",
+      "addedToPlan": "Ditambahkan ke rencana",
+      "addingToPlan": "Menambahkan ke rencana ini",
+      "cancelPlan": "Batalkan rencana",
+      "locked": {
+        "title": "Rencana terkunci",
+        "subtitle": "Penawaran {number} telah diterbitkan. Untuk mengedit perawatan, gunakan Buka Kembali (jika tertunda) atau Negosiasi Ulang penawaran.",
+        "viewBudget": "Lihat penawaran"
+      }
+    },
+    "tooth": "Gigi"
+  },
+  "appointments": {
+    "title": "Jadwal",
+    "create": "Janji temu baru",
+    "edit": "Edit janji temu",
+    "today": "Hari ini",
+    "tomorrow": "Besok",
+    "yesterday": "Kemarin",
+    "week": "Minggu",
+    "prevWeek": "Minggu sebelumnya",
+    "nextWeek": "Minggu depan",
+    "selectPatient": "Pilih pasien",
+    "selectProfessional": "Pilih profesional",
+    "openPatientFile": "Buka berkas pasien",
+    "patient": "Pasien",
+    "professional": "Profesional",
+    "cabinet": "Ruang",
+    "date": "Tanggal",
+    "time": "Waktu",
+    "startTime": "Waktu mulai",
+    "duration": "Durasi",
+    "treatmentType": "Jenis perawatan",
+    "treatments": "Perawatan",
+    "addTreatment": "Tambah perawatan",
+    "selectTreatment": "Pilih perawatan",
+    "estimatedDuration": "Perkiraan durasi",
+    "notes": "Catatan",
+    "hasNotes": "Ada catatan",
+    "status": {
+      "label": "Status",
+      "scheduled": "Terjadwal",
+      "confirmed": "Dikonfirmasi",
+      "checked_in": "Menunggu",
+      "in_treatment": "Di kursi",
+      "completed": "Selesai",
+      "cancelled": "Dibatalkan",
+      "no_show": "Tidak hadir"
+    },
+    "scheduled": "Terjadwal",
+    "confirmed": "Dikonfirmasi",
+    "inProgress": "Berlangsung",
+    "in_progress": "Berlangsung",
+    "completed": "Selesai",
+    "cancelled": "Dibatalkan",
+    "noShow": "Tidak hadir",
+    "no_show": "Tidak hadir",
+    "transitions": {
+      "confirmed": "Tandai dikonfirmasi",
+      "checked_in": "Tandai kedatangan",
+      "in_treatment": "Pindah ke kursi",
+      "completed": "Selesaikan janji temu",
+      "cancelled": "Batalkan janji temu",
+      "no_show": "Tandai tidak hadir"
+    },
+    "timer": {
+      "startsIn": "mulai {minutes} menit",
+      "startsInOverdue": "Terlambat {minutes} menit",
+      "waiting": "menunggu {minutes} menit",
+      "inTreatment": "{elapsed}/{planned} menit",
+      "completedAt": "selesai {time}",
+      "cancelledAt": "dibatalkan",
+      "noShowAt": "tidak hadir"
+    },
+    "confirmTransitionTitle": "Konfirmasi perubahan status",
+    "confirmCancelMessage": "Batalkan janji temu ini? Perubahan akan dicatat.",
+    "confirmNoShowMessage": "Tandai pasien ini sebagai tidak hadir? Perubahan akan dicatat.",
+    "noteLabel": "Catatan (opsional)",
+    "transitionFailed": "Tidak dapat mengubah status janji temu",
+    "when": "Kapan",
+    "whereWho": "Ruang dan profesional",
+    "followup": {
+      "title": "Tindakan pasca-janji temu"
+    },
+    "created": "Janji temu dibuat",
+    "saved": "Janji temu disimpan",
+    "updated": "Janji temu diperbarui",
+    "conflict": "Slot waktu ini sudah terisi",
+    "cancel": "Batalkan janji temu",
+    "markCompleted": "Tandai selesai",
+    "markNoShow": "Tidak hadir",
+    "dailyView": "Hari",
+    "weeklyView": "Minggu",
+    "kanbanView": "Kanban",
+    "kanban": {
+      "upcoming": "Akan datang",
+      "waiting": "Ruang tunggu",
+      "inChair": "Di kursi",
+      "done": "Selesai",
+      "missed": "Tidak hadir / Dibatalkan",
+      "free": "Kosong",
+      "inactive": "Tidak aktif",
+      "empty": "Tidak ada janji temu",
+      "nextIn": "Berikutnya jam {time}",
+      "subtitleCount": "{count} janji temu",
+      "subtitleEmpty": "Tidak ada janji temu",
+      "subtitleWaiting": "{count} menunggu · rata-rata {avg} menit",
+      "subtitleInChair": "{busy} sibuk · {free} tersedia"
+    },
+    "cabinetAssignment": {
+      "assignLater": "Tentukan nanti",
+      "unassigned": "Belum ditentukan",
+      "assign": "Tentukan ruang",
+      "reassign": "Ganti ruang",
+      "unassign": "Lepaskan ruang",
+      "requiredForTreatment": "Tentukan ruang sebelum memulai perawatan"
+    },
+    "professionals": {
+      "strip": "Profesional",
+      "state": {
+        "free": "Tersedia",
+        "in_treatment": "Di kursi",
+        "on_break": "Istirahat",
+        "off": "Tidak bertugas"
+      }
+    },
+    "noProfessionals": "Tidak ada profesional dikonfigurasi",
+    "overlapWarning": "Terdeteksi tumpang tindih",
+    "overlapProfessional": "Profesional memiliki {count} janji temu pada waktu ini",
+    "overlapCabinet": "Ruang memiliki {count} janji temu pada waktu ini",
+    "selectDuration": "Pilih durasi...",
+    "sendEmail": "Kirim email",
+    "sendConfirmationEmail": "Kirim konfirmasi",
+    "resendConfirmation": "Kirim ulang konfirmasi",
+    "sendReminderEmail": "Kirim pengingat",
+    "emailSent": "Email berhasil dikirim",
+    "automatic": "otomatis",
+    "selectPatientFirst": "Pilih pasien terlebih dahulu untuk melihat perawatan tertunda",
+    "noPendingTreatments": "Tidak ada perawatan tertunda",
+    "createPlanFirst": "Buat rencana perawatan untuk pasien ini",
+    "addTreatmentFromPlan": "Tambah perawatan dari rencana",
+    "selectPendingTreatment": "Pilih perawatan tertunda",
+    "emptyDay": "Tidak ada janji temu untuk hari ini",
+    "noPatient": "Tidak ada pasien",
+    "freeSlots": {
+      "byProfessional": "Profesional",
+      "byCabinet": "Ruang",
+      "freeSuffix": "tersedia",
+      "freeShort": "tersedia",
+      "noFreeTime": "Tidak ada waktu luang",
+      "tapToBook": "Ketuk untuk booking",
+      "tapToBookAria": "Slot tersedia {duration} jam {time}",
+      "nextFreeAt": "Berikutnya jam {time}",
+      "gapsAtLeast": "{count} celah ≥ {min} menit",
+      "minDuration": "Minimum",
+      "noFreeSlots": "Tidak ada slot tersedia hari ini",
+      "clinicClosed": "Klinik tutup",
+      "professionalOff": "Tidak bertugas",
+      "onBreak": "Istirahat"
+    },
+    "actionsMenu": "Aksi janji temu"
+  },
+  "dashboard": {
+    "greetings": {
+      "morning": "Selamat pagi",
+      "afternoon": "Selamat siang",
+      "evening": "Selamat sore"
+    },
+    "welcome": "Selamat datang di DentalPin",
+    "welcomeMessage": "Mulai dengan membuat pasien pertama Anda.",
+    "quickActions": {
+      "newAppointment": "Janji temu baru",
+      "newPatient": "Pasien baru",
+      "search": "Cari pasien",
+      "searchPlaceholder": "Cari nama, telepon, atau email"
+    },
+    "timeline": {
+      "title": "Hari ini",
+      "empty": "Tidak ada janji temu hari ini",
+      "now": "Sekarang",
+      "openSchedule": "Buka jadwal"
+    },
+    "todayKpi": {
+      "title": "Janji temu hari ini",
+      "completed": "selesai",
+      "inProgress": "berlangsung",
+      "upcoming": "mendatang",
+      "cancelled": "dibatalkan",
+      "noShow": "tidak hadir",
+      "empty": "Tidak ada janji temu hari ini"
+    },
+    "inClinic": {
+      "title": "Di klinik sekarang",
+      "inTreatment": "{n} di kursi",
+      "waiting": "{n} menunggu",
+      "empty": "Tidak ada di klinik"
+    },
+    "unconfirmed": {
+      "title": "Belum dikonfirmasi untuk besok",
+      "empty": "Semua janji temu besok sudah dikonfirmasi",
+      "confirm": "Konfirmasi",
+      "confirmError": "Gagal mengonfirmasi"
+    },
+    "overdue": {
+      "title": "Pembayaran jatuh tempo",
+      "daysOverdue": "{n} hari jatuh tempo",
+      "viewAll": "Lihat semua",
+      "empty": "Tidak ada faktur jatuh tempo"
+    },
+    "recent": {
+      "title": "Pasien terbaru",
+      "empty": "Belum ada pasien"
+    },
+    "weekGlance": {
+      "title": "Sekilas minggu ini",
+      "subtitle": "7 hari terakhir vs 7 hari sebelumnya",
+      "appointments": "Janji temu",
+      "completed": "Selesai",
+      "invoiced": "Difakturkan",
+      "empty": "Tidak ada data minggu ini"
+    }
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "subtitle": "Kelola klinik, tim, dan modul Anda.",
+    "allCategories": "Semua kategori",
+    "navLabel": "Kategori pengaturan",
+    "attentionRequired": "Perlu perhatian",
+    "categories": {
+      "general": {
+        "label": "Umum",
+        "description": "Profil klinik, merek, dan zona waktu."
+      },
+      "workspace": {
+        "label": "Ruang Kerja",
+        "description": "Ruang perawatan, jam buka, dan ketersediaan."
+      },
+      "people": {
+        "label": "Staf",
+        "description": "Pengguna, peran, dan undangan."
+      },
+      "clinical": {
+        "label": "Klinis",
+        "description": "Katalog, standar perawatan, dan templat."
+      },
+      "billing": {
+        "label": "Penagihan & Pajak",
+        "description": "Seri faktur, PPN, dan kepatuhan pajak."
+      },
+      "communications": {
+        "label": "Komunikasi",
+        "description": "Notifikasi, SMTP, dan templat."
+      },
+      "integrations": {
+        "label": "Integrasi",
+        "description": "Layanan dan penyedia eksternal."
+      },
+      "modules": {
+        "label": "Modul",
+        "description": "Pasang, tingkatkan, dan hapus modul."
+      },
+      "account": {
+        "label": "Akun",
+        "description": "Profil, kata sandi, dan bahasa Anda."
+      }
+    },
+    "search": {
+      "placeholder": "Cari pengaturan…",
+      "empty": "Tidak ada hasil untuk pencarian itu.",
+      "navigate": "navigasi",
+      "open": "buka"
+    },
+    "locked": {
+      "title": "Anda tidak memiliki akses ke bagian ini",
+      "description": "Minta administrator klinik untuk memberikan izin yang diperlukan."
+    },
+    "emptyCategory": {
+      "title": "Tidak ada opsi tersedia",
+      "description": "Saat modul yang kompatibel diaktifkan, pengaturannya akan muncul di sini."
+    },
+    "loadError": {
+      "description": "Tidak dapat memuat editor ini. Coba lagi dalam beberapa detik."
+    },
+    "comingSoon": {
+      "title": "Segera hadir",
+      "subtitle": "Kami sedang mengerjakan bagian ini. Sementara itu, Anda dapat mengelolanya melalui API."
+    },
+    "onboarding": {
+      "title": "Selesaikan pengaturan klinik",
+      "subtitle": "Anda memiliki {count} langkah tertunda untuk menyelesaikan pengaturan awal.",
+      "dismiss": "Tutup",
+      "items": {
+        "clinicInfo": {
+          "label": "Lengkapi profil klinik",
+          "description": "Nama, NPWP, dan alamat muncul di penawaran dan faktur."
+        },
+        "cabinets": {
+          "label": "Buat setidaknya satu ruang perawatan",
+          "description": "Tanpa ruang perawatan, Anda tidak dapat menjadwalkan janji temu."
+        }
+      }
+    },
+    "cabinetsDescription": "Ruang atau bilik tempat pasien dirawat.",
+    "usersDescription": "Akun dengan akses ke klinik ini dan peran mereka.",
+    "profileDescription": "Informasi pribadi Anda di klinik ini.",
+    "clinic": "Klinik",
+    "profile": "Profil",
+    "clinicName": "Nama klinik",
+    "clinicInfo": "Informasi Klinik",
+    "clinicInfoDescription": "Data ini akan muncul di penawaran dan dokumen",
+    "taxId": "NPWP",
+    "legalName": "Nama legal",
+    "legalNameHelp": "Nama legal entitas untuk penagihan. Kosongkan untuk menggunakan nama klinik.",
+    "street": "Alamat",
+    "city": "Kota",
+    "postalCode": "Kode Pos",
+    "country": "Negara",
+    "countryPlaceholder": "Pilih negara",
+    "countrySearchPlaceholder": "Cari negara…",
+    "phone": "Telepon",
+    "timezone": "Zona Waktu",
+    "timezoneHelp": "Semua jadwal dan janji temu ditafsirkan dalam zona waktu ini.",
+    "currency": "Mata Uang",
+    "currencyHelp": "Mata uang klinik yang digunakan dalam penawaran, faktur, dan katalog.",
+    "editClinicInfo": "Edit informasi",
+    "clinicUpdated": "Informasi klinik diperbarui",
+    "clinicUpdateError": "Gagal memperbarui informasi",
+    "cabinets": "Ruang Perawatan",
+    "language": "Bahasa",
+    "languageDescription": "Pilih bahasa yang Anda inginkan",
+    "users": "Pengguna Klinik",
+    "newUser": "Pengguna Baru",
+    "createUser": "Buat Pengguna",
+    "editUser": "Edit Pengguna",
+    "deleteUser": "Hapus Pengguna",
+    "deleteUserConfirm": "Anda yakin ingin menghapus",
+    "deleteUserNote": "Pengguna akan kehilangan akses ke klinik ini tetapi akun mereka tidak akan dihapus.",
+    "noUsers": "Tidak ada pengguna terdaftar",
+    "youTag": "(Anda)",
+    "userActive": "Pengguna aktif",
+    "isProfessional": "Berpraktik sebagai profesional",
+    "isProfessionalHelp": "Muncul di agenda, memiliki jam kerja, dan dapat ditugaskan perawatan. Administrator juga dapat berpraktik.",
+    "userInactiveNote": "(Tidak dapat masuk)",
+    "saveChanges": "Simpan Perubahan",
+    "noCabinets": "Tidak ada ruang perawatan dikonfigurasi",
+    "addCabinet": "Tambah",
+    "newCabinet": "Ruang Baru",
+    "editCabinet": "Edit Ruang",
+    "deleteCabinet": "Hapus Ruang",
+    "deleteCabinetConfirm": "Anda yakin ingin menghapus ruang",
+    "deleteCabinetNote": "Janji temu yang ada di ruang ini tidak akan terpengaruh.",
+    "createCabinet": "Buat Ruang",
+    "roles": {
+      "admin": "Administrator",
+      "dentist": "Dokter Gigi",
+      "hygienist": "Terapis Gigi",
+      "assistant": "Asisten",
+      "receptionist": "Resepsionis"
+    },
+    "errors": {
+      "loadUsers": "Gagal memuat pengguna",
+      "createUser": "Gagal membuat pengguna",
+      "updateUser": "Gagal memperbarui pengguna",
+      "deleteUser": "Gagal menghapus pengguna",
+      "emailExists": "Email sudah ada",
+      "userNotFound": "Pengguna tidak ditemukan",
+      "operationNotAllowed": "Operasi tidak diizinkan",
+      "invalidData": "Data tidak valid",
+      "inviteLink": "Tidak dapat membuat tautan akses"
+    },
+    "messages": {
+      "userCreated": "Pengguna berhasil dibuat",
+      "userUpdated": "Pengguna berhasil diperbarui",
+      "userDeleted": "Pengguna dihapus dari klinik"
+    },
+    "modules": {
+      "title": "Modul",
+      "subtitle": "Pasang, hapus, dan tingkatkan modul klinik.",
+      "description": "Kelola modul mana yang aktif di klinik Anda.",
+      "deps": "Dependensi",
+      "noDeps": "Tidak ada dependensi",
+      "state": {
+        "installed": "Terpasang",
+        "uninstalled": "Belum terpasang",
+        "toInstall": "Tertunda pasang",
+        "toUpgrade": "Tertunda tingkatkan",
+        "toRemove": "Tertunda hapus",
+        "disabled": "Nonaktif",
+        "error": "Error"
+      },
+      "category": {
+        "official": "Resmi",
+        "community": "Komunitas"
+      },
+      "actions": {
+        "install": "Pasang",
+        "uninstall": "Hapus",
+        "upgrade": "Tingkatkan",
+        "apply": "Terapkan perubahan",
+        "viewDetails": "Detail",
+        "force": "Paksa hapus"
+      },
+      "confirmInstall": {
+        "title": "Pasang {name}?",
+        "message": "Modul akan dijadwalkan untuk dipasang dan menjadi aktif setelah perubahan diterapkan.",
+        "scheduled": "Dependensi ini juga akan dipasang:"
+      },
+      "confirmUninstall": {
+        "title": "Hapus {name}?",
+        "warning": "Tabel modul akan dihapus. Cadangan pg_dump dibuat terlebih dahulu agar data dapat dipulihkan.",
+        "forceHint": "Mengabaikan modul dependen. Hanya gunakan jika Anda yakin."
+      },
+      "confirmUpgrade": {
+        "title": "Tingkatkan {name}?",
+        "message": "Modul akan ditingkatkan ke versi manifes di disk saat perubahan diterapkan."
+      },
+      "confirmApply": {
+        "title": "Terapkan perubahan",
+        "message": "Backend akan restart. Sesi mungkin terinterupsi sebentar saat operasi berjalan."
+      },
+      "pending": {
+        "banner": "Perubahan tertunda:",
+        "apply": "Terapkan perubahan"
+      },
+      "doctor": {
+        "banner": "Masalah terdeteksi pada sistem modul.",
+        "orphans": "modul yatim",
+        "missingDeps": "dependensi hilang",
+        "manifestErrors": "kesalahan manifes",
+        "errored": "modul error"
+      },
+      "detail": {
+        "state": "Status",
+        "category": "Kategori",
+        "installedAt": "Dipasang pada",
+        "lastChange": "Perubahan terakhir",
+        "baseRevision": "Revisi dasar",
+        "appliedRevision": "Revisi terapan",
+        "manifest": "Manifes lengkap",
+        "errorMessage": "Pesan error",
+        "operationLog": "Log operasi",
+        "noOperations": "Tidak ada operasi tercatat."
+      },
+      "restart": {
+        "inProgress": "Me-restart backend…",
+        "done": "Perubahan diterapkan",
+        "failed": "Gagal menerapkan perubahan",
+        "timeout": "Waktu tunggu backend habis"
+      },
+      "toasts": {
+        "scheduled": "Operasi dijadwalkan. Terapkan perubahan untuk menyelesaikan.",
+        "applied": "Perubahan berhasil diterapkan."
+      }
+    },
+    "invite": {
+      "linkTitle": "Tautan akses",
+      "linkHelp": "Kirim tautan ini ke {name} agar mereka memilih kata sandi. Kedaluwarsa pada {date} dan hanya berlaku sekali.",
+      "copy": "Salin tautan",
+      "copied": "Tautan disalin",
+      "whatsapp": "Kirim via WhatsApp",
+      "shareText": "Halo {name}, ini tautan akses DentalPin Anda. Buka dan pilih kata sandi Anda: {url}",
+      "secretNote": "Perlakukan seperti kata sandi: siapa pun dengan tautan ini dapat masuk ke akun ini.",
+      "passwordOptionalHelp": "Kosongkan untuk membuat tautan akses yang dapat Anda kirim via WhatsApp atau email.",
+      "passwordOptionalPlaceholder": "Opsional",
+      "createAndLink": "Buat dan buat tautan",
+      "rowAction": "Tautan akses",
+      "setPasswordTitle": "Pilih kata sandi Anda",
+      "setPasswordSubtitle": "Anda diundang ke DentalPin. Buat kata sandi untuk masuk.",
+      "setPasswordSubmit": "Simpan dan masuk",
+      "invalidToken": "Tautan ini tidak valid atau sudah digunakan. Minta administrator klinik untuk tautan baru."
+    }
+  },
+  "selector": {
+    "recentPatients": "Pasien terkini",
+    "commonTreatments": "Perawatan umum",
+    "noRecentPatients": "Tidak ada pasien terkini",
+    "noCommonTreatments": "Tidak ada perawatan umum",
+    "noMatches": "Tidak ada yang cocok",
+    "typeToSearch": "Ketik untuk mencari..."
+  },
+  "density": {
+    "switchToCompact": "Tampilan padat",
+    "switchToComfortable": "Tampilan nyaman"
+  },
+  "patientSelector": {
+    "createOption": "Buat pasien \"{query}\"",
+    "createOptionEmpty": "Buat pasien baru",
+    "newBadge": "Baru",
+    "duplicateWarning": "{name} sudah ada dengan telepon ini",
+    "useExisting": "Gunakan pasien ini",
+    "createForm": {
+      "title": "Pasien baru",
+      "back": "Kembali ke pencarian",
+      "firstName": "Nama depan",
+      "lastName": "Nama belakang",
+      "phone": "Telepon",
+      "phoneHint": "Anda dapat menambahkannya nanti di rekam medis.",
+      "submit": "Buat dan pilih",
+      "cancel": "Batal",
+      "errorGeneric": "Tidak dapat membuat pasien. Coba lagi."
+    }
+  },
+  "common": {
+    "save": "Simpan",
+    "add": "Tambah",
+    "cancel": "Batal",
+    "clear": "Hapus",
+    "close": "Tutup",
+    "delete": "Hapus",
+    "comingSoon": "Segera hadir",
+    "edit": "Edit",
+    "change": "ubah",
+    "back": "Kembali",
+    "loading": "Memuat...",
+    "error": "Error",
+    "success": "Berhasil",
+    "completed": "Selesai",
+    "retry": "Coba lagi",
+    "refresh": "Muat ulang",
+    "hide": "Sembunyikan",
+    "forbidden": "Akses ditolak",
+    "confirm": "Konfirmasi",
+    "yes": "Ya",
+    "no": "Tidak",
+    "actions": "Aksi",
+    "viewDetails": "Lihat detail",
+    "previous": "Sebelumnya",
+    "next": "Berikutnya",
+    "previousYear": "Tahun sebelumnya",
+    "nextYear": "Tahun berikutnya",
+    "undo": "Urungkan",
+    "undone": "Diurungkan",
+    "added": "Ditambahkan",
+    "removed": "Dihapus",
+    "page": "Halaman {current} dari {total}",
+    "noData": "Tidak ada data",
+    "noValue": "tidak ada nilai",
+    "noResults": "Tidak ada hasil",
+    "search": "Cari...",
+    "selectAll": "Semua",
+    "deselectAll": "Tidak ada",
+    "all": "Semua",
+    "required": "Kolom ini wajib diisi",
+    "invalidEmail": "Email tidak valid",
+    "networkError": "Kesalahan koneksi",
+    "serverError": "Kesalahan server",
+    "notFound": "Tidak ditemukan",
+    "offline": "Offline — data mungkin tidak terkini",
+    "inactive": "Tidak aktif",
+    "name": "Nama",
+    "color": "Warna",
+    "firstName": "Nama depan",
+    "lastName": "Nama belakang",
+    "email": "Email",
+    "password": "Kata sandi",
+    "passwordPlaceholder": "Minimal 8 karakter",
+    "role": "Peran",
+    "readOnly": "Hanya baca",
+    "createdBy": "Dibuat oleh",
+    "date": "Tanggal",
+    "upload": "Unggah",
+    "uploading": "Mengunggah…",
+    "maxFileSize": "hingga 10 MB",
+    "durationMinutes": "{value} menit",
+    "days": {
+      "sunday": "Minggu",
+      "monday": "Senin",
+      "tuesday": "Selasa",
+      "wednesday": "Rabu",
+      "thursday": "Kamis",
+      "friday": "Jumat",
+      "saturday": "Sabtu"
+    },
+    "now": "Sekarang",
+    "today": "Hari ini",
+    "tomorrow": "Besok",
+    "yesterday": "Kemarin",
+    "copied": "Tersalin ke papan klip",
+    "copy": "Salin",
+    "copyFailed": "Gagal menyalin"
+  },
+  "cabinet": {
+    "toast": {
+      "created": "Ruang dibuat",
+      "updated": "Ruang diperbarui",
+      "deleted": "Ruang dihapus",
+      "duplicateName": "Ruang dengan nama ini sudah ada",
+      "notFound": "Ruang tidak ditemukan",
+      "createFailed": "Gagal membuat ruang",
+      "updateFailed": "Gagal memperbarui ruang",
+      "deleteFailed": "Gagal menghapus ruang"
+    }
+  },
+  "professionals": {
+    "toast": {
+      "loadFailed": "Gagal memuat profesional"
+    }
+  },
+  "lists": {
+    "empty": {
+      "title": "Tidak ada hasil",
+      "description": "Sesuaikan filter atau hapus untuk melihat semua catatan."
+    },
+    "resultCount": "{shown} dari {total}",
+    "filter": {
+      "title": "Filter",
+      "more": "Filter",
+      "moreCount": "Filter ({count})",
+      "clear": "Hapus",
+      "apply": "Terapkan",
+      "date": "Tanggal",
+      "dateFrom": "Dari",
+      "dateTo": "Ke",
+      "searchPlaceholder": "Cari...",
+      "noResults": "Tidak ada yang cocok",
+      "all": "Semua"
+    },
+    "sort": {
+      "label": "Urutkan",
+      "asc": "Menaik",
+      "desc": "Menurun"
+    },
+    "datePreset": {
+      "today": "Hari ini",
+      "last7": "7 hari terakhir",
+      "last30": "30 hari terakhir",
+      "thisMonth": "Bulan ini",
+      "thisQuarter": "Kuartal",
+      "thisYear": "Tahun",
+      "custom": "Kustom"
+    },
+    "truncatedWarning": "Hasil terpotong (>1000). Perhalus filter."
+  },
+  "shared": {
+    "totals": "Total",
+    "info": "Detail",
+    "moreActions": "Aksi lainnya",
+    "criticalBanner": {
+      "dismiss": "Tutup peringatan"
+    },
+    "collect": {
+      "amountLabel": "Jumlah yang diterima",
+      "methodLabel": "Metode pembayaran",
+      "dateLabel": "Tanggal pembayaran",
+      "today": "Hari ini",
+      "quickFull": "Penuh",
+      "optionalDetails": "Tambah referensi atau catatan (opsional)",
+      "referenceLabel": "Referensi",
+      "referencePlaceholder": "mis. nomor transaksi EDC",
+      "notesLabel": "Catatan internal",
+      "submit": "Terima",
+      "cancel": "Batal"
+    }
+  },
+  "validation": {
+    "required": "Kolom ini wajib diisi",
+    "email": "Masukkan email yang valid",
+    "minLength": "Minimal {min} karakter",
+    "maxLength": "Maksimal {max} karakter",
+    "phone": "Masukkan nomor telepon yang valid"
+  },
+  "time": {
+    "minutes": "{n} menit",
+    "hours": "{n} jam"
+  },
+  "calendar": {
+    "today": "Hari ini",
+    "prevWeek": "Minggu sebelumnya",
+    "nextWeek": "Minggu depan",
+    "monday": "Senin",
+    "tuesday": "Selasa",
+    "wednesday": "Rabu",
+    "thursday": "Kamis",
+    "friday": "Jumat",
+    "saturday": "Sabtu",
+    "sunday": "Minggu"
+  },
+  "catalog": {
+    "title": "Katalog Perawatan",
+    "description": "Kelola perawatan, harga, dan konfigurasi pajak",
+    "items": "Perawatan",
+    "categories": "Kategori",
+    "noItems": "Tidak ada perawatan dalam katalog",
+    "searchPlaceholder": "Cari berdasarkan kode atau nama...",
+    "code": "Kode",
+    "name": "Nama",
+    "category": "Kategori",
+    "price": "Harga",
+    "defaultPrice": "Harga Dasar",
+    "costPrice": "Harga Modal",
+    "currency": "Mata Uang",
+    "vatType": "Tipe PPN",
+    "vatRate": "PPN %",
+    "duration": "Durasi",
+    "system": "Sistem",
+    "newItem": "Perawatan Baru",
+    "editItem": "Edit Perawatan",
+    "deleteItem": "Hapus Perawatan",
+    "deleteItemConfirm": "Anda yakin ingin menghapus perawatan \"{name}\"?",
+    "deleteItemNote": "Tindakan ini tidak dapat dibatalkan.",
+    "pricing": "Harga",
+    "scheduling": "Penjadwalan",
+    "characteristics": "Karakteristik",
+    "scope": "Cakupan",
+    "requiresAppointment": "Memerlukan janji temu",
+    "isDiagnostic": "Diagnostik",
+    "requiresSurfaces": "Memerlukan permukaan",
+    "materialNotes": "Catatan material",
+    "materialNotesPlaceholder": "Material atau perlengkapan yang diperlukan...",
+    "active": "Aktif",
+    "vatTypes": {
+      "exempt": "Bebas",
+      "reduced": "Dikurangi",
+      "standard": "Standar"
+    },
+    "scopeTypes": {
+      "tooth": "Gigi",
+      "multi_tooth": "Multi-gigi",
+      "global_mouth": "Seluruh mulut",
+      "global_arch": "Per rahang"
+    },
+    "pricingStrategy": {
+      "label": "Strategi harga",
+      "help": "Bagaimana harga perawatan dihitung saat diterapkan",
+      "flat": "Tetap (harga tunggal)",
+      "per_tooth": "Per gigi (× jumlah gigi)",
+      "per_surface": "Per permukaan (bertingkat)",
+      "per_role": "Per peran (jembatan: pilar/pontik)"
+    },
+    "surfacePrices": {
+      "title": "Harga berdasarkan jumlah permukaan",
+      "help": "Tentukan harga untuk 1–5 permukaan. Saat permukaan dipilih pada gigi, tingkat yang sesuai digunakan. Tingkat yang hilang mundur ke tingkat terendah terdekat.",
+      "tier": "{n} perm."
+    },
+    "sessions": {
+      "title": "Sesi (penagihan pecahan)",
+      "help": "Tentukan langkah-langkah penyerahan dan penagihan perawatan ini (mis. mahkota: 'Cetakan' + 'Pemasangan'). Jumlahnya harus sama dengan harga dasar.",
+      "label": "Label",
+      "labelPlaceholder": "mis. Cetakan",
+      "price": "Jumlah",
+      "add": "Tambah sesi",
+      "sumStatus": "Jumlah {sum} Rp · Total {total} Rp"
+    },
+    "categoryCreated": "Kategori dibuat",
+    "categoryUpdated": "Kategori diperbarui",
+    "categoryDeleted": "Kategori dihapus",
+    "categoryKeyExists": "Kategori dengan kunci ini sudah ada",
+    "categoryCreateFailed": "Gagal membuat kategori",
+    "categoryUpdateFailed": "Gagal memperbarui kategori",
+    "categoryDeleteFailed": "Gagal menghapus kategori",
+    "cannotModifySystemCategory": "Tidak dapat mengubah kategori sistem",
+    "cannotDeleteSystemCategory": "Tidak dapat menghapus kategori sistem",
+    "itemCreated": "Perawatan dibuat",
+    "itemUpdated": "Perawatan diperbarui",
+    "itemDeleted": "Perawatan dihapus",
+    "itemCodeExists": "Perawatan dengan kode ini sudah ada",
+    "categoryNotFound": "Kategori tidak ditemukan",
+    "itemCreateFailed": "Gagal membuat perawatan",
+    "itemUpdateFailed": "Gagal memperbarui perawatan",
+    "itemDeleteFailed": "Gagal menghapus perawatan",
+    "cannotModifySystemItem": "Tidak dapat mengubah perawatan sistem",
+    "systemItemHint": "Perawatan sistem: kode, kategori, strategi harga, dan cakupan terkunci; harga, modal, PPN, nama, durasi, sesi, dan status dapat diedit.",
+    "cannotDeleteSystemItem": "Tidak dapat menghapus perawatan sistem",
+    "odontogramMapping": "Visualisasi Diagram Gigi",
+    "odontogramMappingDescription": "Hubungkan perawatan ini dengan tipe visualisasi diagram gigi agar muncul di bagan pasien.",
+    "odontogramType": "Tipe perawatan",
+    "clinicalCategory": "Kategori klinis",
+    "noOdontogramMapping": "Tidak ada hubungan",
+    "odontogramMappingHint": "Karakteristik perawatan akan disesuaikan secara otomatis berdasarkan tipe yang dipilih.",
+    "selectCategory": "Pilih kategori...",
+    "selectVatType": "Pilih tipe PPN...",
+    "selectScope": "Pilih cakupan...",
+    "selectOdontogramType": "Pilih tipe...",
+    "selectClinicalCategory": "Pilih kategori...",
+    "expandAll": "Buka semua",
+    "collapseAll": "Tutup semua",
+    "unnamed": "Tanpa judul",
+    "activeHint": "Tersedia untuk penawaran dan rencana",
+    "tabs": {
+      "general": "Umum",
+      "pricing": "Harga",
+      "scheduling": "Penjadwalan",
+      "clinical": "Klinis"
+    },
+    "onboarding": {
+      "label": "Katalog perawatan",
+      "description": "Tanpa perawatan, tidak ada penawaran atau rencana. Muat katalog bawaan atau buat sendiri.",
+      "createOwn": "Saya akan buat sendiri"
+    },
+    "manageCategories": "Kelola kategori",
+    "newCategory": "Kategori baru",
+    "categoryName": "Nama",
+    "categoryNamePlaceholder": "mis. Ortodonti",
+    "categoryOrder": "Urutan",
+    "noCategories": "Tidak ada kategori. Buat satu atau muat katalog bawaan.",
+    "inactiveCategories": "Kategori tidak aktif",
+    "reactivate": "Aktifkan kembali",
+    "deleteCategoryConfirm": "Kategori akan dinonaktifkan; perawatannya tetap tersimpan. Lanjutkan?",
+    "systemCategoryNote": "Kategori sistem tidak dapat diedit atau dihapus.",
+    "loadDefaults": "Muat katalog bawaan",
+    "loadDefaultsHint": "Tipe PPN, kategori, dan perawatan referensi untuk negara klinik. Hanya baris yang hilang yang ditambahkan.",
+    "defaultsLoaded": "Katalog dimuat: {categories} kategori, {items} perawatan, {vat_types} tipe PPN",
+    "defaultsFailed": "Gagal memuat katalog bawaan"
+  },
+  "placeholders": {
+    "selectRole": "Pilih peran..."
+  },
+  "vatTypes": {
+    "title": "Tipe PPN",
+    "description": "Kelola tipe PPN yang tersedia untuk perawatan",
+    "name": "Nama",
+    "rate": "Tarif",
+    "default": "Bawaan",
+    "system": "Sistem",
+    "active": "Aktif",
+    "new": "Tipe PPN Baru",
+    "edit": "Edit Tipe PPN",
+    "delete": "Hapus Tipe PPN",
+    "setAsDefault": "Tetapkan sebagai bawaan",
+    "showInactive": "Tampilkan yang tidak aktif",
+    "noItems": "Tidak ada tipe PPN dikonfigurasi",
+    "namePlaceholder": "Mis.: Dikurangi (10%)",
+    "systemNote": "Tipe PPN sistem hanya dapat diubah status bawaannya.",
+    "deleteConfirm": "Anda yakin ingin menghapus tipe PPN",
+    "deleteNote": "Perawatan yang menggunakan tipe PPN ini tidak akan terpengaruh.",
+    "created": "Tipe PPN dibuat",
+    "updated": "Tipe PPN diperbarui",
+    "deleted": "Tipe PPN dihapus",
+    "loadError": "Gagal memuat tipe PPN",
+    "createError": "Gagal membuat tipe PPN",
+    "updateError": "Gagal memperbarui tipe PPN",
+    "deleteError": "Gagal menghapus tipe PPN"
+  },
+  "treatmentPlans": {
+    "title": "Rencana Perawatan",
+    "description": "Kelola rencana perawatan untuk pasien",
+    "new": "Rencana baru",
+    "create": "Buat rencana perawatan",
+    "edit": "Edit rencana",
+    "view": "Lihat rencana",
+    "delete": "Hapus rencana",
+    "noItems": "Rencana ini tidak memiliki perawatan",
+    "noPlans": "Pasien ini tidak memiliki rencana perawatan",
+    "noPlansHint": "Tandai perawatan pada diagram gigi dan buat rencana untuk mengaturnya",
+    "createFirst": "Buat rencana pertama",
+    "empty": "Tidak ada rencana perawatan terdaftar",
+    "emptyAction": "Buat rencana pertama",
+    "searchPlaceholder": "Cari berdasarkan nomor, pasien, atau judul...",
+    "planNumber": "Nomor",
+    "patient": "Pasien",
+    "untitled": "Tanpa judul",
+    "untitledPlan": "Rencana tanpa judul",
+    "itemCount": "{count} perawatan",
+    "treatments": "perawatan",
+    "progress": "Kemajuan",
+    "pendingTreatments": "Perawatan tertunda",
+    "completedTreatments": "Perawatan selesai",
+    "linkedBudget": "Penawaran tertaut",
+    "unknownTreatment": "Perawatan tidak dikenal",
+    "globalTreatment": "Perawatan umum",
+    "activePlan": "Rencana aktif",
+    "otherPlans": "Rencana lainnya",
+    "viewAllPlans": "Lihat riwayat rencana",
+    "activate": "Aktifkan",
+    "generateBudget": "Buat penawaran",
+    "scheduleAppointment": "Jadwalkan janji temu",
+    "status": {
+      "draft": "Draf",
+      "pending": "Tertunda",
+      "active": "Aktif",
+      "completed": "Selesai",
+      "closed": "Ditutup",
+      "archived": "Diarsipkan"
+    },
+    "fields": {
+      "title": "Judul",
+      "titlePlaceholder": "Mis.: Rehabilitasi oral lengkap",
+      "assignedProfessional": "Profesional yang ditugaskan",
+      "selectProfessional": "Pilih profesional",
+      "diagnosisNotes": "Catatan diagnosis",
+      "diagnosisNotesPlaceholder": "Diagnosis dan observasi klinis...",
+      "internalNotes": "Catatan internal",
+      "internalNotesPlaceholder": "Catatan yang hanya terlihat staf..."
+    },
+    "modal": {
+      "subtitle": "Atur perawatan pasien",
+      "titleHint": "Opsional - membantu mengidentifikasi rencana",
+      "additionalNotes": "Catatan tambahan",
+      "quickTip": "Setelah membuat rencana, Anda dapat menambahkan perawatan dari diagram gigi atau katalog.",
+      "createButton": "Buat rencana"
+    },
+    "actions": {
+      "activate": "Aktifkan rencana",
+      "confirm": "Konfirmasi rencana",
+      "complete": "Tandai selesai",
+      "generateBudget": "Buat penawaran",
+      "linkBudget": "Tautkan penawaran",
+      "syncBudget": "Sinkronkan penawaran",
+      "cancelPlan": "Batalkan rencana",
+      "reopen": "Buka kembali",
+      "close": "Tutup rencana",
+      "reactivate": "Aktifkan kembali rencana",
+      "logContact": "Catat kontak"
+    },
+    "items": {
+      "title": "Perawatan",
+      "add": "Tambah perawatan",
+      "addSelected": "Tambah {count} perawatan",
+      "remove": "Hapus perawatan",
+      "empty": "Tidak ada perawatan dalam rencana ini",
+      "assignedProfessional": "Dokter gigi yang ditugaskan",
+      "assignedProfessionalAriaLabel": "Ubah dokter gigi untuk perawatan ini",
+      "useUsersPlanDoctor": "Gunakan dokter gigi rencana",
+      "noProfessional": "Tidak ada dokter gigi ditugaskan",
+      "inactiveProfessional": "Profesional tidak aktif",
+      "cascadeReassign": {
+        "title": "Alihkan perawatan tertunda?",
+        "body": "Anda mengubah dokter gigi rencana. {count} perawatan tertunda ditugaskan ke {previousName}. Alihkan juga ke dokter gigi baru?",
+        "confirm": "Ya, alihkan yang tertunda",
+        "cancel": "Tidak, biarkan apa adanya"
+      }
+    },
+    "filters": {
+      "allStatuses": "Semua status"
+    },
+    "confirmations": {
+      "delete": "Hapus rencana perawatan ini?",
+      "completeItem": "Tandai perawatan sebagai selesai?",
+      "completeItemDescription": "Tindakan ini tidak dapat dibatalkan.",
+      "activateTitle": "Konfirmasi rencana perawatan?",
+      "activateDescription": "Konfirmasi membuka pembuatan penawaran dan penjadwalan janji temu. Anda dapat terus menambah atau menyelesaikan perawatan setelahnya.",
+      "unlockTitle": "Ubah rencana?",
+      "unlockIntro": "Rencana ini sudah menerbitkan penawaran {number}. Untuk mengubahnya, penawaran saat ini harus dibatalkan.",
+      "unlockConsequence1": "Penawaran {number} akan dibatalkan dan tidak lagi berlaku untuk pasien.",
+      "unlockConsequence2": "Anda dapat menambah, mengedit, atau menghapus perawatan dari rencana.",
+      "unlockConsequence3": "Anda perlu membuat penawaran baru setelah selesai melakukan perubahan.",
+      "unlockConsequence4": "Penawaran yang dibatalkan tetap tersimpan dalam riwayat untuk keterlacakan.",
+      "cancelTitle": "Batalkan rencana perawatan?",
+      "cancelDescription": "Rencana akan berpindah ke status dibatalkan dan perawatan terencana yang belum dilakukan akan dihapus dari diagram gigi. Riwayat rencana tetap tersimpan."
+    },
+    "messages": {
+      "created": "Rencana perawatan dibuat",
+      "updated": "Rencana perawatan diperbarui",
+      "deleted": "Rencana perawatan dihapus",
+      "itemsAdded": "Perawatan ditambahkan ke rencana"
+    },
+    "itemCompleted": "Perawatan selesai",
+    "budgetGenerated": "Penawaran dibuat",
+    "created": "Rencana perawatan dibuat",
+    "updated": "Rencana perawatan diperbarui",
+    "statusUpdated": "Status rencana diperbarui",
+    "deleted": "Rencana perawatan dihapus",
+    "budgetLinked": "Penawaran ditautkan ke rencana",
+    "budgetSynced": "Penawaran disinkronkan",
+    "errors": {
+      "load": "Gagal memuat rencana perawatan",
+      "create": "Gagal membuat rencana perawatan",
+      "update": "Gagal memperbarui rencana perawatan",
+      "delete": "Gagal menghapus rencana perawatan"
+    },
+    "notes": {
+      "title": "Catatan klinis",
+      "empty": "Belum ada catatan klinis",
+      "addNote": "Tambah catatan",
+      "edit": "Edit catatan",
+      "delete": "Hapus catatan",
+      "attachments": "Lampiran",
+      "author": "Penulis",
+      "createdAt": "Dibuat",
+      "templatePicker": "Templat",
+      "bodyPlaceholder": "Tulis catatan klinis…",
+      "saved": "Catatan disimpan",
+      "deleted": "Catatan dihapus"
+    },
+    "completionNudge": {
+      "title": "Selesaikan perawatan",
+      "description": "Tambahkan catatan klinis yang mendokumentasikan kunjungan ini sebelum menandainya selesai.",
+      "completeWithNote": "Selesaikan dengan catatan",
+      "skip": "Lewati catatan",
+      "skipConfirm": "Selesaikan tanpa catatan klinis?"
+    },
+    "visitNote": {
+      "title": "Catatan klinis kunjungan",
+      "save": "Simpan catatan",
+      "empty": "Belum ada catatan kunjungan",
+      "saved": "Catatan disimpan"
+    },
+    "clinicalNotesTab": "Catatan klinis",
+    "filterBy": {
+      "plan": "Rencana",
+      "item": "Perawatan",
+      "visit": "Kunjungan",
+      "all": "Semua"
+    },
+    "byPlan": {
+      "empty": "Pasien ini tidak memiliki catatan klinis di rencana perawatan mana pun",
+      "planNotesLabel": "Catatan rencana",
+      "noNotesForTreatment": "Tidak ada catatan untuk perawatan ini",
+      "noNotesForPlan": "Tidak ada catatan dalam rencana ini"
+    },
+    "noteTemplates": {
+      "endo": {
+        "singleVisit": "Endodonti — satu kunjungan",
+        "multiVisit": "Endodonti — beberapa kunjungan"
+      },
+      "perio": {
+        "scaling": "Scaling / root planing"
+      },
+      "implant": {
+        "placement": "Pemasangan implan"
+      },
+      "general": {
+        "followUp": "Kontrol umum"
+      }
+    },
+    "closureReason": {
+      "rejected_by_patient": "Ditolak pasien",
+      "expired": "Kedaluwarsa",
+      "cancelled_by_clinic": "Dibatalkan klinik",
+      "patient_abandoned": "Pasien tidak melanjutkan",
+      "other": "Alasan lain"
+    },
+    "confirmed": "Rencana dikonfirmasi",
+    "reopened": "Rencana dibuka kembali",
+    "closed": "Rencana ditutup",
+    "reactivated": "Rencana diaktifkan kembali",
+    "contactLogged": "Kontak dicatat",
+    "modals": {
+      "confirm": {
+        "title": "Konfirmasi rencana",
+        "description": "Rencana akan berpindah ke Tertunda dan draf penawaran dibuat otomatis. Perawatan menjadi hanya-baca setelah dikonfirmasi.",
+        "submit": "Konfirmasi rencana"
+      },
+      "reopen": {
+        "title": "Buka kembali rencana untuk edit",
+        "description": "Ini akan membatalkan penawaran saat ini. Rencana kembali ke Draf sehingga Anda dapat mengedit perawatan.",
+        "submit": "Buka kembali"
+      },
+      "close": {
+        "title": "Tutup rencana",
+        "description": "Pilih alasan penutupan. Perawatan tertunda akan diarsipkan.",
+        "reasonLabel": "Alasan",
+        "noteLabel": "Catatan (opsional)",
+        "submit": "Tutup rencana"
+      },
+      "reactivate": {
+        "title": "Aktifkan kembali rencana tertutup",
+        "description": "Ini akan mengaktifkan kembali rencana yang ditutup pada {date} sebagai «{reason}». Lanjutkan?",
+        "submit": "Aktifkan kembali"
+      },
+      "contactLog": {
+        "title": "Catat kontak",
+        "description": "Mencatat titik kontak tanpa mengubah status rencana.",
+        "channelLabel": "Saluran",
+        "noteLabel": "Catatan (opsional)",
+        "submit": "Catat"
+      }
+    },
+    "newBudgetHint": {
+      "text": "Pasien ini memiliki rencana {plan} tanpa penawaran. Buat penawaran dari rencana agar tetap tertaut.",
+      "cta": "Buka rencana"
+    }
+  },
+  "pipeline": {
+    "title": "Pipa Rencana",
+    "description": "Kelola pipa perawatan.",
+    "tabs": {
+      "por_presupuestar": "Perlu penawaran",
+      "esperando_paciente": "Menunggu pasien",
+      "sin_cita": "Tanpa janji temu",
+      "sin_proxima_cita": "Tanpa janji temu berikutnya",
+      "cerrados": "Ditutup",
+      "listado": "Daftar"
+    },
+    "row": {
+      "patient": "Pasien",
+      "plan": "Rencana",
+      "budget": "Penawaran",
+      "items": "Perawatan",
+      "daysIn": "{n} hari dalam status",
+      "nextAppt": "Janji temu berikutnya",
+      "noNextAppt": "Tidak ada janji temu",
+      "noBudget": "Tidak ada penawaran"
+    },
+    "actions": {
+      "open": "Buka",
+      "send": "Kirim",
+      "remind": "Kirim ulang",
+      "schedule": "Jadwalkan",
+      "scheduleNext": "Jadwalkan berikutnya",
+      "reactivate": "Aktifkan kembali",
+      "call": "Telepon",
+      "whatsapp": "WhatsApp",
+      "markContacted": "Tandai sudah dihubungi",
+      "acceptInClinic": "Terima di klinik"
+    },
+    "search": "Cari berdasarkan nama atau nomor…",
+    "empty": "Tidak ada baris dalam tab ini.",
+    "loading": "Memuat…"
+  },
+  "budget": {
+    "title": "Penawaran",
+    "description": "Kelola penawaran perawatan untuk pasien",
+    "new": "Penawaran baru",
+    "edit": "Edit penawaran",
+    "view": "Lihat penawaran",
+    "delete": "Hapus penawaran",
+    "duplicate": "Buat versi baru",
+    "noItems": "Tidak ada penawaran",
+    "empty": "Tidak ada penawaran terdaftar",
+    "emptyAction": "Buat penawaran pertama",
+    "linkedToPlan": "Tertaut ke rencana",
+    "searchPlaceholder": "Cari berdasarkan nomor atau pasien...",
+    "budgetNumber": "Nomor",
+    "version": "Versi",
+    "treatmentPlan": "Rencana perawatan",
+    "patient": "Pasien",
+    "selectPatient": "Pilih pasien",
+    "selectPatientHint": "Cari dan pilih pasien untuk penawaran ini",
+    "professional": "Profesional",
+    "validFrom": "Berlaku dari",
+    "validUntil": "Berlaku hingga",
+    "validUntilHint": "Kosongkan untuk penawaran tanpa tanggal kedaluwarsa",
+    "noExpiry": "Tanpa tanggal kedaluwarsa",
+    "createAndAddItems": "Buat dan tambah perawatan",
+    "subtotal": "Subtotal",
+    "totalDiscount": "Total diskon",
+    "totalTax": "Total PPN",
+    "total": "Total",
+    "globalDiscount": "Diskon global",
+    "discountType": "Jenis diskon",
+    "discountValue": "Nilai diskon",
+    "percentage": "Persentase",
+    "absolute": "Nominal",
+    "internalNotes": "Catatan internal",
+    "internalNotesPlaceholder": "Catatan yang hanya terlihat staf...",
+    "patientNotes": "Catatan pasien",
+    "patientNotesPlaceholder": "Catatan yang terlihat di penawaran...",
+    "status": {
+      "title": "Status",
+      "draft": "Draf",
+      "sent": "Terkirim",
+      "partially_accepted": "Diterima sebagian",
+      "accepted": "Diterima",
+      "in_progress": "Berlangsung",
+      "completed": "Selesai",
+      "invoiced": "Difakturkan",
+      "rejected": "Ditolak",
+      "expired": "Kedaluwarsa",
+      "cancelled": "Dibatalkan"
+    },
+    "itemStatus": {
+      "pending": "Tertunda",
+      "accepted": "Diterima",
+      "rejected": "Ditolak",
+      "in_progress": "Berlangsung",
+      "completed": "Selesai"
+    },
+    "actions": {
+      "send": "Kirim ke pasien",
+      "accept": "Terima penawaran",
+      "acceptPartial": "Terima yang dipilih",
+      "reject": "Tolak",
+      "cancel": "Batalkan penawaran",
+      "duplicate": "Buat versi baru",
+      "downloadPdf": "Unduh PDF",
+      "previewPdf": "Pratinjau PDF",
+      "startTreatment": "Mulai perawatan",
+      "completeTreatment": "Selesaikan perawatan",
+      "renegotiate": "Negosiasi ulang",
+      "acceptInClinic": "Terima di klinik",
+      "resend": "Kirim ulang",
+      "sendReminder": "Kirim pengingat",
+      "setPublicCode": "Tetapkan kode akses",
+      "unlockPublic": "Buka akses"
+    },
+    "items": {
+      "title": "Perawatan",
+      "add": "Tambah perawatan",
+      "remove": "Hapus perawatan",
+      "edit": "Edit perawatan",
+      "empty": "Tidak ada perawatan dalam penawaran ini",
+      "singular": "perawatan",
+      "plural": "perawatan",
+      "addFromCatalog": "Tambah dari katalog",
+      "addFromOdontogram": "Tambah dari diagram gigi",
+      "treatment": "Perawatan",
+      "searchCatalog": "Cari di katalog perawatan...",
+      "unitPrice": "Harga satuan",
+      "quantity": "Jumlah",
+      "discount": "Diskon",
+      "lineTotal": "Total baris",
+      "tooth": "Gigi",
+      "toothNumber": "Nomor gigi",
+      "toothNumberPlaceholder": "Mis.: 11, 21, 36...",
+      "surfaces": "Permukaan",
+      "notes": "Catatan",
+      "notesPlaceholder": "Catatan tentang perawatan ini...",
+      "managedByPlan": "Baris penawaran ini dikelola dari rencana perawatan {plan}."
+    },
+    "signature": {
+      "title": "Tanda tangan digital",
+      "viewAction": "Lihat tanda tangan",
+      "signedBy": "Ditandatangani oleh",
+      "signedAt": "Ditandatangani pada",
+      "methodLabel": "Metode",
+      "relationshipLabel": "Hubungan",
+      "documentHash": "Hash dokumen (SHA-256)",
+      "hashHint": "Hash {short} — mengikat tanda tangan ke PDF ini. Perubahan apa pun akan membatalkannya.",
+      "downloadSignedPdf": "Unduh PDF bertanda tangan",
+      "downloadError": "Tidak dapat mengunduh PDF bertanda tangan.",
+      "notSigned": "Belum ada tanda tangan yang diambil untuk penawaran ini.",
+      "method": {
+        "drawn": "Tanda tangan tulisan tangan",
+        "clickAccept": "Klik-untuk-menerima",
+        "external": "Penyedia eksternal"
+      },
+      "email": "Email",
+      "relationship": "Hubungan dengan pasien",
+      "patient": "Pasien",
+      "guardian": "Wali sah",
+      "representative": "Perwakilan",
+      "accept": "Saya menerima ketentuan penawaran",
+      "signHere": "Tanda tangan di sini",
+      "clear": "Bersihkan tanda tangan"
+    },
+    "history": {
+      "title": "Riwayat perubahan",
+      "noChanges": "Tidak ada perubahan tercatat",
+      "actions": {
+        "created": "Penawaran dibuat",
+        "updated": "Penawaran diperbarui",
+        "status_changed": "Status diubah",
+        "item_added": "Perawatan ditambahkan",
+        "item_removed": "Perawatan dihapus",
+        "signed": "Penawaran ditandatangani",
+        "sent": "Penawaran terkirim",
+        "duplicated": "Versi baru dibuat",
+        "deleted": "Penawaran dihapus",
+        "item_treatment_started": "Perawatan dimulai",
+        "item_treatment_completed": "Perawatan selesai"
+      }
+    },
+    "versions": {
+      "title": "Versi",
+      "current": "Saat ini",
+      "viewVersion": "Lihat versi"
+    },
+    "confirmations": {
+      "send": "Kirim penawaran ke pasien?",
+      "sendDescription": "Penawaran akan ditandai sebagai terkirim.",
+      "reject": "Tolak penawaran?",
+      "rejectDescription": "Tindakan ini tidak dapat dibatalkan.",
+      "cancel": "Batalkan penawaran?",
+      "cancelDescription": "Tindakan ini tidak dapat dibatalkan.",
+      "resend": "Buat versi baru dari penawaran ini? Rencana perawatan tertaut akan mengikuti versi baru.",
+      "delete": "Hapus penawaran?",
+      "deleteDescription": "Tindakan ini tidak dapat dibatalkan."
+    },
+    "send": {
+      "description": "Anda dapat mengirim penawaran melalui email atau menandainya sebagai terkirim manual (dicetak atau diserahkan langsung).",
+      "sendByEmail": "Kirim via email",
+      "willSendTo": "Akan dikirim ke",
+      "noPatientEmail": "Pasien tidak memiliki email terdaftar",
+      "customMessage": "Pesan khusus (opsional)",
+      "customMessagePlaceholder": "Tambahkan pesan untuk pasien...",
+      "manualNote": "Penawaran akan ditandai terkirim tanpa mengirim email.",
+      "sendEmail": "Kirim email",
+      "markAsSent": "Tandai terkirim"
+    },
+    "messages": {
+      "created": "Penawaran dibuat",
+      "updated": "Penawaran diperbarui",
+      "deleted": "Penawaran dihapus",
+      "sent": "Penawaran terkirim",
+      "sentByEmail": "Penawaran terkirim via email",
+      "sentManually": "Penawaran ditandai terkirim",
+      "accepted": "Penawaran diterima",
+      "rejected": "Penawaran ditolak",
+      "cancelled": "Penawaran dibatalkan",
+      "duplicated": "Versi baru dibuat",
+      "resent": "Versi baru dibuat dari penawaran sebelumnya",
+      "itemAdded": "Perawatan ditambahkan",
+      "itemUpdated": "Perawatan diperbarui",
+      "itemRemoved": "Perawatan dihapus",
+      "treatmentStarted": "Perawatan dimulai",
+      "treatmentCompleted": "Perawatan selesai"
+    },
+    "errors": {
+      "load": "Gagal memuat penawaran",
+      "create": "Gagal membuat penawaran",
+      "update": "Gagal memperbarui penawaran",
+      "delete": "Gagal menghapus penawaran",
+      "send": "Gagal mengirim penawaran",
+      "accept": "Gagal menerima penawaran",
+      "reject": "Gagal menolak penawaran",
+      "notFound": "Penawaran tidak ditemukan",
+      "onlyDraft": "Hanya penawaran draf yang dapat diedit"
+    },
+    "filters": {
+      "allStatuses": "Semua status",
+      "status": "Status",
+      "paymentStatus": "Status",
+      "professional": "Profesional",
+      "validity": "Masa berlaku",
+      "validityValid": "Berlaku",
+      "validityExpiringSoon": "Kedaluwarsa dalam 7 hari",
+      "validityExpired": "Kedaluwarsa",
+      "dateFrom": "Dari",
+      "dateTo": "Ke",
+      "showExpired": "Tampilkan kedaluwarsa",
+      "advanced": "Filter lanjutan",
+      "clear": "Bersihkan filter"
+    },
+    "sortFields": {
+      "createdAt": "Dibuat",
+      "validUntil": "Berlaku hingga",
+      "total": "Total",
+      "status": "Status",
+      "budgetNumber": "Nomor"
+    },
+    "validity": {
+      "expired": "Kedaluwarsa",
+      "expiresIn": "Kedaluwarsa {days}h"
+    },
+    "pdf": {
+      "generating": "Membuat PDF...",
+      "downloadError": "Gagal mengunduh PDF"
+    },
+    "modals": {
+      "renegotiate": {
+        "title": "Negosiasi ulang penawaran",
+        "description": "Ini akan membatalkan penawaran saat ini dan membuka kembali rencana ke Draf agar Anda dapat menyesuaikan perawatan.",
+        "submit": "Negosiasi ulang"
+      },
+      "acceptInClinic": {
+        "title": "Terima penawaran di klinik",
+        "description": "Catat penerimaan pasien. Anda dapat mengambil tanda tangan tablet (opsional).",
+        "signerLabel": "Nama lengkap penandatangan",
+        "captureSignature": "Ambil tanda tangan",
+        "submit": "Tandai diterima"
+      },
+      "setPublicCode": {
+        "title": "Tetapkan kode akses",
+        "description": "Pasien ini tidak memiliki telepon atau tanggal lahir di catatan. Tetapkan kode 4-6 digit dan sampaikan secara lisan kepada pasien. JANGAN sertakan kode dalam email.",
+        "codeLabel": "Kode (4-6 digit)",
+        "submit": "Simpan kode"
+      }
+    },
+    "publicLink": {
+      "action": "Bagikan tautan",
+      "title": "Tautan pasien",
+      "help": "Salin tautan ini dan bagikan ke pasien via WhatsApp, SMS, atau email. Mereka akan diminta satu detail verifikasi sebelum melihat penawaran.",
+      "copy": "Salin tautan",
+      "copied": "Tersalin!",
+      "whatsapp": "Kirim via WhatsApp",
+      "whatsappNoPhone": "Pasien tidak memiliki telepon di catatan",
+      "whatsappGreeting": "Halo {name}, ini penawaran Anda:",
+      "whatsappGreetingFallback": "Halo, ini penawaran Anda:",
+      "preview": "Pratinjau",
+      "statusSent": "Terkirim",
+      "statusAccepted": "Diterima",
+      "statusRejected": "Ditolak",
+      "statusExpired": "Kedaluwarsa"
+    },
+    "public": {
+      "title": "Penawaran Anda",
+      "intro": "{clinic} mengirimkan penawaran ini kepada Anda. Tinjau perawatan dan pilih opsi.",
+      "greeting": "Halo, {name}",
+      "subtitle": "Rencana perawatan pribadi Anda",
+      "budgetNumber": "Penawaran",
+      "issuedOn": "Diterbitkan pada {date}",
+      "items": "Perawatan termasuk",
+      "tooth": "Gigi {number}",
+      "subtotal": "Subtotal",
+      "discount": "Diskon",
+      "tax": "PPN",
+      "total": "Total",
+      "validUntil": "Berlaku hingga {date}",
+      "trustSecure": "Koneksi aman",
+      "trustEncrypted": "Data terenkripsi",
+      "trustSignature": "Tanda tangan mengikat secara hukum",
+      "needHelp": "Butuh bantuan? Hubungi klinik",
+      "noteFromClinic": "Pesan dari klinik",
+      "callClinic": "Hubungi klinik",
+      "emailClinic": "Kirim email",
+      "cta_accept": "Terima dan tanda tangani",
+      "cta_reject": "Tidak tertarik",
+      "expired": "Penawaran ini telah kedaluwarsa. Silakan hubungi klinik.",
+      "locked": "Akses terkunci setelah terlalu banyak percobaan. Silakan hubungi klinik.",
+      "already_accepted": "Anda sudah menerima penawaran ini. Klinik akan menghubungi Anda untuk menjadwalkan janji temu pertama.",
+      "already_rejected": "Anda menolak penawaran ini. Jika berubah pikiran, silakan hubungi klinik.",
+      "download": {
+        "signedPdf": "Unduh PDF bertanda tangan",
+        "notSigned": "Penawaran ini belum memiliki tanda tangan terlampir.",
+        "error": "Tidak dapat mengunduh PDF. Silakan coba lagi.",
+        "reauthIntro": "Demi keamanan, verifikasi identitas Anda lagi untuk mengunduh PDF bertanda tangan."
+      },
+      "verify": {
+        "title": "Verifikasi identitas Anda",
+        "intro": "Untuk melindungi informasi Anda, konfirmasi satu detail sebelum melihat penawaran.",
+        "phone_last4_label": "4 digit terakhir telepon Anda",
+        "dob_label": "Tanggal lahir Anda",
+        "manual_code_label": "Kode yang diberikan klinik",
+        "submit": "Lanjut",
+        "invalid": "Detail salah. Silakan coba lagi.",
+        "locked": "Akses terkunci setelah terlalu banyak percobaan. Silakan hubungi klinik.",
+        "rate_limited": "Terlalu banyak percobaan. Tunggu 15 menit."
+      },
+      "accept": {
+        "title": "Terima dan tanda tangani",
+        "signerLabel": "Nama lengkap Anda",
+        "signatureLabel": "Tanda tangan di sini (opsional)",
+        "signatureClear": "Bersihkan",
+        "consent": "Saya menerima penawaran ini dan menyetujui perawatan yang dijelaskan.",
+        "submit": "Konfirmasi penerimaan",
+        "success": "Selesai! Klinik akan menghubungi Anda untuk menjadwalkan janji temu pertama."
+      },
+      "reject": {
+        "title": "Tidak tertarik",
+        "intro": "Mengapa penawaran ini tidak cocok untuk Anda?",
+        "reasonLabel": "Alasan",
+        "noteLabel": "Komentar (opsional)",
+        "submit": "Konfirmasi penolakan",
+        "success": "Kami telah memberi tahu klinik.",
+        "reasons": {
+          "price": "Harga",
+          "time": "Kekurangan waktu",
+          "second_opinion": "Pendapat kedua",
+          "other": "Alasan lain"
+        }
+      }
+    },
+    "settings": {
+      "title": "Pengaturan penawaran",
+      "description": "Konfigurasi kedaluwarsa, pengingat, dan verifikasi tautan publik.",
+      "cards": {
+        "expiry": {
+          "title": "Kedaluwarsa dan penutupan otomatis",
+          "description": "Berapa lama penawaran berlaku sebelum kedaluwarsa dan kapan menutup otomatis rencana tertunda."
+        },
+        "reminders": {
+          "title": "Pengingat otomatis",
+          "description": "Aktifkan pengingat email 7h / 14h untuk pasien tanpa respons."
+        },
+        "publicLink": {
+          "title": "Tautan publik dan verifikasi",
+          "description": "Konfigurasi perlindungan tautan penawaran yang menghadap pasien."
+        }
+      },
+      "expiry": {
+        "validityDays": "Masa berlaku penawaran (hari)",
+        "validityHelp": "Setelah sekian hari tanpa respons, penawaran menjadi Kedaluwarsa (rentang 7-180).",
+        "autoCloseDays": "Hari sebelum menutup otomatis rencana",
+        "autoCloseHelp": "Rencana dengan penawaran kedaluwarsa dan tanpa tindakan selama sekian hari berpindah ke Ditutup (rentang 7-180).",
+        "save": "Simpan"
+      },
+      "reminders": {
+        "enabled": "Kirim pengingat otomatis pada hari ke-7 dan ke-14",
+        "enabledHelp": "Saat aktif, sistem mengirim email ke pasien tentang penawaran tertunda. Saat nonaktif, resepsionis menindaklanjuti manual.",
+        "save": "Simpan"
+      },
+      "publicLink": {
+        "authDisabled": "Nonaktifkan verifikasi tautan publik",
+        "authDisabledHelp": "Saat aktif, pasien melihat penawaran hanya dengan tautan — tanpa tantangan telepon atau tanggal lahir. Terima risikonya jika tautan dibagikan.",
+        "save": "Simpan"
+      },
+      "saved": "Pengaturan disimpan"
+    }
+  },
+  "notifications": {
+    "communications": {
+      "language": {
+        "cardTitle": "Bahasa komunikasi",
+        "cardDescription": "Bahasa yang digunakan dalam tampilan penawaran pasien, email, dan SMS.",
+        "title": "Bahasa komunikasi pasien",
+        "label": "Bahasa",
+        "help": "Berlaku untuk tampilan penawaran pasien dan templat email/SMS otomatis. UI staf tetap menggunakan preferensi bahasa masing-masing pengguna.",
+        "save": "Simpan",
+        "saved": "Bahasa disimpan"
+      }
+    },
+    "title": "Notifikasi",
+    "description": "Konfigurasi notifikasi email klinik",
+    "pageDescription": "Konfigurasi notifikasi mana yang dikirim otomatis dan mana yang memerlukan pengiriman manual.",
+    "autoVsManual": "Notifikasi otomatis vs manual",
+    "autoVsManualDescription": "Tentukan notifikasi mana yang dikirim otomatis saat peristiwa terjadi dan mana yang memerlukan pengguna untuk mengirimnya secara manual.",
+    "notificationType": "Jenis notifikasi",
+    "enabled": "Aktif",
+    "autoSend": "Kirim otomatis",
+    "options": "Opsi",
+    "hoursBefore": "jam sebelum",
+    "testConnection": "Uji koneksi",
+    "testEmailTitle": "Kirim email uji",
+    "testEmailDescription": "Kami akan mengirim email uji untuk memverifikasi konfigurasi berfungsi dengan benar.",
+    "sendTestEmail": "Kirim uji",
+    "test_email_sent": "Email uji berhasil dikirim",
+    "settings_saved": "Pengaturan disimpan",
+    "emailProvider": "Penyedia email",
+    "providerConfigured": "Penyedia email dikonfigurasi",
+    "providerNote": "Konfigurasi server email dilakukan di variabel lingkungan server.",
+    "infoTitle": "Informasi",
+    "infoAutoSend": "Kirim otomatis: Notifikasi dikirim saat peristiwa terjadi (mis. saat membuat janji temu).",
+    "infoManualSend": "Kirim manual: Tombol akan muncul untuk mengirim notifikasi saat diinginkan.",
+    "infoDisabled": "Nonaktif: Notifikasi tidak akan dikirim dan opsi kirim tidak akan muncul.",
+    "types": {
+      "appointment_confirmation": "Konfirmasi janji temu",
+      "appointment_confirmation_desc": "Email konfirmasi saat janji temu dijadwalkan",
+      "appointment_cancelled": "Pembatalan janji temu",
+      "appointment_cancelled_desc": "Email notifikasi saat janji temu dibatalkan",
+      "appointment_reminder": "Pengingat janji temu",
+      "appointment_reminder_desc": "Email pengingat sebelum janji temu",
+      "budget_sent": "Pengiriman penawaran",
+      "budget_sent_desc": "Email dengan detail penawaran",
+      "budget_accepted": "Penawaran diterima",
+      "budget_accepted_desc": "Email konfirmasi saat penawaran diterima",
+      "welcome": "Selamat datang",
+      "welcome_desc": "Email selamat datang untuk pasien baru"
+    },
+    "sendConfirmation": "Kirim konfirmasi",
+    "sendReminder": "Kirim pengingat",
+    "sendCancellation": "Kirim pembatalan",
+    "sendBudget": "Kirim via email",
+    "sendAcceptance": "Kirim konfirmasi",
+    "sendWelcome": "Kirim selamat datang",
+    "sendEmail": "Kirim email",
+    "errors": {
+      "fetch_failed": "Gagal memuat pengaturan",
+      "save_failed": "Gagal menyimpan pengaturan",
+      "test_failed": "Gagal mengirim email uji",
+      "send_failed": "Gagal mengirim notifikasi"
+    },
+    "smtp": {
+      "title": "Konfigurasi server email",
+      "description": "Konfigurasikan server SMTP untuk mengirim email dari klinik Anda. Setiap klinik dapat memiliki konfigurasi sendiri.",
+      "configure": "Konfigurasi",
+      "provider": "Penyedia",
+      "host": "Server",
+      "port": "Port",
+      "username": "Nama pengguna",
+      "password": "Kata sandi",
+      "passwordHint": "Kosongkan untuk mempertahankan kata sandi saat ini",
+      "useTls": "Gunakan TLS",
+      "useSsl": "Gunakan SSL",
+      "fromEmail": "Dari email",
+      "fromName": "Dari nama",
+      "security": "Keamanan",
+      "testConnection": "Uji koneksi",
+      "testConnectionTitle": "Uji konfigurasi sebelum menyimpan",
+      "testEmailPlaceholder": "Alamat email uji",
+      "test_success": "Koneksi SMTP berhasil. Email uji terkirim.",
+      "test_failed": "Kesalahan koneksi SMTP",
+      "settings_saved": "Pengaturan SMTP disimpan",
+      "consoleNote": "Dalam mode konsol, email ditampilkan di konsol server alih-alih dikirim. Berguna untuk pengembangan.",
+      "disabledNote": "Dengan email dinonaktifkan, tidak ada notifikasi email yang akan dikirim dari klinik ini.",
+      "status": {
+        "not_configured": "Belum dikonfigurasi",
+        "verified": "Terverifikasi dan berfungsi",
+        "not_verified": "Terkonfigurasi tetapi belum terverifikasi",
+        "disabled": "Email nonaktif",
+        "console": "Mode konsol (pengembangan)"
+      },
+      "errors": {
+        "fetch_failed": "Gagal memuat pengaturan SMTP",
+        "save_failed": "Gagal menyimpan pengaturan SMTP",
+        "test_failed": "Gagal menguji koneksi SMTP"
+      }
+    },
+    "onboarding": {
+      "label": "Pengiriman email",
+      "description": "Atur pengirim untuk mengirim email konfirmasi janji temu dan penawaran."
+    }
+  },
+  "invoice": {
+    "title": "Faktur",
+    "description": "Kelola faktur dan penagihan",
+    "new": "Faktur baru",
+    "edit": "Edit faktur",
+    "view": "Lihat faktur",
+    "delete": "Hapus faktur",
+    "noItems": "Tidak ada faktur",
+    "empty": "Tidak ada faktur terdaftar",
+    "emptyAction": "Buat faktur pertama",
+    "searchPlaceholder": "Cari berdasarkan nomor atau pasien...",
+    "notFound": "Faktur tidak ditemukan",
+    "draftNoNumber": "Draf",
+    "details": "Detail",
+    "invoiceNumber": "Nomor faktur",
+    "patient": "Pasien",
+    "searchPatient": "Cari pasien",
+    "searchPatientPlaceholder": "Cari berdasarkan nama...",
+    "professional": "Profesional",
+    "billingData": "Data penagihan",
+    "billingName": "Nama penagihan",
+    "taxId": "NPWP",
+    "billingEmail": "Email penagihan",
+    "billingAddress": "Alamat penagihan",
+    "billingDataComplete": "Lengkap",
+    "billingDataIncomplete": "Tidak lengkap",
+    "billingDataIncompleteHint": "Pasien kekurangan beberapa informasi penagihan.",
+    "editPatientBilling": "Edit data pasien",
+    "fromPatient": "Dari pasien",
+    "editInPatient": "Edit di profil",
+    "billingFromPatientHint": "Data ini berasal dari catatan pasien. Untuk mengubahnya, edit informasi penagihan pasien.",
+    "paymentTerms": "Ketentuan pembayaran",
+    "linkedToBudget": "Tertaut ke penawaran",
+    "selectPatient": "Pilih pasien",
+    "noBillingData": "Tidak ada data penagihan",
+    "street": "Jalan",
+    "city": "Kota",
+    "postalCode": "Kode Pos",
+    "province": "Provinsi",
+    "country": "Negara",
+    "linkedBudget": "Penawaran tertaut",
+    "creditNoteFor": "Nota kredit untuk",
+    "paymentTermDays": "Ketentuan pembayaran (hari)",
+    "dueDate": "Jatuh tempo",
+    "issueDate": "Tanggal terbit",
+    "subtotal": "Subtotal",
+    "discount": "Diskon",
+    "totalDiscount": "Total diskon",
+    "tax": "Pajak",
+    "total": "Total",
+    "paid": "Dibayar",
+    "totalPaid": "Total dibayar",
+    "balance": "Saldo",
+    "balanceDue": "Saldo jatuh tempo",
+    "overdue": "Jatuh tempo",
+    "overdueDays": "Jatuh tempo {n}h",
+    "info": {
+      "issueDate": "Tanggal terbit",
+      "dueDate": "Jatuh tempo",
+      "issuedBy": "Diterbitkan oleh",
+      "createdBy": "Dibuat oleh",
+      "createdAt": "Dibuat",
+      "budget": "Penawaran",
+      "creditNoteFor": "Nota kredit untuk"
+    },
+    "criticalBanner": {
+      "aeatRejected": {
+        "title": "AEAT menolak faktur ini",
+        "cta": "Perbaiki dan kirim ulang"
+      },
+      "billingIncomplete": {
+        "title": "Data penagihan tidak lengkap",
+        "cta": "Lengkapi data"
+      }
+    },
+    "collect": {
+      "title": "Terima faktur",
+      "submit": "Terima",
+      "noteAppliedToInvoice": "diterapkan ke faktur ini.",
+      "notePendingAfter": "Sisa saldo",
+      "noteFullySettled": "Pembayaran ini melunasi faktur sepenuhnya.",
+      "noteToInvoice": "diterapkan ke faktur ini dan",
+      "noteExcessToOnAccount": "dikreditkan ke akun pasien.",
+      "noteInvoiceSettled": "Faktur ini sudah lunas.",
+      "noteToOnAccount": "akan dikreditkan ke akun pasien."
+    },
+    "tooth": "Gigi",
+    "vat": "PPN",
+    "currency": "Mata Uang",
+    "internalNotes": "Catatan internal",
+    "internalNotesPlaceholder": "Catatan yang hanya terlihat staf...",
+    "publicNotes": "Catatan publik",
+    "publicNotesPlaceholder": "Catatan yang terlihat di faktur...",
+    "items": "Item",
+    "addItem": "Tambah item",
+    "editItem": "Edit item",
+    "selectTreatment": "Perawatan",
+    "searchCatalog": "Cari perawatan di katalog...",
+    "itemDescription": "Deskripsi",
+    "itemPrice": "Harga satuan",
+    "itemQuantity": "Jumlah",
+    "selectVatType": "Pilih tipe PPN",
+    "summary": "Ringkasan",
+    "createDraft": "Buat draf",
+    "createFromBudget": "Buat faktur dari penawaran",
+    "notes": "Catatan",
+    "status": {
+      "draft": "Draf",
+      "issued": "Diterbitkan",
+      "partial": "Dibayar sebagian",
+      "paid": "Lunas",
+      "cancelled": "Dibatalkan",
+      "voided": "Dibatalkan"
+    },
+    "actions": {
+      "issue": "Terbitkan faktur",
+      "void": "Batalkan",
+      "recordPayment": "Catat pembayaran",
+      "createCreditNote": "Buat nota kredit",
+      "downloadPdf": "Unduh PDF",
+      "previewPdf": "Pratinjau PDF",
+      "sendEmail": "Kirim via email"
+    },
+    "recordPayment": "Catat pembayaran",
+    "paymentAmount": "Jumlah",
+    "paymentMethod": "Metode pembayaran",
+    "paymentDate": "Tanggal pembayaran",
+    "paymentReference": "Referensi",
+    "paymentReferencePlaceholder": "Nomor transaksi, kwitansi...",
+    "paymentNotes": "Catatan pembayaran",
+    "paymentVoided": "Pembayaran dibatalkan",
+    "createCreditNote": "Buat nota kredit",
+    "creditNoteReason": "Alasan nota kredit",
+    "creditNoteReasonPlaceholder": "Jelaskan alasan nota kredit...",
+    "creditNoteInfo": "Nota kredit akan dibuat untuk jumlah faktur penuh.",
+    "prompts": {
+      "voidPaymentReason": "Masukkan alasan pembatalan pembayaran ini"
+    },
+    "payments": {
+      "title": "Pembayaran",
+      "record": "Catat pembayaran",
+      "void": "Batalkan pembayaran",
+      "amount": "Jumlah",
+      "method": "Metode pembayaran",
+      "date": "Tanggal",
+      "reference": "Referensi",
+      "notes": "Catatan",
+      "noPayments": "Tidak ada pembayaran tercatat",
+      "recorded": "Pembayaran dicatat",
+      "voided": "Pembayaran dibatalkan",
+      "voidReason": "Alasan pembatalan",
+      "voidReasonPlaceholder": "Alasan pembatalan pembayaran ini...",
+      "methods": {
+        "cash": "Tunai",
+        "card": "Kartu",
+        "bank_transfer": "Transfer bank",
+        "direct_debit": "Debit langsung",
+        "insurance": "Asuransi",
+        "other": "Lainnya",
+        "qris": "QRIS",
+        "gopay": "GoPay",
+        "ovo": "OVO",
+        "dana": "Dana",
+        "bca": "Transfer BCA",
+        "mandiri": "Transfer Mandiri",
+        "bni": "Transfer BNI"
+      }
+    },
+    "creditNote": {
+      "title": "Nota kredit",
+      "create": "Buat nota kredit",
+      "reason": "Alasan",
+      "reasonPlaceholder": "Alasan nota kredit...",
+      "selectItems": "Pilih item yang akan diperbaiki",
+      "fullCreditNote": "Nota kredit penuh (semua item)",
+      "partialCreditNote": "Nota kredit sebagian (item terpilih)",
+      "originalInvoice": "Faktur asli",
+      "created": "Nota kredit dibuat"
+    },
+    "history": {
+      "title": "Riwayat",
+      "noChanges": "Tidak ada perubahan tercatat",
+      "actions": {
+        "created": "Faktur dibuat",
+        "updated": "Faktur diperbarui",
+        "issued": "Faktur diterbitkan",
+        "voided": "Faktur dibatalkan",
+        "payment_recorded": "Pembayaran dicatat",
+        "payment_voided": "Pembayaran dibatalkan",
+        "credit_note_created": "Nota kredit dibuat"
+      }
+    },
+    "fromBudget": "Buat faktur dari penawaran",
+    "selectItems": "Pilih item untuk difakturkan",
+    "selectItemsHint": "Pilih item penawaran yang ingin difakturkan",
+    "availableQuantity": "Tersedia",
+    "quantityToInvoice": "Jml difakturkan",
+    "alreadyInvoiced": "Sudah difakturkan",
+    "remaining": "Sisa",
+    "noItemsAvailable": "Tidak ada item yang tersedia untuk difakturkan",
+    "allItemsInvoiced": "Semua item telah difakturkan",
+    "series": {
+      "title": "Seri faktur",
+      "prefix": "Awalan",
+      "type": "Tipe",
+      "currentNumber": "Nomor saat ini",
+      "resetYearly": "Reset tahunan",
+      "default": "Bawaan",
+      "active": "Aktif",
+      "invoice": "Faktur",
+      "credit_note": "Nota kredit"
+    },
+    "filters": {
+      "allStatuses": "Status",
+      "overdueOnly": "Jatuh tempo",
+      "dateFrom": "Dari",
+      "dateTo": "Ke"
+    },
+    "sortFields": {
+      "created": "Dibuat",
+      "issueDate": "Tanggal terbit",
+      "dueDate": "Jatuh tempo",
+      "total": "Total"
+    },
+    "overdueByDays": "Jatuh tempo {days}h",
+    "pdf": {
+      "generating": "Membuat PDF...",
+      "downloadError": "Gagal mengunduh PDF"
+    },
+    "reports": {
+      "title": "Laporan penagihan",
+      "summary": "Ringkasan",
+      "overdue": "Jatuh tempo",
+      "overdueInvoices": "Faktur jatuh tempo",
+      "byPaymentMethod": "Per metode pembayaran",
+      "byProfessional": "Per profesional",
+      "vatSummary": "Ringkasan PPN",
+      "gaps": "Celah penomoran",
+      "period": "Periode",
+      "from": "Dari",
+      "to": "Ke",
+      "refresh": "Muat ulang",
+      "totalInvoiced": "Total difakturkan",
+      "totalCollected": "Total diterima",
+      "totalPaid": "Total dibayar",
+      "totalPending": "Total tertunda",
+      "pending": "Saldo beredar",
+      "invoices": "faktur",
+      "paid": "dibayar",
+      "payments": "pembayaran",
+      "noGaps": "Tidak ada celah penomoran",
+      "gapsFound": "Ditemukan {count} celah penomoran",
+      "gapsDetected": "Celah terdeteksi dalam penomoran",
+      "missingNumbers": "Nomor yang hilang:",
+      "noData": "Tidak ada data untuk periode yang dipilih",
+      "noOverdue": "Tidak ada faktur jatuh tempo",
+      "daysOverdue": "hari jatuh tempo",
+      "vatType": "Tipe PPN",
+      "base": "Dasar",
+      "tax": "Pajak",
+      "thisMonth": "Bulan ini",
+      "thisQuarter": "Kuartal ini",
+      "thisYear": "Tahun ini",
+      "lastMonth": "Bulan lalu",
+      "lastQuarter": "Kuartal lalu",
+      "lastYear": "Tahun lalu"
+    },
+    "confirmations": {
+      "issue": "Terbitkan faktur?",
+      "issueDescription": "Setelah diterbitkan, faktur tidak dapat diedit. Hanya pembayaran yang dapat dicatat atau nota kredit dibuat.",
+      "void": "Batalkan faktur?",
+      "voidDescription": "Tindakan ini tidak dapat dibatalkan.",
+      "delete": "Hapus faktur?",
+      "deleteDescription": "Tindakan ini tidak dapat dibatalkan."
+    },
+    "messages": {
+      "created": "Faktur dibuat",
+      "updated": "Faktur diperbarui",
+      "deleted": "Faktur dihapus",
+      "issued": "Faktur diterbitkan",
+      "voided": "Faktur dibatalkan",
+      "itemAdded": "Item ditambahkan",
+      "itemUpdated": "Item diperbarui",
+      "sentByEmail": "Faktur terkirim via email",
+      "sentManually": "Faktur ditandai terkirim"
+    },
+    "send": {
+      "title": "Kirim faktur",
+      "description": "Anda dapat mengirim faktur via email atau menandainya sebagai terkirim manual (dicetak atau diserahkan langsung).",
+      "sendByEmail": "Kirim via email",
+      "willSendTo": "Akan dikirim ke",
+      "noPatientEmail": "Pasien tidak memiliki alamat email",
+      "customMessage": "Pesan khusus (opsional)",
+      "customMessagePlaceholder": "Tambahkan pesan untuk pasien...",
+      "manualNote": "Faktur akan ditandai terkirim tanpa mengirim email.",
+      "sendEmail": "Kirim email",
+      "markAsSent": "Tandai terkirim"
+    },
+    "errors": {
+      "load": "Gagal memuat faktur",
+      "create": "Gagal membuat faktur",
+      "update": "Gagal memperbarui faktur",
+      "delete": "Gagal menghapus faktur",
+      "issue": "Gagal menerbitkan faktur",
+      "void": "Gagal membatalkan faktur",
+      "recordPayment": "Gagal mencatat pembayaran",
+      "voidPayment": "Gagal membatalkan pembayaran",
+      "createCreditNote": "Gagal membuat nota kredit",
+      "send": "Gagal mengirim faktur",
+      "creditNoteReasonRequired": "Alasan nota kredit diperlukan",
+      "notFound": "Faktur tidak ditemukan",
+      "onlyDraft": "Hanya faktur draf yang dapat diedit",
+      "canOnlyDeleteDraft": "Hanya faktur draf yang dapat dihapus",
+      "patientRequired": "Pasien diperlukan",
+      "itemsRequired": "Setidaknya satu item diperlukan",
+      "itemRequired": "Deskripsi dan harga diperlukan",
+      "selectCatalogItem": "Silakan pilih perawatan dari katalog",
+      "cannotEdit": "Hanya faktur draf yang dapat diedit"
+    },
+    "newItemsPending": "Item baru menunggu disimpan",
+    "linkedPlan": "Rencana perawatan"
+  },
+  "reports": {
+    "title": "Laporan",
+    "subtitle": "Analitik dan statistik klinik",
+    "viewReports": "Lihat laporan",
+    "noAccess": "Anda tidak memiliki akses ke laporan mana pun",
+    "dashboard": {
+      "title": "Dasbor",
+      "subtitle": "Klinik Anda sekilas",
+      "period": "Periode",
+      "snapshotBadge": "Hari ini",
+      "snapshotTooltip": "Tidak terpengaruh oleh rentang tanggal",
+      "vsPrev": "vs. periode sebelumnya",
+      "empty": {
+        "noData": "Tidak ada data dalam rentang ini"
+      },
+      "drilldown": {
+        "title": "Rincian",
+        "payments": "Pembayaran"
+      },
+      "kpi": {
+        "cashCollected": "Tunai diterima",
+        "cashCollectedHint": "{count} pembayaran",
+        "patientAdvance": "Kredit pasien",
+        "patientAdvanceHint": "Uang muka belum dialokasikan",
+        "production": "Produksi",
+        "productionHint": "{count} perawatan",
+        "byMethod": "Per metode pembayaran",
+        "methodCount": "{count} pembayaran",
+        "total": "Total",
+        "newPatients": "Pasien baru",
+        "newPatientsHint": "{rate}% dari total janji temu",
+        "appointmentFunnel": "Tingkat tidak hadir",
+        "funnelHint": "{completed}% selesai",
+        "avgCollectedTicket": "Rata-rata tagihan diterima",
+        "avgTicketHint": "Atas {count} pembayaran",
+        "aging": "Piutang menua"
+      },
+      "charts": {
+        "cashOverTime": "Penerimaan dari waktu ke waktu",
+        "productionByDoctor": "Produksi per dokter",
+        "refunded": "Pengembalian dana"
+      },
+      "production": {
+        "unassigned": "Belum ditugaskan",
+        "others": "Lainnya",
+        "treatmentCount": "{count} perawatan"
+      },
+      "aging": {
+        "bucket0_30": "0-30 hari",
+        "bucket31_60": "31-60 hari",
+        "bucket61_90": "61-90 hari",
+        "bucket90plus": "90+ hari",
+        "empty": "Tidak ada piutang beredar",
+        "patientCount": "{count} pasien"
+      }
+    },
+    "billing": {
+      "title": "Penagihan",
+      "description": "Pendapatan, pembayaran, PPN, dan faktur jatuh tempo",
+      "summary": "Ringkasan",
+      "overdue": "Jatuh tempo",
+      "overdueInvoices": "Faktur jatuh tempo",
+      "byPaymentMethod": "Per metode pembayaran",
+      "byProfessional": "Per profesional",
+      "vatSummary": "Ringkasan PPN",
+      "gaps": "Celah penomoran",
+      "period": "Periode",
+      "from": "Dari",
+      "to": "Ke",
+      "refresh": "Muat ulang",
+      "totalInvoiced": "Total difakturkan",
+      "totalCollected": "Total diterima",
+      "pending": "Saldo beredar",
+      "invoices": "faktur",
+      "paid": "dibayar",
+      "payments": "pembayaran",
+      "gapsDetected": "Celah terdeteksi dalam penomoran",
+      "missingNumbers": "Nomor yang hilang:",
+      "noData": "Tidak ada data untuk periode yang dipilih",
+      "noOverdue": "Tidak ada faktur jatuh tempo",
+      "daysOverdue": "hari jatuh tempo",
+      "vatType": "Tipe PPN",
+      "base": "Dasar",
+      "tax": "Pajak",
+      "thisMonth": "Bulan ini",
+      "thisQuarter": "Kuartal ini",
+      "thisYear": "Tahun ini",
+      "lastMonth": "Bulan lalu",
+      "lastQuarter": "Kuartal lalu",
+      "lastYear": "Tahun lalu"
+    },
+    "budgets": {
+      "title": "Penawaran",
+      "description": "Tingkat penerimaan, analisis profesional, dan perawatan",
+      "comingSoonDescription": "Laporan penawaran akan segera tersedia. Anda akan dapat menganalisis tingkat penerimaan, penawaran per profesional, dan perawatan paling banyak diminta.",
+      "features": {
+        "acceptanceRate": "Tingkat penerimaan",
+        "acceptanceRateDesc": "Persentase penawaran diterima vs ditolak",
+        "byProfessional": "Per profesional",
+        "byProfessionalDesc": "Penawaran dibuat oleh setiap profesional",
+        "byTreatment": "Per perawatan",
+        "byTreatmentDesc": "Perawatan paling banyak ditawarkan",
+        "averageValue": "Nilai rata-rata",
+        "averageValueDesc": "Jumlah penawaran rata-rata"
+      },
+      "labels": {
+        "totalCreated": "Total dibuat",
+        "accepted": "Diterima",
+        "rejected": "ditolak",
+        "pending": "tertunda",
+        "completed": "Selesai",
+        "acceptanceRate": "Tingkat penerimaan",
+        "averageValue": "Nilai rata-rata",
+        "byStatus": "Per status",
+        "topTreatments": "Perawatan paling banyak ditawarkan",
+        "treatment": "Perawatan",
+        "occurrences": "Kejadian",
+        "quantity": "Jumlah"
+      }
+    },
+    "scheduling": {
+      "title": "Jadwal",
+      "description": "Kunjungan pertama, jam kerja, dan okupansi",
+      "comingSoonDescription": "Laporan jadwal akan segera tersedia. Anda akan dapat menganalisis kunjungan pertama, jam per profesional, dan tingkat pembatalan.",
+      "features": {
+        "firstVisits": "Kunjungan pertama",
+        "firstVisitsDesc": "Pasien baru per periode",
+        "hoursWorked": "Jam kerja",
+        "hoursWorkedDesc": "Waktu per profesional",
+        "cancellations": "Pembatalan",
+        "cancellationsDesc": "Tingkat pembatalan dan tidak hadir",
+        "cabinetUtilization": "Okupansi ruang",
+        "cabinetUtilizationDesc": "Penggunaan setiap ruang"
+      },
+      "labels": {
+        "totalAppointments": "Total janji temu",
+        "completionRate": "Tingkat penyelesaian",
+        "completed": "selesai",
+        "cancellationRate": "Tingkat pembatalan",
+        "cancelled": "dibatalkan",
+        "noShowRate": "Tingkat tidak hadir",
+        "noShows": "tidak hadir",
+        "newPatients": "pasien baru",
+        "firstVisitRate": "Tingkat kunjungan pertama",
+        "ofTotalAppointments": "dari total janji temu",
+        "appointmentsInPeriod": "Janji temu dalam periode",
+        "excludingCancelled": "tidak termasuk dibatalkan",
+        "appointments": "janji temu",
+        "byDayOfWeek": "Per hari dalam seminggu",
+        "statusBreakdown": "Rincian status",
+        "pending": "tertunda"
+      },
+      "analytics": {
+        "funnel": "Corong status",
+        "funnelDesc": "Distribusi janji temu berdasarkan status dalam periode",
+        "waitingTimes": "Waktu tunggu",
+        "waitingTimesDesc": "Menit antara kedatangan pasien dan masuk ke kursi",
+        "punctuality": "Ketepatan waktu pasien",
+        "punctualityDesc": "Selisih antara waktu terjadwal dan kedatangan aktual",
+        "durationVariance": "Durasi rencana vs aktual",
+        "durationVarianceDesc": "Perbandingan antara durasi rencana dan waktu kursi aktual",
+        "samples": "Sampel",
+        "average": "Rata-rata",
+        "median": "Median",
+        "p90": "P90",
+        "avgDelta": "Rata-rata delta",
+        "medianDelta": "Median delta",
+        "onTime": "% tepat waktu",
+        "avgOverrun": "Rata-rata kelebihan",
+        "overrunCount": "Jumlah kelebihan",
+        "underCount": "Jumlah kekurangan",
+        "completionRate": "Selesai",
+        "noShowRate": "Tidak hadir",
+        "cancellationRate": "Pembatalan",
+        "punctuality_early": "Awal (<-5)",
+        "punctuality_on_time": "Tepat waktu (±5)",
+        "punctuality_late_short": "Terlambat (5-15)",
+        "punctuality_late_long": "Terlambat (>15)"
+      },
+      "tabs": {
+        "overview": "Ikhtisar",
+        "activity": "Aktivitas",
+        "quality": "Kualitas"
+      },
+      "hero": {
+        "inPeriod": "dalam periode"
+      },
+      "filters": {
+        "cabinet": "Ruang",
+        "professional": "Profesional",
+        "custom": "Rentang kustom",
+        "all": "Semua",
+        "clear": "Bersihkan filter"
+      },
+      "empty": {
+        "title": "Tidak ada data untuk periode ini",
+        "desc": "Coba rentang tanggal yang lebih luas atau hapus filter."
+      }
+    }
+  },
+  "invoiceSeries": {
+    "title": "Seri Faktur",
+    "description": "Konfigurasi awalan dan penomoran faktur",
+    "regularInvoices": "Faktur",
+    "creditNotes": "Nota Kredit",
+    "new": "Seri baru",
+    "newTitle": "Seri {type} baru",
+    "editTitle": "Edit seri",
+    "prefix": "Awalan",
+    "prefixHint": "mis. INV, CR. Tahun akan ditambahkan otomatis.",
+    "descriptionLabel": "Deskripsi",
+    "descriptionPlaceholder": "Deskripsi seri opsional...",
+    "nextNumber": "Nomor berikutnya",
+    "preview": "Pratinjau",
+    "resetYearly": "Reset tahunan",
+    "resetYearlyLabel": "Reset penomoran setiap tahun",
+    "setAsDefault": "Tetapkan sebagai bawaan",
+    "activeLabel": "Seri aktif",
+    "showInactive": "Tampilkan yang tidak aktif",
+    "noItems": "Tidak ada seri dikonfigurasi",
+    "resetCounter": "Reset penghitung",
+    "currentNumber": "Nomor saat ini",
+    "seriesPrefix": "Awalan seri",
+    "newNumber": "Nomor baru",
+    "newNumberHint": "Nomor harus lebih besar dari nomor tertinggi yang ada dalam seri ini.",
+    "resetWarningTitle": "Peringatan",
+    "resetWarning": "Tindakan ini akan dicatat dalam log audit dan tidak dapat dibatalkan.",
+    "confirmReset": "Reset penghitung",
+    "created": "Seri berhasil dibuat",
+    "saved": "Seri berhasil diperbarui",
+    "resetSuccess": "Penghitung berhasil direset",
+    "onboarding": {
+      "label": "Seri faktur",
+      "description": "Diperlukan untuk menerbitkan faktur pertama (mis. FAC-2026-0001)."
+    }
+  },
+  "documents": {
+    "title": "Dokumen",
+    "add": "Tambah",
+    "edit": "Edit Dokumen",
+    "upload": "Unggah Dokumen",
+    "uploading": "Mengunggah...",
+    "empty": "Belum ada dokumen",
+    "uploadFirst": "Unggah dokumen pertama",
+    "types": {
+      "consent": "Persetujuan",
+      "id_scan": "Dokumen Identitas",
+      "insurance": "Asuransi",
+      "report": "Laporan",
+      "referral": "Rujukan",
+      "other": "Lainnya"
+    },
+    "fields": {
+      "type": "Tipe",
+      "title": "Judul",
+      "titlePlaceholder": "Judul dokumen",
+      "description": "Deskripsi",
+      "descriptionPlaceholder": "Catatan opsional"
+    },
+    "dropzone": {
+      "hint": "Seret dan lepas file di sini, atau klik untuk memilih"
+    },
+    "filter": {
+      "allTypes": "Semua tipe"
+    },
+    "deleteConfirm": {
+      "title": "Hapus Dokumen",
+      "message": "Anda yakin ingin menghapus dokumen ini? Tindakan ini tidak dapat dibatalkan."
+    },
+    "fetchError": "Gagal memuat dokumen",
+    "uploadSuccess": "Dokumen berhasil diunggah",
+    "uploadError": "Gagal mengunggah dokumen",
+    "downloadError": "Gagal mengunduh dokumen",
+    "deleteSuccess": "Dokumen dihapus",
+    "deleteError": "Gagal menghapus dokumen",
+    "updateSuccess": "Dokumen diperbarui",
+    "updateError": "Gagal memperbarui dokumen",
+    "viewer": {
+      "loading": "Memuat dokumen...",
+      "error": "Tidak dapat memuat dokumen",
+      "downloadInstead": "Unduh sebagai gantinya",
+      "unsupported": "Pratinjau tidak tersedia untuk tipe file ini",
+      "zoomOut": "Perkecil",
+      "zoomIn": "Perbesar",
+      "resetZoom": "Reset ke 100%",
+      "zoomHint": "Ctrl + gulir untuk zoom"
+    },
+    "typeDesc": {
+      "consent": "Dokumen ditandatangani",
+      "id_scan": "KTP / paspor",
+      "insurance": "Polis atau kartu",
+      "report": "Laporan klinis",
+      "referral": "Surat rujukan",
+      "other": "Tidak diklasifikasikan"
+    },
+    "errors": {
+      "mime": "Tipe file tidak diizinkan. Hanya PDF, JPG, atau PNG.",
+      "size": "File melebihi 10 MB."
+    },
+    "pdfPreviewHint": "Pratinjau tersedia setelah unggah",
+    "uploadHelp": "Klasifikasikan file agar muncul di kategori yang benar."
+  },
+  "photoGallery": {
+    "title": "Galeri pasien",
+    "add": "Tambah foto",
+    "empty": "Belum ada foto",
+    "uploadFirst": "Unggah yang pertama",
+    "showingOf": "Menampilkan {count} dari {total}",
+    "upload": "Unggah foto",
+    "uploadHelp": "Klasifikasikan agar muncul di kategori yang benar",
+    "dropHere": "Seret foto ke sini atau klik",
+    "category": "Tipe",
+    "subtype": "Tampilan",
+    "titlePlaceholder": "Frontal intraoral — 02/05",
+    "capturedAt": "Tanggal",
+    "exifHint": "Otomatis dari EXIF",
+    "cat": {
+      "all": "Semua",
+      "intraoral": "Intraoral",
+      "extraoral": "Ekstraoral",
+      "xray": "Rontgen",
+      "clinical": "Sebelum/Sesudah",
+      "other": "Lainnya"
+    },
+    "catDesc": {
+      "intraoral": "Di dalam mulut",
+      "extraoral": "Wajah dan profil",
+      "xray": "Gambar radiologi",
+      "clinical": "Perbandingan perawatan",
+      "other": "Tidak diklasifikasikan"
+    },
+    "sub": {
+      "frontal": "Frontal",
+      "lateral_left": "Lateral kiri",
+      "lateral_right": "Lateral kanan",
+      "occlusal_upper": "Oklusal atas",
+      "occlusal_lower": "Oklusal bawah",
+      "palatal": "Palatal",
+      "lingual": "Lingual",
+      "smile": "Senyum",
+      "rest": "Istirahat",
+      "frontal_face": "Frontal",
+      "profile_left": "Profil kiri",
+      "profile_right": "Profil kanan",
+      "three_quarter_left": "3/4 kiri",
+      "three_quarter_right": "3/4 kanan",
+      "panoramic": "Panoramik",
+      "periapical": "Periapikal",
+      "bitewing": "Bitewing",
+      "ceph_lat": "Sefalometri lateral",
+      "ceph_pa": "Sefalometri PA",
+      "cbct": "CBCT",
+      "occlusal_xray": "Rontgen oklusal",
+      "before": "Sebelum",
+      "after": "Sesudah",
+      "progress": "Kemajuan",
+      "reference": "Referensi",
+      "portrait": "Potret",
+      "document_scan": "Dokumen",
+      "model_photo": "Model"
+    },
+    "compare": {
+      "before": "Sebelum",
+      "after": "Sesudah"
+    },
+    "pair": {
+      "pickHint": "Pilih foto untuk dipasangkan:",
+      "noCandidates": "Tidak ada foto tersedia. Unggah yang lain terlebih dahulu.",
+      "paired": "Dipasangkan",
+      "exitCompare": "Keluar perbandingan",
+      "compare": "Bandingkan",
+      "unpair": "Hapus",
+      "pair": "Pasangkan sebelum/sesudah"
+    }
+  },
+  "help": {
+    "label": "Bantuan",
+    "openHelp": "Buka bantuan",
+    "drawerTitle": "Bantuan untuk halaman ini",
+    "unavailable": "Belum ada bantuan kontekstual untuk halaman ini.",
+    "openFullManual": "Buka manual lengkap"
+  },
+  "charts": {
+    "trend": {
+      "ariaLabel": "Tren atas {count} titik"
+    },
+    "donut": {
+      "ariaLabel": "Diagram donat, {count} segmen"
+    }
+  }
+}

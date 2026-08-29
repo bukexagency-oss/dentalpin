@@ -1,0 +1,11 @@
+{
+  "notifications": {
+    "conversation": {
+      "title": "Percakapan WhatsApp",
+      "empty": "Belum ada pesan.",
+      "placeholder": "Ketik balasan…",
+      "replyError": "Balasan tidak dapat dikirim",
+      "windowClosed": "Jendela 24 jam telah ditutup. Gunakan template untuk membuka kembali percakapan."
+    }
+  }
+}
