@@ -1,0 +1,38 @@
+{
+  "whatsapp_kapso": {
+    "settings": {
+      "title": "WhatsApp (Kapso)",
+      "description": "Hubungkan nomor WhatsApp klinik via Kapso untuk kirim-terima pesan."
+    },
+    "connection": "Koneksi",
+    "verified": "Terverifikasi",
+    "notVerified": "Belum terverifikasi",
+    "apiKey": "API key Kapso",
+    "phoneNumberId": "ID nomor telepon",
+    "businessAccountId": "ID akun bisnis",
+    "businessAccountHelp": "Diperlukan untuk sinkronisasi template yang disetujui.",
+    "displayPhone": "Nomor tampilan",
+    "webhookSecret": "Rahasia webhook",
+    "secretStored": "Tersimpan. Kosongkan agar tetap tidak berubah.",
+    "webhook": "Webhook",
+    "webhookHelp": "Tempel URL ini ke pengaturan webhook Kapso untuk menerima status dan balasan.",
+    "copy": "Salin",
+    "copied": "URL disalin",
+    "templates": "Templat",
+    "sync": "Sinkronisasi",
+    "noTemplates": "Belum ada template disetujui. Sinkronkan untuk mengambil dari Kapso.",
+    "notificationType": "Jenis notifikasi",
+    "template": "Templat",
+    "map": "Peta",
+    "mapped": "Template dipetakan",
+    "mapError": "Gagal memetakan template",
+    "test": "Kirim uji",
+    "sendTest": "Kirim uji",
+    "testOk": "Pesan uji terkirim",
+    "testFail": "Gagal mengirim uji",
+    "saved": "Pengaturan disimpan",
+    "saveError": "Gagal menyimpan",
+    "synced": "Tersinkronkan {n} template",
+    "syncError": "Gagal sinkronisasi"
+  }
+}

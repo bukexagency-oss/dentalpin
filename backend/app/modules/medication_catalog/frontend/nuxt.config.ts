@@ -8,7 +8,8 @@ export default defineNuxtConfig({
       { code: 'fr', file: 'fr.json' },
       { code: 'pt', file: 'pt.json' },
       { code: 'hu', file: 'hu.json' },
-      { code: 'ta', file: 'ta.json' }
+      { code: 'ta', file: 'ta.json' },
+      { code: 'id', file: 'id.json' }
     ],
     langDir: 'locales'
   }

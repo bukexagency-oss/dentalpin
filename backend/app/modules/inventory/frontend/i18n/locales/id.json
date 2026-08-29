@@ -1,0 +1,35 @@
+{
+  "inventory": {
+    "title": "Inventaris",
+    "add": "Tambah item",
+    "edit": "Edit item",
+    "item": "Barang",
+    "category": "Kategori",
+    "unit": "Satuan",
+    "stock": "Stok",
+    "minimum": "Minimum",
+    "notes": "Catatan",
+    "status": "Status",
+    "ok": "OK",
+    "low": "Ringan",
+    "filterByCategory": "Filter berdasarkan kategori",
+    "lowStockOnly": "Stok rendah saja",
+    "increment": "Tambah stok",
+    "decrement": "Kurangi stok",
+    "delete": "Hapus",
+    "deleteTitle": "Hapus item",
+    "deleteMessage": "Hapus item stok ini? Tidak bisa dibatalkan.",
+    "allCategories": "Semua kategori",
+    "adjustBy": "Sesuaikan…",
+    "apply": "Terapkan",
+    "categories": {
+      "consumables": "Bahan habis pakai",
+      "equipment": "Peralatan",
+      "office": "Perkantoran",
+      "other": "Lainnya"
+    }
+  },
+  "nav": {
+    "inventory": "Inventaris"
+  }
+}

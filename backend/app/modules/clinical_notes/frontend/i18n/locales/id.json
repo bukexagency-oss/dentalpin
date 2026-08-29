@@ -1,0 +1,124 @@
+{
+  "clinicalNotes": {
+    "types": {
+      "administrative": "Administratif",
+      "diagnosis": "Diagnosis",
+      "treatment": "Perawatan",
+      "treatment_plan": "Rencana",
+      "appointment_clinical": "Klinis",
+      "appointment_administrative": "Administratif"
+    },
+    "appointment": {
+      "addByType": "Tambah catatan {label}",
+      "empty": "Belum ada catatan pada janji temu ini. Gunakan tombol di atas untuk menambah."
+    },
+    "feed": {
+      "filterLabel": "Filter",
+      "filterAll": "Semua",
+      "filterClear": "Bersihkan filter",
+      "filterStatus": "Menampilkan {n} dari {total} tipe",
+      "addAdministrative": "Catatan administratif",
+      "loadMore": "Muat lebih banyak",
+      "empty": {
+        "title": "Belum ada catatan",
+        "help": "Catatan administratif, diagnosis, dan perawatan akan muncul di sini secara kronologis."
+      }
+    },
+    "diagnosisSidebar": {
+      "title": "Catatan",
+      "addNote": "Tambah catatan",
+      "empty": "Belum ada catatan di kategori ini."
+    },
+    "treatmentButton": {
+      "title": "Catatan perawatan",
+      "add": "Tambah catatan",
+      "empty": "Belum ada catatan pada perawatan ini.",
+      "aria": "Catatan perawatan ({n})"
+    },
+    "timeline": {
+      "addPlanNote": "Catatan rencana",
+      "empty": "Belum ada catatan.",
+      "emptyForFilter": "Tidak ada catatan yang cocok dengan filter.",
+      "source": {
+        "plan": "Rencana",
+        "treatment": "Perawatan",
+        "visit": "Kunjungan"
+      }
+    },
+    "byPlan": {
+      "empty": "Pasien ini belum punya catatan klinis yang tertaut ke rencana.",
+      "planNotesLabel": "Catatan rencana",
+      "unknownTreatment": "Perawatan",
+      "noNotesForTreatment": "Belum ada catatan pada perawatan ini."
+    },
+    "composer": {
+      "placeholder": "Tulis catatan…",
+      "templates": "Template",
+      "attach": "Lampirkan foto atau dokumen",
+      "bindToTooth": "Lampirkan ke gigi {n}"
+    },
+    "linked": {
+      "tooth": "Gigi {n}",
+      "treatment": "Perawatan",
+      "treatmentOnTooth": "{label} (gigi {n})",
+      "plan": "Rencana",
+      "planNamed": "Rencana: {label}"
+    },
+    "actions": {
+      "showMore": "Tampilkan lebih banyak",
+      "showLess": "Tampilkan lebih sedikit",
+      "openLinked": "Buka konteks"
+    },
+    "author": {
+      "unknown": "Penulis tidak dikenal"
+    },
+    "time": {
+      "justNow": "baru saja",
+      "minutesAgo": "{n} mnt lalu",
+      "hoursAgo": "{n} jam lalu",
+      "daysAgo": "{n} hari lalu"
+    },
+    "toasts": {
+      "saved": "Catatan tersimpan",
+      "deleted": "Catatan dihapus",
+      "saveFailed": "Gagal menyimpan catatan"
+    },
+    "confirms": {
+      "delete": "Hapus catatan ini? Pemulihan memerlukan bantuan dukungan."
+    },
+    "templates": {
+      "endo": {
+        "singleVisit": "Endodontik (satu kunjungan)",
+        "multiVisit": "Endodontik (beberapa kunjungan)"
+      },
+      "perio": {
+        "scaling": "Scaling / RAR"
+      },
+      "implant": {
+        "placement": "Pemasangan implan"
+      },
+      "diagnosis": {
+        "caries": "Karies",
+        "periapical": "Lesi periapikal"
+      },
+      "admin": {
+        "phoneCall": "Telepon pasien",
+        "reschedule": "Permintaan reschedule"
+      },
+      "general": {
+        "followUp": "Tindak lanjut umum"
+      }
+    },
+    "templateBodies": {
+      "endo_single_visit": "Diagnosis: \nAnestesi: \nSaluran ditemukan: \nPanjang kerja: \nObturasi: \nPasca operasi: ",
+      "endo_multi_visit": "Sesi: \nSaluran dikerjakan: \nMedikasi intrakanal: \nJanji temu berikutnya: ",
+      "perio_scaling": "Kuadran dirawat: \nKedalaman probing: \nPerdarahan saat probing: \nInstruksi hygiene: ",
+      "implant_placement": "Implan (merk / diameter / panjang): \nTorsi akhir (Ncm): \nStabilitas primer: \nGraft: \nPasca operasi: ",
+      "diagnosis_caries": "Temuan: karies \nKedalaman: \nGejala: \nTes vitalitas: \nPerawatan disarankan: ",
+      "diagnosis_periapical": "Lesi periapikal \nGigi: \nRontgen: \nTes (perkusi, palpasi): \nDiagnosis: ",
+      "admin_phone_call": "Telepon pasien: \nAlasan: \nTindakan diambil: \nTindak lanjut: ",
+      "admin_reschedule": "Permintaan reschedule: \nTanggal saat ini: \nUsulan baru: ",
+      "general_follow_up": "Temuan: \nProsedur dilakukan: \nInstruksi pasien: "
+    }
+  }
+}

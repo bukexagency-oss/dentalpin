@@ -1,0 +1,129 @@
+{
+  "recalls": {
+    "title": "Pengingat",
+    "callList": "Daftar panggilan",
+    "noRecallsThisMonth": "Tidak ada pengingat bulan ini",
+    "filters": {
+      "month": "Bulan",
+      "reason": "Alasan",
+      "professional": "Dokter",
+      "status": "Status",
+      "priority": "Prioritas",
+      "overdue": "Tampilkan lewat jatuh tempo",
+      "any": "Semua",
+      "thisMonth": "Bulan ini"
+    },
+    "counters": {
+      "due_this_week": "Jatuh tempo minggu ini",
+      "due_this_month": "Jatuh tempo bulan ini",
+      "overdue": "Terlewat",
+      "scheduled_this_month": "Terjadwal bulan ini",
+      "completed_this_month": "Selesai bulan ini",
+      "conversion_rate": "Konversi"
+    },
+    "setRecall": "Atur pengingat",
+    "setRecallShort": "Pengingat",
+    "history": "Riwayat pengingat",
+    "viewAll": "Lihat semua",
+    "pillNext": "Pengingat berikut: {month} · {reason}",
+    "pillNone": "Tidak ada pengingat aktif",
+    "reasons": {
+      "hygiene": "Hygiene",
+      "checkup": "Check-up",
+      "ortho_review": "Kontrol ortodonti",
+      "implant_review": "Kontrol implan",
+      "post_op": "Pasca operasi",
+      "treatment_followup": "Tindak lanjut perawatan",
+      "other": "Lainnya"
+    },
+    "priority": {
+      "low": "Rendah",
+      "normal": "Normal",
+      "high": "Tinggi"
+    },
+    "status": {
+      "pending": "Menunggu",
+      "contacted_no_answer": "Tidak dijawab",
+      "contacted_scheduled": "Terjadwal",
+      "contacted_declined": "Ditolak",
+      "done": "Selesai",
+      "cancelled": "Dibatalkan",
+      "needs_review": "Perlu ditinjau"
+    },
+    "actions": {
+      "call": "Telepon",
+      "logAttempt": "Catat percobaan",
+      "noAnswer": "Tidak dijawab",
+      "book": "Buat janji temu",
+      "snooze": "Tunda",
+      "cancel": "Batal",
+      "markDone": "Tandai selesai",
+      "exportCsv": "Ekspor CSV",
+      "save": "Simpan"
+    },
+    "closeoutPrompt": {
+      "title": "Atur pengingat?",
+      "subtitle": "Pasien baru selesai — kapan harus dihubungi kembali?",
+      "skip": "Nanti"
+    },
+    "modal": {
+      "title": "Atur pengingat",
+      "subtitle": "Tandai pasien untuk dihubungi kembali",
+      "patient": "Pasien",
+      "reason": "Alasan",
+      "when": "Kapan",
+      "month": "Bulan target",
+      "targetMonth": "Bulan target",
+      "preciseDate": "Pilih tanggal spesifik",
+      "priority": "Prioritas",
+      "assigned": "Dokter penanggung jawab",
+      "note": "Catatan internal",
+      "notePlaceholder": "Detail opsional (mis. 'Cek tambalan pada 47')",
+      "optional": "opsional",
+      "duplicateGuard": "Pengingat untuk pasien dan alasan ini sudah ada. Akan diperbarui."
+    },
+    "doNotContact": {
+      "cannotSchedule": "Pasien ini ditandai 'Jangan hubungi'. Pengingat tidak bisa dijadwalkan. Ubah preferensi demografi untuk mengaktifkan kembali."
+    },
+    "activeRecallHint": "Pengingat aktif · ketuk untuk kelola",
+    "logAttempt": {
+      "channel": "Saluran",
+      "outcome": "Hasil",
+      "note": "Catatan",
+      "submit": "Catat percobaan"
+    },
+    "channel": {
+      "phone": "Telepon",
+      "whatsapp": "WhatsApp",
+      "sms": "SMS",
+      "email": "Email"
+    },
+    "outcome": {
+      "no_answer": "Tidak dijawab",
+      "voicemail": "Pesan suara",
+      "scheduled": "Janji temu dijadwalkan",
+      "declined": "Ditolak",
+      "wrong_number": "Nomor salah"
+    },
+    "snoozePrompt": "Tunda berapa bulan?",
+    "settings": {
+      "title": "Pengingat",
+      "description": "Interval default + pemetaan kategori perawatan",
+      "intervals": "Interval default (bulan)",
+      "categoryMap": "Perawatan → alasan",
+      "categoryKeyPlaceholder": "kunci kategori katalog",
+      "autoSuggest": "Sarankan pengingat saat perawatan selesai",
+      "autoLink": "Tautkan janji temu terjadwal ke pengingat",
+      "saved": "Pengaturan tersimpan"
+    },
+    "dashboard": {
+      "title": "Pengingat"
+    },
+    "suggestion": {
+      "title": "Pengingat disarankan",
+      "body": "Setelah perawatan ini kami sarankan pengingat dalam {month} ({reason}).",
+      "create": "Buat pengingat",
+      "dismiss": "Tutup"
+    }
+  }
+}

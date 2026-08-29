@@ -37,7 +37,7 @@ _ACTOR_KEYS = (
     "actor_id",
     "created_by",
     "changed_by",  # agenda status transitions
-    "performed_by",  # odontogram.treatment.performed
+    "performed_by",  # treatment performed
     "completed_by",  # treatment_plan.item_session_completed
     "refunded_by",  # payment.refunded
     "cancelled_by",  # budget.cancelled / budget.renegotiated

@@ -12,6 +12,7 @@ from __future__ import annotations
 from collections.abc import AsyncIterator
 from uuid import UUID
 
+from sqlalchemy import text as sql_text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.agents.context import AgentContext, AgentMode
@@ -62,6 +63,42 @@ _PLAYBOOKS = (
 )
 
 SYSTEM_PROMPT = _BASE_PROMPT + _PLAYBOOKS
+
+# Language instruction appended to SYSTEM_PROMPT based on the clinic's
+# ``communication_language`` setting (clinics.settings JSONB). Keeps the
+# copilot replying in the clinic's configured language instead of the
+# hard-coded Spanish baseline (OTO-439).
+_LOCALE_LANGUAGE = {
+    "id": "Bahasa Indonesia (Indonesian)",
+    "en": "English",
+    "es": "español (Spanish)",
+    "fr": "français (French)",
+    "pt": "português (Portuguese)",
+    "ta": "தமிழ் (Tamil)",
+    "de": "Deutsch (German)",
+    "hu": "magyar (Hungarian)",
+    "pl": "polski (Polish)",
+    "it": "italiano (Italian)",
+}
+
+_LANGUAGE_INSTRUCTION = (
+    "\n\nLanguage: Respond to the user in {language}. Use this language for "
+    "every reply, tool summaries, and confirmations."
+)
+
+
+async def _system_prompt_for(db: AsyncSession, clinic_id: UUID) -> str:
+    """Build the copilot system prompt in the clinic's communication language."""
+    row = (
+        await db.execute(
+            sql_text("SELECT settings FROM clinics WHERE id = :id"), {"id": clinic_id}
+        )
+    ).first()
+    settings = (row.settings or {}) if row else {}
+    lang = settings.get("communication_language") if isinstance(settings, dict) else None
+    lang = lang or "es"
+    language = _LOCALE_LANGUAGE.get(lang, _LOCALE_LANGUAGE["es"])
+    return SYSTEM_PROMPT + _LANGUAGE_INSTRUCTION.format(language=language)
 
 # Copilot gates writes via inline confirmation (a turn-level pause), so
 # the approval-queue triggers are disabled. Rate limits + denylist stay.
@@ -168,7 +205,7 @@ async def drive_turn(
     async for ev in run_turn(
         ctx=ctx,
         provider=provider,
-        system=SYSTEM_PROMPT,
+        system=await _system_prompt_for(db, conv.clinic_id),
         history=history,
         tool_names=_tool_names_for(permissions, include_free_text=not redactor.enabled),
         redactor=redactor,
@@ -228,7 +265,7 @@ async def resume_turn(
     async for ev in run_turn(
         ctx=ctx,
         provider=provider,
-        system=SYSTEM_PROMPT,
+        system=await _system_prompt_for(db, conv.clinic_id),
         history=history,
         tool_names=_tool_names_for(permissions, include_free_text=not redactor.enabled),
         redactor=redactor,

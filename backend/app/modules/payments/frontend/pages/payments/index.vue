@@ -103,7 +103,7 @@ const {
   fetcher
 })
 
-const PAYMENT_METHODS: PaymentMethod[] = ['cash', 'card', 'bank_transfer', 'direct_debit', 'insurance', 'other']
+const PAYMENT_METHODS: PaymentMethod[] = ['cash', 'card', 'bank_transfer', 'direct_debit', 'insurance', 'other', 'qris', 'gopay', 'ovo', 'dana', 'bca', 'mandiri', 'bni']
 
 const methodItems = computed(() =>
   PAYMENT_METHODS.map(m => ({ label: t(`payments.methods.${m}`), value: m }))
@@ -190,6 +190,16 @@ function methodIcon(method: string): string {
       return 'i-lucide-repeat'
     case 'insurance':
       return 'i-lucide-shield'
+    case 'qris':
+      return 'i-lucide-qr-code'
+    case 'gopay':
+    case 'ovo':
+    case 'dana':
+      return 'i-lucide-smartphone'
+    case 'bca':
+    case 'mandiri':
+    case 'bni':
+      return 'i-lucide-building-2'
     default:
       return 'i-lucide-circle-dollar-sign'
   }

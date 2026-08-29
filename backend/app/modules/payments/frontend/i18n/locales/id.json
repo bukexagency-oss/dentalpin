@@ -1,0 +1,310 @@
+{
+  "payments": {
+    "nav": {
+      "payments": "Pembayaran",
+      "reports": "Laporan pembayaran"
+    },
+    "balance": {
+      "debt": "Berutang",
+      "credit": "Uang muka",
+      "paid": "Total dibayar"
+    },
+    "list": {
+      "title": "Pembayaran",
+      "subtitle": "Pembayaran pasien, uang muka penawaran, dan kredit uang muka.",
+      "empty": "Belum ada pembayaran tercatat.",
+      "new": "Pembayaran baru",
+      "searchPlaceholder": "Pasien atau referensi",
+      "filterDateFrom": "Dari",
+      "filterDateTo": "Ke",
+      "filterMethod": "Metode",
+      "filterPatient": "Pasien",
+      "filter": {
+        "method": "Metode",
+        "hasRefunds": "Dengan pengembalian dana",
+        "hasUnallocated": "Belum dialokasikan",
+        "patient": "Pasien",
+        "withDebt": "Dengan tagihan",
+        "paymentStatus": "Status"
+      },
+      "sort": {
+        "paymentDate": "Tanggal",
+        "amount": "Jumlah"
+      },
+      "budgetStatus": {
+        "paid": "Lunas",
+        "partial": "Sebagian",
+        "unpaid": "Belum dibayar"
+      },
+      "row": {
+        "debtTooltip": "Saldo terutang pasien",
+        "creditTooltip": "Saldo uang muka pasien",
+        "allocationsLabel": "Alokasi",
+        "refundedLabel": "Dikembalikan",
+        "noPatient": "Tidak ada pasien"
+      },
+      "columnDate": "Tanggal",
+      "columnPatient": "Pasien",
+      "columnAmount": "Jumlah",
+      "columnMethod": "Metode",
+      "columnAllocations": "Alokasi",
+      "columnNet": "Bersih",
+      "columnActions": "Aksi"
+    },
+    "detail": {
+      "title": "Pembayaran {reference}",
+      "amount": "Jumlah",
+      "method": "Metode",
+      "date": "Tanggal",
+      "recordedBy": "Dicatat oleh",
+      "allocations": "Alokasi",
+      "refunds": "Pengembalian dana",
+      "refund": "Pengembalian dana",
+      "refundedTotal": "Dikembalikan",
+      "netAmount": "Bersih",
+      "reference": "Referensi",
+      "notes": "Catatan"
+    },
+    "new": {
+      "title": "Catat pembayaran",
+      "patient": "Pasien",
+      "patientPlaceholder": "Cari pasien...",
+      "unknownPatient": "Pasien tidak dikenal",
+      "amount": "Jumlah",
+      "suggestedHint": "Menunggu ditagih: {amount}",
+      "useSuggested": "gunakan jumlah ini",
+      "method": "Metode",
+      "moreMethods": "Metode lainnya",
+      "date": "Tanggal",
+      "today": "Hari ini",
+      "advanced": "Opsi lanjutan",
+      "reference": "Referensi",
+      "referencePlaceholder": "Referensi kartu, transfer...",
+      "notes": "Catatan",
+      "allocations": "Alokasi",
+      "allocationsHint": "Bagi pembayaran ini ke beberapa anggaran atau biarkan sebagai uang muka.",
+      "addAllocation": "Tambah alokasi",
+      "allocationToBudget": "Ke anggaran",
+      "allocationOnAccount": "Uang muka",
+      "sumLabel": "Jumlah:",
+      "sumMismatch": "tidak sesuai dengan jumlah",
+      "submit": "Catat",
+      "submitWithAmount": "Tagih {amount}",
+      "cancel": "Batal",
+      "errPatient": "Pilih pasien",
+      "errAmount": "Masukkan jumlah lebih dari 0",
+      "errSum": "Jumlah alokasi harus sama dengan total",
+      "errUnknown": "Gagal mencatat pembayaran. Coba lagi."
+    },
+    "methods": {
+      "cash": "Tunai",
+      "card": "Kartu",
+      "bank_transfer": "Transfer",
+      "direct_debit": "Debit langsung",
+      "insurance": "Asuransi",
+      "other": "Lainnya",
+      "qris": "QRIS",
+      "gopay": "GoPay",
+      "ovo": "OVO",
+      "dana": "Dana",
+      "bca": "Transfer BCA",
+      "mandiri": "Transfer Mandiri",
+      "bni": "Transfer BNI"
+    },
+    "refund": {
+      "title": "Pengembalian dana",
+      "amount": "Jumlah",
+      "method": "Metode",
+      "reason": "Alasan",
+      "note": "Detail",
+      "submit": "Pengembalian dana",
+      "reasonCodes": {
+        "duplicate": "Pembayaran duplikat",
+        "overpaid": "Lebih bayar",
+        "treatment_cancelled": "Perawatan dibatalkan",
+        "dispute": "Sengketa",
+        "other": "Lainnya"
+      }
+    },
+    "ledger": {
+      "title": "Buku besar pasien",
+      "totalPaid": "Total dibayar",
+      "totalEarned": "Perawatan dilakukan",
+      "patientCredit": "Saldo uang muka pasien",
+      "clinicReceivable": "Piutang klinik",
+      "onAccount": "Uang muka",
+      "empty": "Tidak ada transaksi."
+    },
+    "budgetCard": {
+      "title": "Pembayaran anggaran",
+      "budgetTotal": "Dianggarkan",
+      "collected": "Terkumpul",
+      "pending": "Tertunda",
+      "collect": "Terima pembayaran",
+      "empty": "Belum ada pembayaran dianggarkan ke anggaran ini.",
+      "collectedLabel": "Terkumpul",
+      "pendingLabel": "Tertunda",
+      "outOfTotal": "dari total {total}",
+      "settled": "Anggaran lunas",
+      "history": "Riwayat pembayaran",
+      "payment": "Pembayaran",
+      "emptyDetailed": "Belum ada pembayaran. Gunakan \"Tagih\" untuk mencatat yang pertama."
+    },
+    "budgetCollect": {
+      "title": "Tagih anggaran",
+      "amountLabel": "Jumlah",
+      "methodLabel": "Metode pembayaran",
+      "dateLabel": "Tanggal pembayaran",
+      "today": "Hari ini",
+      "quickFull": "Penuh",
+      "optionalDetails": "Tambah referensi atau catatan (opsional)",
+      "referenceLabel": "Referensi",
+      "referencePlaceholder": "mis. ID transaksi POS",
+      "notesLabel": "Catatan internal",
+      "submit": "Terima pembayaran",
+      "cancel": "Batal",
+      "success": "Pembayaran dicatat",
+      "errorGeneric": "Gagal mencatat pembayaran",
+      "noteAppliedToBudget": "diterapkan ke anggaran.",
+      "notePendingAfter": "Sisa",
+      "noteFullySettled": "Anggaran akan lunas sepenuhnya.",
+      "noteToBudget": "diterapkan ke anggaran dan",
+      "noteExcessToOnAccount": "ke uang muka pasien.",
+      "noteBudgetSettled": "Anggaran sudah lunas.",
+      "noteToOnAccount": "masuk ke uang muka pasien."
+    },
+    "pendingCharges": {
+      "title": "Menunggu ditagih",
+      "count": "{n} sesi",
+      "more": "+ {n} lainnya",
+      "collect": "Tagih {amount}",
+      "unnamedSession": "Sesi tanpa judul"
+    },
+    "patientPanel": {
+      "title": "Buku besar pasien",
+      "kpis": {
+        "totalPaid": "Total dibayar",
+        "debt": "Piutang klinik",
+        "onAccount": "Uang muka"
+      },
+      "sidebar": {
+        "title": "Ringkasan",
+        "credit": "Kredit pasien",
+        "lastPayment": "Pembayaran terakhir",
+        "noLastPayment": "Belum ada pembayaran",
+        "totalEarned": "Perawatan dilakukan"
+      },
+      "banner": {
+        "debtTitle": "Berutang {amount} ke klinik",
+        "debtDescription": "Total bayar di bawah perawatan yang dilakukan.",
+        "creditTitle": "Punya kredit {amount}",
+        "creditDescription": "Bayar di atas perawatan yang dilakukan."
+      },
+      "cobrar": "Catat pembayaran",
+      "timeline": {
+        "title": "Transaksi",
+        "empty": "Belum ada transaksi",
+        "emptyCta": "Catat pembayaran pertama",
+        "loadError": "Gagal memuat buku besar pasien.",
+        "retry": "Coba lagi",
+        "drPrefix": "drg. {name}",
+        "types": {
+          "payment": "Pembayaran",
+          "refund": "Pengembalian dana",
+          "earned": "Perawatan dilakukan"
+        },
+        "treatmentStatus": {
+          "planned": "Direncanakan",
+          "performed": "Dilakukan",
+          "completed": "Selesai",
+          "cancelled": "Dibatalkan",
+          "in_progress": "Berlangsung"
+        },
+        "rowMenu": {
+          "detail": "Lihat detail",
+          "refund": "Pengembalian dana",
+          "reallocate": "Tetapkan ke penawaran…"
+        }
+      },
+      "refundModal": {
+        "title": "Pengembalian dana",
+        "amount": "Jumlah pengembalian",
+        "method": "Metode pengembalian",
+        "reason": "Alasan",
+        "note": "Detail (opsional)",
+        "submit": "Konfirmasi pengembalian",
+        "cancel": "Batal",
+        "errorGeneric": "Gagal mencatat pengembalian"
+      }
+    },
+    "reports": {
+      "title": "Laporan pembayaran",
+      "subtitle": "Penerimaan, pengembalian, saldo pasien, dan tren untuk periode ini.",
+      "cardDescription": "Penerimaan, pengembalian, saldo pasien, jatuh tempo, dan tren.",
+      "period": "Periode",
+      "refresh": "Muat ulang",
+      "collected": "Terkumpul",
+      "refunded": "Dikembalikan",
+      "net": "Bersih",
+      "patientCredit": "Total kredit pasien",
+      "patientCreditHint": "Saldo uang muka atau di muka.",
+      "clinicReceivable": "Piutang klinik",
+      "refundRatio": "Rasio pengembalian",
+      "byMethod": "Per metode",
+      "byProfessional": "Per profesional",
+      "byProfessionalHint": "Perawatan dilakukan, belum ditagih.",
+      "aging": "Jatuh tempo piutang",
+      "agingHint": "Pasien bersaldo terutang dikelompokkan berdasarkan umur utang.",
+      "refunds": "Pengembalian per alasan",
+      "refundsHint": "Distribusi pengembalian berdasarkan alasan tercatat.",
+      "bucket": "{range} hari",
+      "unknownProfessional": "Belum ditentukan",
+      "countShort": "{n} transaksi",
+      "countPatients": "{n} pasien",
+      "granularity": {
+        "day": "Hari",
+        "week": "Minggu",
+        "month": "Bulan"
+      },
+      "hero": {
+        "netCollected": "Penerimaan bersih",
+        "netCollectedHint": "Penerimaan dikurangi pengembalian pada periode ini.",
+        "receivable": "Piutang beredar",
+        "receivableHint": "Perawatan dilakukan yang belum ditagih, berdasarkan usia.",
+        "vsPrevious": "vs. periode sebelumnya",
+        "transactionsCount": "{n} transaksi pada periode ini"
+      },
+      "trend": {
+        "title": "Tren penerimaan",
+        "subtitle": "Bersih per kelompok. Garis putus-putus menimpa pengembalian."
+      },
+      "empty": {
+        "noDataTitle": "Tidak ada data dalam rentang ini",
+        "noDataDescription": "Sesuaikan periode atau catat pembayaran untuk mulai melihat laporan.",
+        "noTrend": "Titik belum cukup untuk menggambar tren.",
+        "noMethods": "Tidak ada penerimaan per metode pada periode ini.",
+        "noProfessionals": "Tidak ada perawatan dilakukan pada periode ini.",
+        "noReceivable": "Tidak ada pasien berutang."
+      },
+      "drilldown": {
+        "viewPayments": "Lihat pembayaran pada periode ini",
+        "viewPatients": "Lihat pasien berutang"
+      }
+    },
+    "target": {
+      "label": "Terapkan ke",
+      "placeholder": "Pilih tujuan",
+      "onAccount": "Kredit pasien (uang muka)",
+      "onAccountHint": "Tetap sebagai kredit uang muka pasien. Tidak diterapkan ke invoice atau penawaran apa pun sampai Anda menetapkannya.",
+      "budgetHint": "Akan diterapkan ke penawaran ini dan invoice yang terbit.",
+      "lockedBudget": "Akan diterapkan ke penawaran {budget} dan invoice-nya."
+    },
+    "reallocate": {
+      "title": "Tetapkan ke penawaran",
+      "hint": "Pembayaran {amount} akan dipindahkan ke penawaran terpilih dan invoice yang terbit.",
+      "submit": "Tetapkan",
+      "success": "Pembayaran ditetapkan ke penawaran",
+      "error": "Gagal menetapkan ulang pembayaran. Coba lagi."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "journal": {
+    "title": "Log aktivitas",
+    "subtitle": "Catatan tambahan siapa melakukan apa, kapan — dari event modul.",
+    "filterByType": "Filter berdasarkan tipe event",
+    "filterByDateFrom": "Dari",
+    "filterByDateTo": "Ke",
+    "event": "Peristiwa",
+    "actor": "Pelaku",
+    "patient": "Pasien",
+    "when": "Kapan",
+    "source": "Sumber",
+    "empty": "Belum ada aktivitas tercatat.",
+    "total": "{total} entri",
+    "detailTitle": "Payload event",
+    "unattributed": "—",
+    "allEvents": "Semua event",
+    "viewPayload": "Lihat detail"
+  }
+}

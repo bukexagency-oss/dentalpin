@@ -1,0 +1,24 @@
+{
+  "expenses": {
+    "title": "Pengeluaran",
+    "add": "Tambah pengeluaran",
+    "date": "Tanggal",
+    "category": "Kategori",
+    "amount": "Jumlah",
+    "description": "Deskripsi",
+    "filterByCategory": "Filter berdasarkan kategori",
+    "delete": "Hapus",
+    "deleteTitle": "Hapus pengeluaran",
+    "deleteMessage": "Hapus pengeluaran ini? Tidak bisa dibatalkan.",
+    "categories": {
+      "rent": "Sewa",
+      "utilities": "Utilitas",
+      "salaries": "Gaji",
+      "supplies": "Perlengkapan",
+      "equipment": "Peralatan",
+      "insurance": "Asuransi",
+      "maintenance": "Pemeliharaan",
+      "other": "Lainnya"
+    }
+  }
+}

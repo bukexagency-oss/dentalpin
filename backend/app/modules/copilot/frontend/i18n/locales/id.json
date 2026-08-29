@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "copilot": "IA"
+  },
+  "copilot": {
+    "title": "IA",
+    "open": "Buka IA",
+    "empty": "Tanyakan tentang pasien, jadwal, atau untuk membuat janji temu.",
+    "placeholder": "Ketik pesan…",
+    "send": "Kirim",
+    "copy": "Salin",
+    "new": "Percakapan baru",
+    "thinking": "Berpikir…",
+    "you": "Anda",
+    "assistant": "IA",
+    "trust": "Data Anda terlindungi",
+    "phase": {
+      "working": "Mengerjakan…",
+      "writing": "Menulis…"
+    },
+    "tabs": {
+      "pending": "Tugas",
+      "chat": "Chat"
+    },
+    "pending": {
+      "empty": "Tidak ada tugas tertunda. Semua beres.",
+      "unknownPatient": "Pasien tidak dikenal",
+      "group": {
+        "recall": "Pengingat yang perlu ditindaklanjuti",
+        "budget": "Anggaran menunggu respons"
+      }
+    },
+    "nudge": {
+      "act": "Periksa",
+      "dismiss": "Tutup",
+      "appointmentCancelled": {
+        "text": "Janji temu {time} dibatalkan — ada slot yang baru terbuka.",
+        "prompt": "Janji temu {time} dibatalkan. Cari pasien pengingat yang bisa mengisi slot itu."
+      }
+    },
+    "suggest": {
+      "heading": "Bagaimana saya bisa membantu?",
+      "cat": {
+        "workflows": "Alur kerja",
+        "patients": "Pasien",
+        "agenda": "Jadwal",
+        "recalls": "Pengingat",
+        "money": "Penagihan & anggaran",
+        "reports": "Laporan"
+      },
+      "dailyBriefing": "Briefing harian",
+      "prepareVisit": "Siapkan kunjungan",
+      "fillGap": "Isi slot kosong",
+      "searchPatient": "Cari pasien",
+      "patientSummary": "Ringkas pasien",
+      "freeSlots": "Slot kosong hari ini",
+      "bookAppointment": "Buat janji temu",
+      "dueRecalls": "Pengingat jatuh tempo",
+      "pendingBudgets": "Anggaran belum dijawab",
+      "recordPayment": "Catat pembayaran",
+      "monthCollections": "Penagihan bulan ini",
+      "agendaSummary": "Ringkasan jadwal",
+      "prompt": {
+        "dailyBriefing": "Beri saya briefing harian: janji temu hari ini, pengingat terlewat, dan anggaran belum dijawab",
+        "prepareVisit": "Siapkan kunjungan pasien berikutnya untuk saya",
+        "fillGap": "Ada slot kosong di jadwal, siapa yang bisa kami hubungi?",
+        "searchPatient": "Cari pasien",
+        "patientSummary": "Beri saya ringkasan pasien",
+        "freeSlots": "Slot kosong apa saja yang tersedia hari ini?",
+        "bookAppointment": "Saya ingin membuat janji temu",
+        "dueRecalls": "Pengingat mana yang jatuh tempo bulan ini?",
+        "pendingBudgets": "Anggaran mana yang sudah terkirim tapi belum dijawab?",
+        "recordPayment": "Saya ingin mencatat pembayaran pasien",
+        "monthCollections": "Ringkasan penagihan bulan ini",
+        "agendaSummary": "Beri saya ringkasan jadwal hari ini"
+      }
+    },
+    "settings": {
+      "title": "Copilot",
+      "description": "Asisten AI: briefing harian dan engine",
+      "saved": "Pengaturan tersimpan",
+      "digest": {
+        "title": "Email briefing pagi",
+        "description": "Setiap pagi: janji temu hari ini, pengingat terlewat, dan anggaran belum dijawab.",
+        "enabled": "Kirim briefing harian",
+        "hour": "Jam kirim",
+        "hourHelp": "Diterjemahkan dalam zona waktu klinik.",
+        "recipients": "Penerima",
+        "recipientsHelp": "Setiap penerima mendapat briefing sendiri, dibatasi sesuai peran mereka.",
+        "recipientsPlaceholder": "Pilih staf…"
+      },
+      "engine": {
+        "title": "Engine",
+        "provider": "Penyedia",
+        "model": "Model",
+        "redaction": "Redaksi PHI",
+        "redactionOn": "Aktif",
+        "redactionOff": "Nonaktif"
+      },
+      "metrics": {
+        "title": "Pemakaian",
+        "description": "{days} hari terakhir.",
+        "toolCalls": "Panggilan tool",
+        "errorRate": "Tingkat error",
+        "avgLatency": "Latensi rata-rata",
+        "conversations": "Percakapan",
+        "tokenBudget": "Anggaran token bulanan",
+        "topTools": "Tool paling sering dipakai",
+        "toolNames": {
+          "recalls_list_due_recalls": "Pengingat terlewat",
+          "budget_list_budgets": "Estimasi tertunda",
+          "patients_list_patients": "Pencarian pasien",
+          "appointments_list_appointments": "Janji temu",
+          "invoices_list_invoices": "Invoice"
+        }
+      }
+    },
+    "tool": {
+      "running": "Menjalankan {name}…",
+      "done": "{name} selesai",
+      "failed": "{name} gagal"
+    },
+    "card": {
+      "viewPatient": "Lihat catatan",
+      "noResults": "Tidak ada hasil",
+      "notFound": "Tidak ditemukan",
+      "more": "+{n} lainnya",
+      "freeSlots": "Slot kosong",
+      "appointments": "Janji temu",
+      "patients": "Pasien"
+    },
+    "patientStatus": {
+      "active": "aktif",
+      "archived": "diarsipkan"
+    },
+    "apptStatus": {
+      "scheduled": "Terjadwal",
+      "confirmed": "Dikonfirmasi",
+      "checked_in": "Check-in",
+      "in_treatment": "Dalam perawatan",
+      "completed": "Selesai",
+      "cancelled": "Dibatalkan",
+      "no_show": "Tidak hadir"
+    },
+    "confirm": {
+      "title": "Konfirmasi tindakan",
+      "body": "IA ingin menjalankan {name}.",
+      "approve": "Konfirmasi",
+      "reject": "Batal",
+      "approved": "Dikonfirmasi",
+      "rejected": "Dibatalkan",
+      "destructiveNote": "Tindakan ini tidak bisa dibatalkan.",
+      "action": {
+        "book_appointment": "IA ingin membuat janji temu.",
+        "cancel_appointment": "IA ingin membatalkan janji temu.",
+        "create_patient": "IA ingin membuat pasien baru."
+      },
+      "field": {
+        "patient_id": "Pasien",
+        "professional_id": "Dokter",
+        "appointment_id": "Janji temu",
+        "cabinet_id": "Ruang",
+        "cabinet": "Ruang",
+        "start_time": "Tanggal",
+        "end_time": "Selesai",
+        "datetime": "Tanggal",
+        "service": "Layanan",
+        "reason": "Alasan",
+        "duration_minutes": "Durasi (menit)",
+        "first_name": "Nama depan",
+        "last_name": "Nama belakang",
+        "phone": "Telepon",
+        "email": "Email",
+        "date_of_birth": "Tanggal lahir",
+        "query": "Cari"
+      }
+    },
+    "budgetExceeded": "Batas pemakaian IA bulanan telah tercapai.",
+    "error": "Terjadi kesalahan.",
+    "page": {
+      "title": "IA",
+      "subtitle": "Asisten klinik Anda, dibatasi sesuai izin Anda."
+    }
+  }
+}

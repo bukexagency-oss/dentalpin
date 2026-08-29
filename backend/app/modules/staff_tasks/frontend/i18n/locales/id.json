@@ -1,0 +1,34 @@
+{
+  "staffTasks": {
+    "title": "Tugas staf",
+    "add": "Tugas baru",
+    "taskTitle": "Tugas",
+    "details": "Detail",
+    "priority": "Prioritas",
+    "dueDate": "Tanggal jatuh tempo",
+    "status": "Status",
+    "assignee": "Ditugaskan ke",
+    "filterByStatus": "Filter berdasarkan status",
+    "all": "Semua",
+    "delete": "Hapus",
+    "deleteTitle": "Hapus tugas",
+    "deleteMessage": "Hapus tugas ini? Tidak bisa dibatalkan.",
+    "updateFailed": "Gagal memperbarui tugas.",
+    "saveFailed": "Gagal menyimpan tugas.",
+    "deleteFailed": "Gagal menghapus tugas.",
+    "statuses": {
+      "open": "Buka",
+      "claimed": "Diklaim",
+      "done": "Selesai",
+      "cancelled": "Dibatalkan"
+    },
+    "priorities": {
+      "low": "Ringan",
+      "normal": "Normal",
+      "high": "Berat"
+    }
+  },
+  "nav": {
+    "staffTasks": "Tugas staf"
+  }
+}

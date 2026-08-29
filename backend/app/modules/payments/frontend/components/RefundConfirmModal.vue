@@ -30,7 +30,8 @@ const { t } = useI18n()
 const { refund } = usePayments()
 
 const PAYMENT_METHODS: PaymentMethod[] = [
-  'cash', 'card', 'bank_transfer', 'direct_debit', 'insurance', 'other'
+  'cash', 'card', 'bank_transfer', 'direct_debit', 'insurance', 'other',
+  'qris', 'gopay', 'ovo', 'dana', 'bca', 'mandiri', 'bni'
 ]
 
 const REASON_CODES: RefundReason[] = [

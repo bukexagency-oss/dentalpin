@@ -1,0 +1,90 @@
+{
+  "migrationImport": {
+    "settingsCard": {
+      "title": "Migrasi data (dental-bridge)",
+      "description": "Impor file DPMF dari dental-bridge (pasien, janji temu, anggaran, pembayaran, dokumen)."
+    },
+    "page": {
+      "title": "Migrasi data",
+      "subtitle": "Impor data dari dental-bridge ke klinik ini."
+    },
+    "upload": {
+      "dropFile": "Letakkan file .dpm di sini, atau klik untuk memilih",
+      "passphrase": "Kata sandi (hanya file terenkripsi)",
+      "passphraseHelp": "Hanya diperlukan untuk .dpm.enc / .dpm.zst.enc",
+      "submit": "Unggah dan validasi",
+      "uploading": "Mengunggah…",
+      "error": "Gagal mengunggah"
+    },
+    "validate": {
+      "running": "Memverifikasi file…",
+      "ok": "File valid",
+      "failed": "Validasi gagal"
+    },
+    "preview": {
+      "title": "Pratinjau",
+      "entities": "Entitas",
+      "samples": "Sampel",
+      "warnings": "Peringatan",
+      "files": "File terlampir",
+      "filesTotal": "Total",
+      "filesWithSha": "Dengan sha256",
+      "filesWithoutSha": "Tanpa sha256",
+      "verifactuCheckbox": "Impor data legal Verifactu",
+      "verifactuHelp": "Menjaga hash legal (Verifactu) pada invoice. Hanya tersedia saat modul Verifactu terpasang dan file berisi data tersebut.",
+      "confirm": "Konfirmasi dan impor",
+      "warning": "Tindakan ini tidak bisa dibatalkan. Tinjau data sebelum mengonfirmasi."
+    },
+    "filters": {
+      "title": "Penyaringan dokter",
+      "description": "Staf yang disaring diimpor sebagai nonaktif (disimpan untuk referensi historis tapi disembunyikan dari agenda). Anda bisa mengaktifkannya kembali di Pengaturan → Pengguna.",
+      "totalLabel": "Total",
+      "deactivatedLabel": "Nonaktif di sumber",
+      "orphansLabel": "Kolom khusus agenda",
+      "stale24mLabel": "Tidak ada aktivitas 24 bulan terakhir",
+      "minActivityLabel": "Aktivitas minimum (bulan)",
+      "minActivityHelp": "Nonaktifkan lunak dokter tanpa jejak klinis lebih baru dari sekian bulan. Setel 0 untuk menonaktifkan.",
+      "excludeOrphans": "Kecualikan kolom khusus agenda tanpa catatan kolaborator nyata",
+      "excludeInactive": "Kecualikan dokter yang ditandai nonaktif di sumber",
+      "excludeNonClinical": "Impor hanya dokter gigi dan hygienis (lewati asisten dan staf admin)"
+    },
+    "execute": {
+      "running": "Mengimpor…",
+      "progress": "{processed} dari {total} entitas",
+      "ok": "Impor selesai",
+      "failed": "Impor gagal"
+    },
+    "proposals": {
+      "title": "Tinjau pemetaan katalog",
+      "subtitle": "Tautkan tiap perawatan Gesdén ke katalog DentalPin sebelum mengimpor.",
+      "build": "Hitung proposal",
+      "building": "Menghitung…",
+      "summary": "{total} proposal: {link} tertaut, {fuzzy} fuzzy, {create} dibuat",
+      "bulkAccept": "Terima semua kecocokan dengan keyakinan ≥ 0.9",
+      "accepted": "{n} proposal diterima.",
+      "columnSource": "Perawatan Gesdén",
+      "columnProposed": "Proposal",
+      "columnAction": "Aksi",
+      "columnStatus": "Status",
+      "actionLink": "Tautkan ke katalog",
+      "actionFuzzy": "Kecocokan fuzzy",
+      "actionCreate": "Buat baru",
+      "operatorPending": "Tertunda",
+      "operatorAccepted": "Diterima",
+      "operatorRelinked": "Ditautkan ulang",
+      "operatorCreated": "Buat baru",
+      "operatorIgnored": "Diabaikan",
+      "acceptRow": "Terima",
+      "ignoreRow": "Abaikan"
+    },
+    "status": {
+      "uploaded": "Diunggah",
+      "validating": "Memvalidasi",
+      "validated": "Tervalidasi",
+      "previewing": "Pratinjau",
+      "executing": "Mengimpor",
+      "completed": "Selesai",
+      "failed": "Gagal"
+    }
+  }
+}

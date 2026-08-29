@@ -109,6 +109,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-15',
 
   vite: {
+    server: {
+      // Allow the public subdomain (and loopback) so the dev server does not
+      // reject requests whose Host header is otodental.otomedis.com.
+      allowedHosts: ['otodental.otomedis.com', 'localhost', '127.0.0.1']
+    },
     optimizeDeps: {
       // Pre-bundle deps that Vite otherwise discovers at runtime. Runtime
       // discovery triggers a full page reload, which in CI races Playwright's
@@ -150,9 +155,15 @@ export default defineNuxtConfig({
       { code: 'de', name: 'Deutsch', file: 'de.json' },
       { code: 'hu', name: 'Magyar', file: 'hu.json' },
       { code: 'pl', name: 'Polski', file: 'pl.json' },
-      { code: 'it', name: 'Italiano', file: 'it.json' }
+      { code: 'it', name: 'Italiano', file: 'it.json' },
+      { code: 'id', name: 'Bahasa Indonesia', file: 'id.json' }
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'id',
+    // Module-layer locales are fully key-complete but a long tail of keys
+    // is still untranslated for `id`. Falling back to English keeps the UI
+    // readable (no raw key paths) while the Indonesian translation catches
+    // up module by module.
+    fallbackLocale: 'en',
     lazy: true,
     langDir: 'locales',
     strategy: 'no_prefix',
@@ -161,11 +172,11 @@ export default defineNuxtConfig({
     // (placeholder, title, aria-label) are not patched during hydration,
     // so an English server render used to survive until the next
     // client-side navigation (#235, #202). First visit without the
-    // cookie falls back to Accept-Language, then to `en`.
+    // cookie falls back to Accept-Language, then to `id`.
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'dentalpin_locale',
-      fallbackLocale: 'en'
+      fallbackLocale: 'id'
     }
   },
 

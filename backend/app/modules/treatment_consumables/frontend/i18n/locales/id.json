@@ -1,0 +1,20 @@
+{
+  "consumables": {
+    "title": "Bahan habis pakai",
+    "subtitle": "Item inventaris yang dikonsumsi tiap perawatan katalog, dan jumlahnya. Pemetaan murni — stok tidak dikurangi otomatis.",
+    "treatment": "Perawatan",
+    "item": "Item inventaris",
+    "quantity": "Jumlah",
+    "note": "Catatan",
+    "searchTreatments": "Cari perawatan…",
+    "searchItems": "Cari item inventaris…",
+    "add": "Tautkan bahan habis pakai",
+    "delete": "Unlink",
+    "deleteTitle": "Lepas tautan bahan habis pakai",
+    "deleteMessage": "Hapus tautan ini? Perawatan tidak lagi mencantumkan item ini sebagai bahan habis pakai.",
+    "empty": "No links yet. Use “Link consumable” to map a treatment to an inventory item.",
+    "noMatches": "Tidak ada yang cocok",
+    "duplicate": "Perawatan ini sudah mengonsumsi item ini.",
+    "editTitle": "Edit bahan habis pakai"
+  }
+}

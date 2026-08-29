@@ -1266,7 +1266,7 @@ export interface SmtpTestRequest {
 
 export type InvoiceStatus = 'draft' | 'issued' | 'partial' | 'paid' | 'cancelled' | 'voided'
 
-export type PaymentMethod = 'cash' | 'card' | 'bank_transfer' | 'direct_debit' | 'insurance' | 'other'
+export type PaymentMethod = 'cash' | 'card' | 'bank_transfer' | 'direct_debit' | 'insurance' | 'other' | 'qris' | 'gopay' | 'ovo' | 'dana' | 'bca' | 'mandiri' | 'bni'
 
 // ============================================================================
 // Payments module (issue #53). Patient-centric Payment, allocations,

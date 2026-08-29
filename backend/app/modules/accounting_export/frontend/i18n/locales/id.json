@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "accountingExport": "Ekspor akuntansi"
+  },
+  "accountingExport": {
+    "title": "Ekspor akuntansi",
+    "subtitle": "Unduh invoice dan pembayaran periode ini untuk diserahkan ke akuntan.",
+    "period": "Periode",
+    "from": "Dari",
+    "to": "Ke",
+    "presets": {
+      "currentMonth": "Bulan ini",
+      "previousMonth": "Bulan sebelumnya",
+      "currentQuarter": "Kuartal ini",
+      "previousQuarter": "Kuartal sebelumnya",
+      "yearToDate": "Tahun berjalan",
+      "custom": "Kustom"
+    },
+    "actions": {
+      "preview": "Pratinjau",
+      "download": "Unduh (.zip)"
+    },
+    "counters": {
+      "invoices": "Faktur",
+      "payments": "Pembayaran",
+      "base": "Dasar",
+      "total": "Total"
+    },
+    "cols": {
+      "numero": "Nomor",
+      "fecha_emision": "Tanggal",
+      "cliente": "Customer",
+      "nif": "NPWP",
+      "base": "Dasar",
+      "cuota_iva": "PPN",
+      "total": "Total",
+      "estado": "Status"
+    }
+  }
+}

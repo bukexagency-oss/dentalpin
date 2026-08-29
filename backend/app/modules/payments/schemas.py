@@ -7,7 +7,10 @@ from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-PaymentMethod = Literal["cash", "card", "bank_transfer", "direct_debit", "insurance", "other"]
+PaymentMethod = Literal[
+    "cash", "card", "bank_transfer", "direct_debit", "insurance", "other",
+    "qris", "gopay", "ovo", "dana", "bca", "mandiri", "bni",
+]
 AllocationTarget = Literal["budget", "on_account"]
 RefundReason = Literal["duplicate", "overpaid", "treatment_cancelled", "dispute", "other"]
 

@@ -1,0 +1,50 @@
+{
+  "labOrders": {
+    "title": "Order lab",
+    "add": "Order lab baru",
+    "patient": "Pasien",
+    "lab": "Pabrikan",
+    "loading": "Memuat…",
+    "selectPatient": "Pilih pasien",
+    "selectLab": "Pilih laboratorium",
+    "workType": "Jenis pekerjaan",
+    "tooth": "Gigi / referensi",
+    "impressionType": "Cetakan",
+    "antagonistInfo": "Informasi antagonis",
+    "shade": "Warna",
+    "sentDate": "Tanggal kirim",
+    "expectedDate": "Tanggal perkiraan",
+    "status": "Status",
+    "notes": "Catatan",
+    "save": "Kirim order",
+    "cancel": "Batal",
+    "noLabsHint": "Buat kontak lab dulu di Kontak.",
+    "workTypes": {
+      "crown": "Mahkota",
+      "bridge": "Jembatan gigi",
+      "denture": "Gigi tiruan",
+      "implant": "Implan",
+      "veneer": "Veneer",
+      "orthodontic": "Ortodontik",
+      "repair": "Perbaikan",
+      "other": "Lainnya"
+    },
+    "impressionTypes": {
+      "alginate": "Alginat",
+      "pvs_silicone": "PVS / silikon",
+      "digital_scan": "Pindai digital",
+      "other": "Lainnya"
+    },
+    "statuses": {
+      "sent": "Terkirim",
+      "in_progress": "Berlangsung",
+      "ready": "Siap",
+      "received": "Diterima",
+      "cancelled": "Dibatalkan"
+    }
+  },
+  "nav": {
+    "labOrdersForm": "Order lab baru",
+    "labOrdersStatus": "Order lab"
+  }
+}

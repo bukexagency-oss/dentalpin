@@ -1,0 +1,84 @@
+{
+  "periodontogram": {
+    "tab": {
+      "label": "Periodontogram"
+    },
+    "empty": {
+      "title": "Belum ada pemeriksaan periodontal",
+      "description": "Buka sesi baru untuk merekam kedalaman probing, perdarahan, plak, dan metrik SEPA lainnya.",
+      "cta": "Mulai pemeriksaan"
+    },
+    "session": {
+      "draftBadge": "Draf sedang dikerjakan",
+      "closedBadge": "Sesi ditutup",
+      "recordedAt": "Terekam pada {date}",
+      "openDraft": "Buka sesi baru",
+      "continueDraft": "Lanjutkan draf",
+      "closeTitle": "Tutup sesi periodontal",
+      "closeDescription": "Setelah ditutup, sesi tidak dapat diubah dan muncul di riwayat. Untuk melakukan koreksi, buka sesi baru.",
+      "closeButton": "Tutup sesi",
+      "discardTitle": "Hapus draf",
+      "discardDescription": "Semua data yang dimasukkan di sesi ini akan dihapus. Tindakan ini tidak dapat dibatalkan.",
+      "discardButton": "Hapus",
+      "cancel": "Batal",
+      "closeSession": "Tutup sesi",
+      "discardDraft": "Hapus draf"
+    },
+    "indices": {
+      "bop": "Perdarahan",
+      "pi": "Plak",
+      "calMean": "Rata-rata CAL",
+      "deepPockets": "Kantong ≥5mm"
+    },
+    "saveState": {
+      "saving": "Menyimpan…",
+      "dirty": "Perubahan belum disimpan",
+      "saved": "Perubahan tersimpan"
+    },
+    "history": {
+      "viewingSession": "Melihat sesi dari {date} (hanya-baca).",
+      "returnToCurrent": "Kembali ke saat ini"
+    },
+    "arch": {
+      "upper": "Atas",
+      "lower": "Bawah",
+      "palatal": "Palatal",
+      "lingual": "Lingual",
+      "vestibular": "Vestibular",
+      "probing": "Probing",
+      "margin": "Margin",
+      "bleeding": "Perdarahan",
+      "plaque": "Plak",
+      "probingTitle": "{code} probing (0–15 mm)",
+      "marginTitle": "{code} margin gingiva (-5 s.d. 10 mm)",
+      "plaqueTitle": "{code} plak (klik untuk alih)",
+      "bleedingTitle": "{code} perdarahan (klik untuk alih)",
+      "implant": "Implan",
+      "implantToggleOn": "Implan (klik untuk hapus)",
+      "implantToggleOff": "Klik untuk menandai sebagai implan",
+      "mobility": "Mobilitas",
+      "mobilityTitle": "Klik untuk mengubah mobilitas (0–3)",
+      "prognosis": "Prognosis",
+      "prognosisTitle": "Baik / Cukup / Diragukan / Tidak ada harapan",
+      "furcaV": "Furka V",
+      "furcaVTitle": "Furkasi vestibular (0/I/II/III)",
+      "furcaLP": "Furka L/P",
+      "furcaLPTitle": "Furkasi lingual/palatal (0/I/II/III)",
+      "gingivalWidth": "Lebar gingiva",
+      "siteMarkerAria": "Situs {code}, probing {depth}"
+    },
+    "chart": {
+      "ariaLabel": "Periodontogram — lengkung atas dan bawah"
+    },
+    "indicesBanner": {
+      "observationsPlaceholder": "Catatan pemeriksaan…",
+      "noteLabel": "Catatan (opsional)"
+    },
+    "loading": "Memuat periodontogram…",
+    "errors": {
+      "loadFailed": "Gagal memuat periodontogram.",
+      "saveFailed": "Gagal menyimpan perubahan.",
+      "checkConnection": "Periksa koneksi Anda dan coba lagi."
+    }
+  }
+}

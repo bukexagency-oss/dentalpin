@@ -119,6 +119,11 @@ export const PERMISSIONS = {
     catalogManage: 'india_gst.catalog.manage',
     reportsRead: 'india_gst.reports.read'
   },
+  indonesiaRegulation: {
+    settingsRead: 'indonesia_regulation.settings.read',
+    settingsConfigure: 'indonesia_regulation.settings.configure',
+    reportsRead: 'indonesia_regulation.reports.read'
+  },
   recalls: {
     read: 'recalls.read',
     write: 'recalls.write',

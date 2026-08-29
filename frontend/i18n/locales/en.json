@@ -24,7 +24,6 @@
     "expenses": "Expenses",
     "labOrdersForm": "New lab order",
     "labOrdersStatus": "Lab orders",
-    "staffTasks": "Staff tasks",
     "treatmentPlans": "Treatment Plans",
     "budgets": "Quotes",
     "invoices": "Invoices",
@@ -36,7 +35,14 @@
     "menu": "Menu",
     "openMenu": "Open menu",
     "close": "Close",
-    "toggleSidebar": "Toggle sidebar"
+    "toggleSidebar": "Toggle sidebar",
+    "skinAssessments": "Skin Assessments",
+    "aesthetic": {
+      "photos": "Photos",
+      "consultations": "Consultations",
+      "treatments": "Treatments",
+      "recommendations": "Recommendations"
+    }
   },
   "auth": {
     "login": "Log in",
@@ -2507,7 +2513,14 @@
         "bank_transfer": "Bank transfer",
         "direct_debit": "Direct debit",
         "insurance": "Insurance",
-        "other": "Other"
+        "other": "Other",
+        "qris": "QRIS",
+        "gopay": "GoPay",
+        "ovo": "OVO",
+        "dana": "Dana",
+        "bca": "BCA Transfer",
+        "mandiri": "Mandiri Transfer",
+        "bni": "BNI Transfer"
       }
     },
     "creditNote": {

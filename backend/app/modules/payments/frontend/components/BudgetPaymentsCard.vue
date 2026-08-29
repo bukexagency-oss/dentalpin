@@ -61,7 +61,14 @@ const METHOD_ICONS: Record<PaymentMethod, string> = {
   bank_transfer: 'i-lucide-landmark',
   direct_debit: 'i-lucide-repeat',
   insurance: 'i-lucide-shield',
-  other: 'i-lucide-circle-dollar-sign'
+  other: 'i-lucide-circle-dollar-sign',
+  qris: 'i-lucide-qr-code',
+  gopay: 'i-lucide-smartphone',
+  ovo: 'i-lucide-smartphone',
+  dana: 'i-lucide-smartphone',
+  bca: 'i-lucide-building-2',
+  mandiri: 'i-lucide-building-2',
+  bni: 'i-lucide-building-2'
 }
 
 function methodIcon(method?: PaymentMethod): string {

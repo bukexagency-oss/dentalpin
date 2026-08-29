@@ -1,0 +1,35 @@
+{
+  "medicalReference": {
+    "settingsLabel": "Daftar Referensi Medis",
+    "settingsDescription": "Kelola daftar alergi, obat, dan penyakit yang digunakan di catatan pasien.",
+    "title": "Daftar Referensi Medis",
+    "description": "Daftar ini mengisi dropdown yang dapat dicari di riwayat medis pasien. Nonaktifkan item menghapusnya dari pencarian mendatang tanpa mengubah catatan pasien yang ada.",
+    "tabs": {
+      "allergies": "Alergi",
+      "medications": "Obat-obatan",
+      "diseases": "Penyakit",
+      "surgeries": "Tindakan bedah",
+      "interactions": "Interaksi",
+      "contraindications": "Kontraindikasi"
+    },
+    "name": "Nama",
+    "status": "Status",
+    "active": "Aktif",
+    "inactive": "Tidak aktif",
+    "showInactive": "Tampilkan yang tidak aktif",
+    "newItemPlaceholder": "Nama item baru…",
+    "addSuccess": "Ditambahkan",
+    "addError": "Gagal menambah item",
+    "updateError": "Gagal memperbarui item",
+    "deactivateError": "Gagal menonaktifkan item",
+    "itemCount": "{count} item",
+    "medicationA": "Obat A",
+    "medicationB": "Obat B",
+    "riskNote": "Risiko",
+    "riskNotePlaceholder": "Jelaskan risiko…",
+    "flags": {
+      "interaction": "Interaksi {a} + {b}",
+      "contraindication": "{a}: contraindicated with {b}"
+    }
+  }
+}

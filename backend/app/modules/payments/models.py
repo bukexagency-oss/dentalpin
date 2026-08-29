@@ -29,7 +29,24 @@ if TYPE_CHECKING:
 
 
 # Allowed payment methods (kept as plain list — schemas validate via Literal).
-PAYMENT_METHODS = ["cash", "card", "bank_transfer", "direct_debit", "insurance", "other"]
+# Indonesia payment rails (QRIS, e-wallets, national bank transfers) added
+# for the IDR market. `bank_transfer` stays as the generic fallback.
+PAYMENT_METHODS = [
+    "cash",
+    "card",
+    "bank_transfer",
+    "direct_debit",
+    "insurance",
+    "other",
+    # Indonesia
+    "qris",
+    "gopay",
+    "ovo",
+    "dana",
+    "bca",
+    "mandiri",
+    "bni",
+]
 
 # Allocation targets that don't require a foreign key (``on_account``)
 # vs targets backed by another row (``budget``).

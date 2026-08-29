@@ -52,8 +52,15 @@ interface MethodOption {
 
 const METHODS: MethodOption[] = [
   { value: 'cash', icon: 'i-lucide-banknote' },
-  { value: 'card', icon: 'i-lucide-credit-card' },
+  { value: 'qris', icon: 'i-lucide-qr-code' },
   { value: 'bank_transfer', icon: 'i-lucide-landmark' },
+  { value: 'gopay', icon: 'i-lucide-smartphone' },
+  { value: 'ovo', icon: 'i-lucide-smartphone' },
+  { value: 'dana', icon: 'i-lucide-smartphone' },
+  { value: 'card', icon: 'i-lucide-credit-card' },
+  { value: 'bca', icon: 'i-lucide-building-2' },
+  { value: 'mandiri', icon: 'i-lucide-building-2' },
+  { value: 'bni', icon: 'i-lucide-building-2' },
   { value: 'direct_debit', icon: 'i-lucide-repeat' },
   { value: 'insurance', icon: 'i-lucide-shield' },
   { value: 'other', icon: 'i-lucide-more-horizontal' }

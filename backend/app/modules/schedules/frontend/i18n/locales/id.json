@@ -1,0 +1,88 @@
+{
+  "schedules": {
+    "nav": {
+      "clinicHours": "Jam klinik",
+      "professionalSchedules": "Jadwal dokter"
+    },
+    "settingsCards": {
+      "clinicHoursTitle": "Jam klinik",
+      "clinicHoursDescription": "Tentukan jam buka klinik mingguan dan tanggal khusus (libur, jam terbatas).",
+      "professionalHoursTitle": "Jadwal dokter",
+      "professionalHoursDescription": "Atur jadwal masing-masing dokter serta kelola cuti atau periode tidak tersedia."
+    },
+    "clinicHours": {
+      "title": "Jam klinik",
+      "subtitle": "Tentukan jam buka klinik setiap hari dalam seminggu.",
+      "weeklyTemplate": "Template mingguan",
+      "overrides": "Tanggal khusus",
+      "addOverride": "Tambah tanggal khusus",
+      "editOverride": "Edit tanggal khusus",
+      "save": "Simpan perubahan",
+      "saved": "Jadwal diperbarui",
+      "savedError": "Gagal menyimpan jadwal"
+    },
+    "professionalHours": {
+      "title": "Jadwal dokter",
+      "selectProfessional": "Pilih dokter",
+      "weeklyTemplate": "Jadwal mingguan",
+      "overrides": "Ketidakhadiran dan jam khusus",
+      "addOverride": "Tambah ketidakhadiran",
+      "editOverride": "Edit ketidakhadiran",
+      "save": "Simpan perubahan",
+      "saved": "Jadwal diperbarui"
+    },
+    "weekday": {
+      "0": "Senin",
+      "1": "Selasa",
+      "2": "Rabu",
+      "3": "Kamis",
+      "4": "Jumat",
+      "5": "Sabtu",
+      "6": "Minggu",
+      "closed": "Tutup",
+      "addShift": "Tambah shift",
+      "removeShift": "Hapus shift",
+      "start": "Mulai",
+      "end": "Selesai"
+    },
+    "overrides": {
+      "startDate": "Tanggal mulai",
+      "endDate": "Tanggal selesai",
+      "kind": "Tipe",
+      "reason": "Alasan",
+      "reasonPlaceholder": "Misalnya: Natal, konferensi...",
+      "closed": "Tutup",
+      "customHours": "Jam khusus",
+      "unavailable": "Tidak tersedia",
+      "noOverrides": "Tidak ada tanggal khusus terjadwal",
+      "delete": "Hapus",
+      "confirmDelete": "Hapus periode ini?",
+      "add": "Tambah",
+      "save": "Simpan",
+      "cancel": "Batal"
+    },
+    "analytics": {
+      "occupancyTitle": "Keterisian per ruang",
+      "utilizationTitle": "Utilisasi per dokter",
+      "peakHoursTitle": "Jam tersibuk",
+      "bookedMinutes": "Menit terbooking",
+      "availableMinutes": "Menit tersedia",
+      "rate": "Keterisian",
+      "noData": "Tidak ada data dalam rentang yang dipilih"
+    },
+    "availability": {
+      "clinicClosed": "Klinik tutup",
+      "professionalOff": "Dokter tidak tersedia",
+      "outsideHours": "Di luar jam yang dikonfigurasi",
+      "confirmOutside": "Slot ini di luar jam kerja. Tetap buat janji temu?",
+      "confirm": "Tetap buat",
+      "cancel": "Batal"
+    },
+    "onboarding": {
+      "hoursLabel": "Jam klinik",
+      "hoursDescription": "Agenda saat ini buka 24/7. Atur jam buka sebenarnya.",
+      "presetSplit": "Sen–Jum 9–14 & 16–20",
+      "presetContinuous": "Sen–Jum 9–18"
+    }
+  }
+}

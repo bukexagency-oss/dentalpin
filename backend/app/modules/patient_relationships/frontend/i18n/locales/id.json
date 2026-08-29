@@ -1,0 +1,22 @@
+{
+  "patientRelationships": {
+    "title": "Family",
+    "emptyHint": "Belum ada tautan keluarga.",
+    "relationships": {
+      "title": "Hubungan keluarga",
+      "searchPatient": "Cari pasien untuk ditautkan…",
+      "addSuccess": "Hubungan ditambahkan",
+      "addError": "Gagal menambah hubungan",
+      "removeError": "Gagal menghapus hubungan",
+      "types": {
+        "parent": "Orang tua",
+        "child": "Anak",
+        "spouse": "Pasangan",
+        "sibling": "Saudara",
+        "guardian": "Wali",
+        "ward": "Bangsal",
+        "other": "Lainnya"
+      }
+    }
+  }
+}

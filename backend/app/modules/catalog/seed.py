@@ -79,8 +79,40 @@ VAT_TYPES: list[dict[str, Any]] = [
 # trio above; "generic" is a single 0% default the clinic edits under
 # /settings/vat-types. Dental care is VAT-exempt in most jurisdictions, so
 # exempt-by-default is the safe generic choice.
+# Indonesia VAT types (PPN) — PPN 11% standard rate, Bebas PPN for exempt.
+# Dental care is exempt from PPN under UU PPN Pasal 4A, but clinics may
+# offer non-dental services (whitening, orthodontic retail) that are taxable.
+ID_VAT_TYPES: list[dict[str, Any]] = [
+        {
+            "key": "ppn_11",
+            "name": "PPN 11%",
+            "rate": 11.0,
+            "is_default": True,
+            "is_system": True,
+            "is_active": True,
+        },
+        {
+            "key": "ppn_12",
+            "name": "PPN 12%",
+            "rate": 12.0,
+            "is_default": False,
+            "is_system": True,
+            "is_active": True,
+        },
+        {
+            "key": "exempt",
+            "name": "Bebas PPN",
+            "rate": 0.0,
+            "is_default": False,
+            "is_system": True,
+            "is_active": True,
+        },
+    ],
+
+
 VAT_PRESETS: dict[str, list[dict[str, Any]]] = {
     "es": VAT_TYPES,
+    "id": ID_VAT_TYPES,
     "generic": [_EXEMPT_BASE],
 }
 

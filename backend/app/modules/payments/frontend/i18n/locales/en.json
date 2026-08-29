@@ -99,10 +99,17 @@
     "methods": {
       "cash": "Cash",
       "card": "Card",
-      "bank_transfer": "Transfer",
-      "direct_debit": "Direct debit",
+      "bank_transfer": "Bank Transfer",
+      "direct_debit": "Direct Debit",
       "insurance": "Insurance",
-      "other": "Other"
+      "other": "Other",
+      "qris": "QRIS",
+      "gopay": "GoPay",
+      "ovo": "OVO",
+      "dana": "Dana",
+      "bca": "BCA Transfer",
+      "mandiri": "Mandiri Transfer",
+      "bni": "BNI Transfer"
     },
     "refund": {
       "title": "Refund payment",

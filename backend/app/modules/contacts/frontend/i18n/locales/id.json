@@ -1,0 +1,24 @@
+{
+  "contacts": {
+    "title": "Kontak",
+    "add": "Tambah kontak",
+    "edit": "Edit kontak",
+    "delete": "Hapus kontak",
+    "deleteConfirm": "Nonaktifkan \"{name}\"? Akan hilang dari direktori tapi tetap terhubung ke catatan historis.",
+    "name": "Nama",
+    "type": "Tipe",
+    "phone": "Telepon",
+    "email": "Email",
+    "address": "Alamat",
+    "notes": "Catatan",
+    "search": "Cari kontak",
+    "filterByType": "Filter berdasarkan tipe",
+    "allTypes": "Semua tipe",
+    "types": {
+      "lab": "Laboratorium",
+      "supplier": "Pemasok",
+      "other": "Lainnya",
+      "delegate": "Perwakilan"
+    }
+  }
+}

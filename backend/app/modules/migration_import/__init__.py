@@ -63,6 +63,7 @@ class MigrationImportModule(BaseModule):
             "recalls",
             "catalog",
             "budget",
+            
             "treatment_plan",
             "billing",
             "payments",
